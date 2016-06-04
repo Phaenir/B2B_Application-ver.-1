@@ -1,0 +1,3422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="6334b896-b2eb-4a07-b196-4632115d1af9"
+  name="B2B_Layer" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="d30bb838-5685-4459-88e8-c2c422ec8ec5"
+        name="Application Operator"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="0cf01965-fcb2-4ade-830a-78f30943543a"
+            isDerived="false"
+            sourceEndRoleName="Application Operator"
+            targetEndRoleName="configure common properties"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="22a0ced0-3b0c-438a-a14a-6fa8e5dba565"
+              LastKnownName="configure common properties"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ee1f126e-fbac-4901-931e-dd6b288d16ab"
+                  name="Application Operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="33f46dc9-96a1-45b4-97ba-70f5ad4ab9cf"
+                  name="configure common properties"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6aca7dbc-82ae-4764-8e0d-bc8a80eedfea"
+            isDerived="false"
+            sourceEndRoleName="Application Operator"
+            targetEndRoleName="Open Template"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="85edfda8-2ab7-4f79-83a6-2db53f43bf61"
+              LastKnownName="Open Template"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="84fdbdca-9983-45e7-bd7a-d244e6f19df9"
+                  name="Application Operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2f2faded-9984-4c15-8862-ad16ff93184a"
+                  name="Open Template"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7f3fcc73-c86a-45f4-86d2-f68fb2ebd049"
+            isDerived="false"
+            sourceEndRoleName="Application Operator"
+            targetEndRoleName="Create Template"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="19b33633-6160-459e-8282-beb9917cc125"
+              LastKnownName="Create Template"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="67e4a388-0fb4-4286-941d-820410aa5a94"
+                  name="Application Operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1635f106-ecc0-429e-8922-66e6131b1f8c"
+                  name="Create Template"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0265d47d-f881-4c82-8aad-e1f90190283f"
+            isDerived="false"
+            sourceEndRoleName="Application Operator"
+            targetEndRoleName="Delete Template"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="17215f2a-f460-4c38-811f-cf3db3507dca"
+              LastKnownName="Delete Template"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="972756fc-621e-4181-96c6-f3b26032b8fa"
+                  name="Application Operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="13ae3a62-0592-418a-93cf-632ece410256"
+                  name="Delete Template"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a86ab171-e413-41ed-b4b6-19c9c4b3460c"
+            isDerived="false"
+            sourceEndRoleName="Application Operator"
+            targetEndRoleName="Use preferable routes"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="790cdc28-5a39-457a-9bf9-cb4d8d3b91ce"
+              LastKnownName="Use preferable routes"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ed114022-0d87-4ee2-b443-20d2a1631ff0"
+                  name="Application Operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f15b5db6-6285-441f-9574-90862010b71a"
+                  name="Use preferable routes"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3a8ed950-845a-4927-828b-3330ad6b8b71"
+            isDerived="false"
+            sourceEndRoleName="Application Operator"
+            targetEndRoleName="Create List of preferable routes"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6f045720-e0c3-44cb-9a67-37d5a854e0ae"
+              LastKnownName="Create List of preferable routes"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a03089b0-7a88-48de-b6b2-a245476be150"
+                  name="Application Operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ab6dc9c3-48a3-49af-8ffc-7b9fc84b4655"
+                  name="Create List of preferable routes"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="58455fb6-b965-4047-b931-126c71d02897"
+            isDerived="false"
+            sourceEndRoleName="Application Operator"
+            targetEndRoleName="Start Search"
+            isLeaf="false"
+            isAbstract="false">
+            <artifactMoniker
+              Id="788a0b50-a050-4701-a99c-01c09c77d7e5"
+              LastKnownName="Start Search"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e9783355-8774-40d2-bab3-216df4d3f4a1"
+                  name="Application Operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9ec397fb-87d2-4d97-87b7-281fb39cce71"
+                  name="Start Search"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="22a0ced0-3b0c-438a-a14a-6fa8e5dba565"
+        name="configure common properties"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="b92387f2-4eed-4a67-8e44-6c4a7e036884">
+            <useCaseMoniker
+              Id="5cfdb8d6-72ed-4f50-abca-a8f0e366c6c1"
+              LastKnownName="Change properties"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+          <dependency
+            Id="0af1f167-ace1-47d5-bae2-f66234527a74">
+            <useCaseMoniker
+              Id="43441849-0d32-402a-930e-a6a79e0f2c63"
+              LastKnownName="Load user properties in Application"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5099f5a5-7d66-48fa-b5b2-c6adb2f87de6"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="86fbc278-e208-4370-b777-6906e4aa87ef"
+        name="WriteAndRead XML data"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="0b01aeed-72a6-4a89-bd04-3d4e073b6242"
+        name="Artifact1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d361dc28-8fa4-4fe5-8030-b9366570cb61"
+        name="UseCase2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="97a748eb-487d-4724-a684-f0052f22eb2b"
+        name="Load XML schema"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="eea867fe-2dba-40f3-b860-b119f9b585af">
+            <useCaseMoniker
+              Id="7c7873aa-c176-4e98-bb88-777884ccd2bd"
+              LastKnownName="Find properties"
+              LastKnownLocation="B2B_Layer.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="86fbc278-e208-4370-b777-6906e4aa87ef"
+            LastKnownName="WriteAndRead XML data"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7c7873aa-c176-4e98-bb88-777884ccd2bd"
+        name="Find properties"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="2589832b-a7dc-40ae-97e5-c6ff1851d819">
+            <useCaseMoniker
+              Id="5cfdb8d6-72ed-4f50-abca-a8f0e366c6c1"
+              LastKnownName="Change properties"
+              LastKnownLocation="B2B_Layer.uml" />
+          </extend>
+          <extend
+            Id="309248a0-e925-425c-a911-1ae88557c9b1">
+            <useCaseMoniker
+              Id="43441849-0d32-402a-930e-a6a79e0f2c63"
+              LastKnownName="Load user properties in Application"
+              LastKnownLocation="B2B_Layer.uml" />
+          </extend>
+          <extend
+            Id="b24dd2c8-dee4-4ac2-9787-dbe0eceb46cd">
+            <useCaseMoniker
+              Id="4f257ad0-956f-4e29-ab92-775b86f4b448"
+              LastKnownName="Load List of templates"
+              LastKnownLocation="B2B_Layer.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="86fbc278-e208-4370-b777-6906e4aa87ef"
+            LastKnownName="WriteAndRead XML data"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="43441849-0d32-402a-930e-a6a79e0f2c63"
+        name="Load user properties in Application"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="86fbc278-e208-4370-b777-6906e4aa87ef"
+            LastKnownName="WriteAndRead XML data"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5cfdb8d6-72ed-4f50-abca-a8f0e366c6c1"
+        name="Change properties"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="26f57d54-0ffb-4f4f-94d0-a7f9823769a9">
+            <useCaseMoniker
+              Id="b34f3e69-acb3-4583-8b36-39ceecaf066e"
+              LastKnownName="Save properties"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="86fbc278-e208-4370-b777-6906e4aa87ef"
+            LastKnownName="WriteAndRead XML data"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b34f3e69-acb3-4583-8b36-39ceecaf066e"
+        name="Save properties"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="9976bc98-0b0d-45e0-9a77-b942d1291054">
+            <artifactMoniker
+              Id="5362b2d9-863d-4122-a9d4-dd33b309a9a2"
+              LastKnownName="config.xml"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="86fbc278-e208-4370-b777-6906e4aa87ef"
+            LastKnownName="WriteAndRead XML data"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="04eed1ea-ce21-4585-9b6d-8981b423ac0f"
+        name="config_schema.xsd"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ddfd8fa8-a712-4820-a8ca-69dd9a1db662"
+            isDerived="false"
+            sourceEndRoleName="config_schema.xsd"
+            targetEndRoleName="Load XML schema"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="97a748eb-487d-4724-a684-f0052f22eb2b"
+              LastKnownName="Load XML schema"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="113426b0-d8be-40f1-9c6e-257f9113e283"
+                  name="config_schema.xsd"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="23f24f30-a6ec-405c-8e2b-31f91166493e"
+                  name="Load XML schema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </artifact>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="5362b2d9-863d-4122-a9d4-dd33b309a9a2"
+        name="config.xml"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="85edfda8-2ab7-4f79-83a6-2db53f43bf61"
+        name="Open Template"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="65897a67-837b-4e77-b1f6-61735a2cd7f1">
+            <useCaseMoniker
+              Id="4f257ad0-956f-4e29-ab92-775b86f4b448"
+              LastKnownName="Load List of templates"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="19b33633-6160-459e-8282-beb9917cc125"
+        name="Create Template"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="de5862b5-3315-404f-8bc1-75d45a331a51">
+            <useCaseMoniker
+              Id="5cfdb8d6-72ed-4f50-abca-a8f0e366c6c1"
+              LastKnownName="Change properties"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="31ef35de-ba9c-4652-a948-25c162afad21"
+        name="DataBase processing"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4f257ad0-956f-4e29-ab92-775b86f4b448"
+        name="Load List of templates"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b2ecf1b5-8a18-479a-a9a8-414328d0d396"
+        name="Send &quot;Select&quot; Request"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="e05ff88f-113d-43bd-b04e-de8c6c0eb027">
+            <useCaseMoniker
+              Id="4f257ad0-956f-4e29-ab92-775b86f4b448"
+              LastKnownName="Load List of templates"
+              LastKnownLocation="B2B_Layer.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="31ef35de-ba9c-4652-a948-25c162afad21"
+            LastKnownName="DataBase processing"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="d827c21e-b666-4344-badf-ff7544a53b07"
+        name="XSD schema"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="179f44c2-aae0-4655-ac9c-fbec560b5b53"
+            name="document"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="4c5bafe1-9e0a-47ab-bcbf-7d5f3472c048"
+            isDerived="false"
+            sourceEndRoleName="XSD schema"
+            targetEndRoleName="Load XML schema"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="97a748eb-487d-4724-a684-f0052f22eb2b"
+              LastKnownName="Load XML schema"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="acdac0f4-e39e-4f22-a896-1a75b0124609"
+                  name="XSD schema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="048d4d6c-216f-41c0-815a-93efe2d0e776"
+                  name="Load XML schema"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </artifact>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="7a048ef8-dc23-4e09-a46c-2c619da8364f"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="fcda4cca-f8a8-45aa-81e5-c62592df7f2a"
+        name="XML files"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b61d4821-87a4-43bf-8eed-66d380baff5a"
+            name="document"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="ee6f284d-85ff-422f-99ad-d21d8daf21e8"
+            isDerived="false"
+            sourceEndRoleName="XML files"
+            targetEndRoleName="Save properties"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b34f3e69-acb3-4583-8b36-39ceecaf066e"
+              LastKnownName="Save properties"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="37f18a32-3c73-4472-afef-ff1c45f4b6de"
+                  name="XML files"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cd30c63a-e139-4a0e-94d7-3bdddda821c8"
+                  name="Save properties"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </artifact>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="74caaa61-5ddf-4fae-b093-000f225765fc"
+        name="Database"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="60ae4435-c6be-42e3-81a9-fb0544f5cc6e"
+            name="executable"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="437c4d9e-c2d7-4cd7-870d-255e3a5f41ac"
+            isDerived="false"
+            sourceEndRoleName="Database"
+            targetEndRoleName="Send &quot;Select&quot; Request"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b2ecf1b5-8a18-479a-a9a8-414328d0d396"
+              LastKnownName="Send &quot;Select&quot; Request"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="39a524d5-020a-4784-9195-0d676ad2ea36"
+                  name="Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e8ec8dda-0a6b-47d1-87c9-a585baec327a"
+                  name="Send &quot;Select&quot; Request"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9daa27fe-9f77-4be2-8d1a-8afe1d4362c7"
+            isDerived="false"
+            sourceEndRoleName="Database"
+            targetEndRoleName="Send &quot;Input&quot; Request"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c17ac55c-9bff-425d-baa1-e05c7e1db4d8"
+              LastKnownName="Send &quot;Insert&quot; Request"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="493283f0-c3a4-4d22-b753-a8285429aa2b"
+                  name="Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="52c47749-2256-4613-a290-981b10b60963"
+                  name="Send &quot;Input&quot; Request"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="c8a08c9d-f46c-4677-a0cc-43ae04aef50d"
+            isDerived="false"
+            sourceEndRoleName="Database"
+            targetEndRoleName="Send &quot;Delete&quot; Request"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="43510cf0-16dd-4d38-ac26-605458d0eb79"
+              LastKnownName="Send &quot;Delete&quot; Request"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="16c8cfbf-fd71-4aa6-85f0-06390484c92c"
+                  name="Database"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dd18cab1-8de9-47b7-bdfa-ef6d88958ab5"
+                  name="Send &quot;Delete&quot; Request"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </artifact>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="41aa87ec-87ca-49f9-9262-3242ceddb126"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c17ac55c-9bff-425d-baa1-e05c7e1db4d8"
+        name="Send &quot;Insert&quot; Request"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="db6c9319-2320-4071-815e-7f8d1c8bccb0">
+            <useCaseMoniker
+              Id="19b33633-6160-459e-8282-beb9917cc125"
+              LastKnownName="Create Template"
+              LastKnownLocation="B2B_Layer.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="31ef35de-ba9c-4652-a948-25c162afad21"
+            LastKnownName="DataBase processing"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="17215f2a-f460-4c38-811f-cf3db3507dca"
+        name="Delete Template"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="f9037108-a689-46c4-8ed1-abe040fb27b6">
+            <useCaseMoniker
+              Id="4f257ad0-956f-4e29-ab92-775b86f4b448"
+              LastKnownName="Load List of templates"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="43510cf0-16dd-4d38-ac26-605458d0eb79"
+        name="Send &quot;Delete&quot; Request"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="2ff86cc7-2d09-4eec-b32e-09e5f782f951">
+            <useCaseMoniker
+              Id="17215f2a-f460-4c38-811f-cf3db3507dca"
+              LastKnownName="Delete Template"
+              LastKnownLocation="B2B_Layer.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="31ef35de-ba9c-4652-a948-25c162afad21"
+            LastKnownName="DataBase processing"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="baa5c4ca-ae69-40f3-8759-7f27c2cb217b"
+        name="Load List of Preferable routes"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="5e8eddc3-97e7-45cf-b46e-2e09cb1b9687">
+            <useCaseMoniker
+              Id="bb2a9c68-6ce5-4486-b247-e51bfb27978c"
+              LastKnownName="Load of file names"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+        <extendedCases>
+          <extend
+            Id="50b231d7-1282-4288-9f48-a734d7deee0f">
+            <useCaseMoniker
+              Id="790cdc28-5a39-457a-9bf9-cb4d8d3b91ce"
+              LastKnownName="Use preferable routes"
+              LastKnownLocation="B2B_Layer.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6f045720-e0c3-44cb-9a67-37d5a854e0ae"
+        name="Create List of preferable routes"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="33849ef5-cc5a-4a3a-bfc9-edcd902f3dd8">
+            <useCaseMoniker
+              Id="7b3d7b24-043b-4d45-9594-12d0d6350e51"
+              LastKnownName="Write data in file"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="3e6befef-eb0a-4d2c-b172-eca4dd2b5334"
+        name="File Manager"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bb2a9c68-6ce5-4486-b247-e51bfb27978c"
+        name="Load of file names"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="c74dc5e6-ac78-4d95-900b-76d661b0bb0d">
+            <useCaseMoniker
+              Id="a2133f5b-d138-4867-bf17-dad8984240ad"
+              LastKnownName="Check that file is unique"
+              LastKnownLocation="B2B_Layer.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="3e6befef-eb0a-4d2c-b172-eca4dd2b5334"
+            LastKnownName="File Manager"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2b2dd14e-8491-4268-9aa2-d3a8a0417ed6"
+        name="Load files"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="0680f02b-2d44-4790-8cfc-872ab53ec4c6">
+            <useCaseMoniker
+              Id="562ce0c4-ac83-43ac-a3a5-46ce77b35867"
+              LastKnownName="Read data from file"
+              LastKnownLocation="B2B_Layer.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="3e6befef-eb0a-4d2c-b172-eca4dd2b5334"
+            LastKnownName="File Manager"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="790cdc28-5a39-457a-9bf9-cb4d8d3b91ce"
+        name="Use preferable routes"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="6c7f3141-9615-48ed-be00-3b667946a66a">
+            <useCaseMoniker
+              Id="562ce0c4-ac83-43ac-a3a5-46ce77b35867"
+              LastKnownName="Read data from file"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="562ce0c4-ac83-43ac-a3a5-46ce77b35867"
+        name="Read data from file"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3e6befef-eb0a-4d2c-b172-eca4dd2b5334"
+            LastKnownName="File Manager"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7b3d7b24-043b-4d45-9594-12d0d6350e51"
+        name="Write data in file"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="3e6befef-eb0a-4d2c-b172-eca4dd2b5334"
+            LastKnownName="File Manager"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a2133f5b-d138-4867-bf17-dad8984240ad"
+        name="Check that file is unique"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="e77f50b1-8eb2-4616-a503-3451168eacc3">
+            <useCaseMoniker
+              Id="7b3d7b24-043b-4d45-9594-12d0d6350e51"
+              LastKnownName="Write data in file"
+              LastKnownLocation="B2B_Layer.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="3e6befef-eb0a-4d2c-b172-eca4dd2b5334"
+            LastKnownName="File Manager"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5ba771e3-02ad-4a4a-98cd-8f8a317350da"
+        name="Save file"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="cb7d71f3-1ac0-44d9-9341-920a471ac4d0">
+            <useCaseMoniker
+              Id="7b3d7b24-043b-4d45-9594-12d0d6350e51"
+              LastKnownName="Write data in file"
+              LastKnownLocation="B2B_Layer.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="3e6befef-eb0a-4d2c-b172-eca4dd2b5334"
+            LastKnownName="File Manager"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="531ac60f-9778-4029-94ed-eaa675d834cc"
+        name="CSV files"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2cd1045a-3733-4095-ac24-433ada76bb24"
+            name="document"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="8a87ad1e-469c-45d5-88a9-31e5bad524e9"
+            isDerived="false"
+            sourceEndRoleName="CSV files"
+            targetEndRoleName="Load files"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2b2dd14e-8491-4268-9aa2-d3a8a0417ed6"
+              LastKnownName="Load files"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="871ab76a-7001-4827-9ba7-3331694c3569"
+                  name="CSV files"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="583c71a5-013a-4d09-86a0-d95c752a6087"
+                  name="Load files"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f492a2a8-c22e-40e6-af40-b2d7ad1a3f01"
+            isDerived="false"
+            sourceEndRoleName="CSV files"
+            targetEndRoleName="Save file"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5ba771e3-02ad-4a4a-98cd-8f8a317350da"
+              LastKnownName="Save file"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ffacabe1-a5d2-442d-8056-7f3bea5f560d"
+                  name="CSV files"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9c387758-42da-4284-8468-6a2ad3060f68"
+                  name="Save file"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </artifact>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1a5fe1c8-d8dd-4dc7-b5b3-36948802506f"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="142eaf06-3627-4566-9e55-c665f29223c4"
+        name="Application operator"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="29492c51-6635-41e4-9177-a712bcf4cca8"
+            isDerived="false"
+            sourceEndRoleName="Application operator"
+            targetEndRoleName="Start Investigation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ccf1553b-e62c-4b7f-89e6-91c87e9d5bee"
+              LastKnownName="Start Investigation"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="583fce46-7a06-4e7a-8f3e-c00ca8fbbea6"
+                  name="Application operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cad29b31-0a2a-4ce5-8e45-b82a69b0d37c"
+                  name="Start Investigation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="056ccc2e-beb4-4d38-9cc9-1f07ffd51d43"
+            isDerived="false"
+            sourceEndRoleName="Application operator"
+            targetEndRoleName="Manage with application configuration"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="289b5b68-7e15-4bd3-bd47-ec54dedc076d"
+              LastKnownName="Manage with application configuration"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f9ad3aa9-fafa-4bb1-b10a-d38334a12d31"
+                  name="Application operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="91aa01f0-c09a-40d0-a3d1-03665235b4e9"
+                  name="Manage with application configuration"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2a968100-0d6d-4188-b41d-62a394fae0e6"
+            isDerived="false"
+            sourceEndRoleName="Application operator"
+            targetEndRoleName="Preview Data for selected period"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="7bf9ccba-a4a9-48c9-9e01-d8bae93083ac"
+              LastKnownName="Preview Data for selected period"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="027a703f-7f58-42fb-bd6f-1f159454825f"
+                  name="Application operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9553d7e2-ec3c-499f-ae08-6c3d8de984f4"
+                  name="Preview Data for selected period"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1e10821f-b2a2-4f08-ae79-949d5d388390"
+            isDerived="false"
+            sourceEndRoleName="Application operator"
+            targetEndRoleName="Open data in Excel"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="615758c1-9cfe-4d41-9d69-44f02a2f60ab"
+              LastKnownName="Open data in Excel"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8381b4a6-2a32-41be-86ea-0852551d164d"
+                  name="Application operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="04ce3ff0-adc0-4a93-864f-b453680d4ead"
+                  name="Open data in Excel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="33a005d9-b3fa-4c22-86e7-166216b16bd6"
+            isDerived="false"
+            sourceEndRoleName="Application operator"
+            targetEndRoleName="Close Application"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c71562b0-cfc1-4fed-be03-09a858d25f35"
+              LastKnownName="Close Application"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a7627f8c-db1c-48b9-801a-b91f6b959e00"
+                  name="Application operator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6cae76e2-9097-44fe-97ed-e23394b57556"
+                  name="Close Application"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="62bbe8c8-b62b-40d3-ac61-98c42331a7b5"
+        name="Configuration"
+        isAbstract="false"
+        isLeaf="false"
+        fileName="B2B_Layer\B2B_UseCase_Configuration.usecasediagram">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="72932ee0-ef40-474a-948b-00aec59ff3ec"
+            name="specification"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+      </artifact>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="289b5b68-7e15-4bd3-bd47-ec54dedc076d"
+        name="Manage with application configuration"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="8e0ab4fb-b069-4420-a6c2-688d0ae75ed8">
+            <artifactMoniker
+              Id="62bbe8c8-b62b-40d3-ac61-98c42331a7b5"
+              LastKnownName="Configuration"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4af2d6a0-c981-4209-a861-c6c9cdd3453c"
+        name="Load properties"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="786ab982-4457-42fb-8b7e-bc0e581c79d6">
+            <artifactMoniker
+              Id="62bbe8c8-b62b-40d3-ac61-98c42331a7b5"
+              LastKnownName="Configuration"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include
+            Id="8adf9b54-7d36-4566-836d-e59a5be8b9e4">
+            <useCaseMoniker
+              Id="8d9ba415-a7e1-489c-b824-a9b8133f538e"
+              LastKnownName="Load Website"
+              LastKnownLocation="B2B_Layer.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8d9ba415-a7e1-489c-b824-a9b8133f538e"
+        name="Load Website"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="38d3f59e-bb45-4bca-95c1-2fbca16a1416">
+            <useCaseMoniker
+              Id="def81fb9-934e-4d15-979a-b0716f964e80"
+              LastKnownName="Fill Form"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="e05d9a96-411e-4fc0-9dd0-eaafd31713c6"
+            LastKnownName="Parse WebSite"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f2426ea4-7782-4c9b-8c8a-d857b18acd53"
+        name="Send request to WebService"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="91058c5a-a533-4642-938b-13968b906a23">
+            <artifactMoniker
+              Id="eadce6c6-db1f-4493-ace4-d639b68df412"
+              LastKnownName="WebService in WSDL"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="a7a86431-a130-449a-a840-f8248010ca1a"
+            LastKnownName="WebService processing"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="def81fb9-934e-4d15-979a-b0716f964e80"
+        name="Fill Form"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="4892b795-fb49-4941-a251-f93e2c74e10d">
+            <useCaseMoniker
+              Id="2e09e4ac-0f3b-4e89-a947-2b1f2a5bb25c"
+              LastKnownName="Send request on website"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="e05d9a96-411e-4fc0-9dd0-eaafd31713c6"
+            LastKnownName="Parse WebSite"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2e09e4ac-0f3b-4e89-a947-2b1f2a5bb25c"
+        name="Send request on website"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="a85a6735-6011-432a-b1a8-6a35c8e8fa7e">
+            <useCaseMoniker
+              Id="12393c7a-969c-4876-a5e1-81d7782481f0"
+              LastKnownName="loading DOM of website"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="e05d9a96-411e-4fc0-9dd0-eaafd31713c6"
+            LastKnownName="Parse WebSite"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="66b55bb2-7bf0-44cb-a76e-3f2406a952d0"
+        name="Obtain result page"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="8c4b6ec7-3276-4e2e-ad24-16934a960824">
+            <useCaseMoniker
+              Id="2e09e4ac-0f3b-4e89-a947-2b1f2a5bb25c"
+              LastKnownName="Send request on website"
+              LastKnownLocation="B2B_Layer.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="e05d9a96-411e-4fc0-9dd0-eaafd31713c6"
+            LastKnownName="Parse WebSite"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0d78b7d5-48ff-4457-a17d-ab9e16058541"
+        name="Detail page filters"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="bcf229a6-e948-4e63-ae15-ef9b1b1dfc31">
+            <useCaseMoniker
+              Id="2e09e4ac-0f3b-4e89-a947-2b1f2a5bb25c"
+              LastKnownName="Send request on website"
+              LastKnownLocation="B2B_Layer.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="e05d9a96-411e-4fc0-9dd0-eaafd31713c6"
+            LastKnownName="Parse WebSite"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="12393c7a-969c-4876-a5e1-81d7782481f0"
+        name="loading DOM of website"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="1420bf27-7fab-414f-8b5d-0a5b09e7654d">
+            <useCaseMoniker
+              Id="44750ecb-e599-431f-be21-4cdd1b5d1786"
+              LastKnownName="Parse Web Page"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="e05d9a96-411e-4fc0-9dd0-eaafd31713c6"
+            LastKnownName="Parse WebSite"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="44750ecb-e599-431f-be21-4cdd1b5d1786"
+        name="Parse Web Page"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="39371a3e-c3c4-462d-9053-a23b60b06e5c">
+            <useCaseMoniker
+              Id="572c9dd0-5bbc-41db-bf14-9c34de8c78ed"
+              LastKnownName="Save data in Database"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="e05d9a96-411e-4fc0-9dd0-eaafd31713c6"
+            LastKnownName="Parse WebSite"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="0b355399-8720-4b01-967f-acd6bc87c8bb"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b5dcf731-e720-440a-a26d-f3bbda821815"
+        name="Parse Responce from WebService"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="7e9908f1-84cd-4cc9-917e-b988f738f8a1">
+            <artifactMoniker
+              Id="eadce6c6-db1f-4493-ace4-d639b68df412"
+              LastKnownName="WebService in WSDL"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+          <dependency
+            Id="fccae976-dad9-4de4-a7ac-65e957a1dd55">
+            <useCaseMoniker
+              Id="572c9dd0-5bbc-41db-bf14-9c34de8c78ed"
+              LastKnownName="Save data in Database"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker
+            Id="a7a86431-a130-449a-a840-f8248010ca1a"
+            LastKnownName="WebService processing"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="14494def-590b-4010-a6df-fad34d6b36d0"
+        name="Check correctness of obtained data"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="a83061d8-1c87-471c-8cc5-b6b8bb3e79c6">
+            <useCaseMoniker
+              Id="572c9dd0-5bbc-41db-bf14-9c34de8c78ed"
+              LastKnownName="Save data in Database"
+              LastKnownLocation="B2B_Layer.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="572c9dd0-5bbc-41db-bf14-9c34de8c78ed"
+        name="Save data in Database"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="f137efb4-254e-4241-8a4c-266f7cfec430">
+            <useCaseMoniker
+              Id="664ce49c-0872-4d5f-9b78-9cc58a326882"
+              LastKnownName="Send &quot;Insert&quot; request"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="004fe827-56fc-4c51-b59d-90ddcc4f7e1d"
+        name="Send &quot;Select&quot; request"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="74ede737-c606-4759-838f-dfedd8e1a9dc"
+            LastKnownName="DataBase processing"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="664ce49c-0872-4d5f-9b78-9cc58a326882"
+        name="Send &quot;Insert&quot; request"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="74ede737-c606-4759-838f-dfedd8e1a9dc"
+            LastKnownName="DataBase processing"
+            LastKnownLocation="B2B_Layer.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="615758c1-9cfe-4d41-9d69-44f02a2f60ab"
+        name="Open data in Excel"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="fd2f5cb3-a280-4072-9ec0-3bd3c37fc915">
+            <useCaseMoniker
+              Id="004fe827-56fc-4c51-b59d-90ddcc4f7e1d"
+              LastKnownName="Send &quot;Select&quot; request"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="7bf9ccba-a4a9-48c9-9e01-d8bae93083ac"
+        name="Preview Data for selected period"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="4e1c50a5-a2ec-4bcd-b07c-e2d05c6b1cd9">
+            <useCaseMoniker
+              Id="004fe827-56fc-4c51-b59d-90ddcc4f7e1d"
+              LastKnownName="Send &quot;Select&quot; request"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ccf1553b-e62c-4b7f-89e6-91c87e9d5bee"
+        name="Start Investigation"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="c8272a87-6b6d-4393-a425-27599bae2b79">
+            <useCaseMoniker
+              Id="8d9ba415-a7e1-489c-b824-a9b8133f538e"
+              LastKnownName="Load Website"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+          <dependency
+            Id="024979fb-006a-431b-b3ee-024b186cfb93">
+            <useCaseMoniker
+              Id="f2426ea4-7782-4c9b-8c8a-d857b18acd53"
+              LastKnownName="Send request to WebService"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="588a2623-0a43-4a69-8157-e919901a48fe"
+        name="Fill search form"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="cc5bedbb-e297-4192-a595-51958ea97353">
+            <useCaseMoniker
+              Id="ccf1553b-e62c-4b7f-89e6-91c87e9d5bee"
+              LastKnownName="Start Investigation"
+              LastKnownLocation="B2B_Layer.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="e05d9a96-411e-4fc0-9dd0-eaafd31713c6"
+        name="Parse WebSite"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="99762c5f-f518-44ad-b04c-dfdfb4fda58e"
+        name="WatIn"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="fec0230e-c45e-430c-ac29-51197e0f87b3"
+            name="library"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="be275440-af3c-465f-979c-85d3a54f323e"
+            isDerived="false"
+            sourceEndRoleName="WatIn"
+            targetEndRoleName="Fill Form"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="def81fb9-934e-4d15-979a-b0716f964e80"
+              LastKnownName="Fill Form"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5f68b01f-12fc-4693-95a1-c10372b883ef"
+                  name="WatIn"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a226e58e-4092-4c97-b35b-12c21b7be130"
+                  name="Fill Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </artifact>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="9bb21ad9-6971-4642-8450-0be7969c64c4"
+        name="Selenium"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e3cd2c81-3631-4998-a1e1-a047af09e60b"
+            name="library"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="1dcc3855-e48e-4e04-b793-2a8c0e8a9704"
+            isDerived="false"
+            sourceEndRoleName="Selenium"
+            targetEndRoleName="Fill Form"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="def81fb9-934e-4d15-979a-b0716f964e80"
+              LastKnownName="Fill Form"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b2de8a93-d6b3-447f-bd92-e93b91ac772d"
+                  name="Selenium"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5fc2b7c7-126a-402a-bd01-25b4bd89b924"
+                  name="Fill Form"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </artifact>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="2024c280-db9c-4d02-922d-6dd8f790c909"
+        name="HtmlAgilityPack"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1ead79b4-0db4-48f4-92f0-4ad8bfb46eb2"
+            name="library"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="6d4f0761-162a-4616-9d6e-135e2c6a72d2"
+            isDerived="false"
+            sourceEndRoleName="HtmlAgilityPack"
+            targetEndRoleName="Parse Web Page"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="44750ecb-e599-431f-be21-4cdd1b5d1786"
+              LastKnownName="Parse Web Page"
+              LastKnownLocation="B2B_Layer.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dcf8ebce-4b85-4cd2-9d5d-fce8d5de46a2"
+                  name="HtmlAgilityPack"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="47931f22-9a67-4951-97f7-b39d4bf6f97b"
+                  name="Parse Web Page"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </artifact>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="695d3a46-92d1-4df5-b912-725411fa8d35"
+        name="Artifact2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="a7a86431-a130-449a-a840-f8248010ca1a"
+        name="WebService processing"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="eadce6c6-db1f-4493-ace4-d639b68df412"
+        name="WebService in WSDL"
+        isAbstract="false"
+        isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="410bb7d2-6d17-4f30-8871-9b0cd96d6d5b"
+            name="library"
+            profile="StandardProfileL2" />
+          <stereotypeInstance
+            Id="6625406b-06e9-41f2-9ffc-2ac69d3e94ca"
+            name="executable"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+      </artifact>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="74ede737-c606-4759-838f-dfedd8e1a9dc"
+        name="DataBase processing"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c71562b0-cfc1-4fed-be03-09a858d25f35"
+        name="Close Application"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="788a0b50-a050-4701-a99c-01c09c77d7e5"
+        name="Start Search"
+        isAbstract="false"
+        isLeaf="false"
+        fileName="B2B_Layer\B2B_UseCase_Processing.usecasediagram">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="54ef4788-2270-42b5-bcd7-3a6ee1f9a66e"
+            name="specification"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+      </artifact>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="75f1f3fb-992a-4711-a798-4116cc5169ea"
+        name="B2B_Activity"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="a34ae0ed-f263-499c-a867-72cc831dde8a"
+        name="B2B_Sequence_Common"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="5b4afd5b-0d30-478e-b676-b5537c91bc0e"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="2e4bb8a6-f809-426e-a1d5-9cbf22e25602"
+                LastKnownName="B2B Application. Main Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="b10de588-5a80-4bbd-8e7a-ba1e835b13d5"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="B2B_Layer.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="f2771288-2d04-4be8-a11c-949a4821d4bb"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="B2B_Layer.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="f4c52980-a5cc-48d2-a0a9-4bf9cdb1331c"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="B2B_Layer.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="898495bd-2d85-4d31-856c-b117827ef3ce"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="B2B_Layer.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="f2771288-2d04-4be8-a11c-949a4821d4bb"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c1b51215-b615-490b-8f6f-92a42e8bff15"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2e4bb8a6-f809-426e-a1d5-9cbf22e25602"
+                LastKnownName="B2B Application. Main Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <lostFoundTarget
+            Id="1227ff22-92a9-41bd-9c34-0431147ee582"
+            name="LostFoundTarget2" />
+          <messageOccurrenceSpecification
+            Id="f4c52980-a5cc-48d2-a0a9-4bf9cdb1331c"
+            name="MessageOccurrenceSpecification6">
+            <covered>
+              <lifelineMoniker
+                Id="2e4bb8a6-f809-426e-a1d5-9cbf22e25602"
+                LastKnownName="B2B Application. Main Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="d2e1d8da-a15a-4149-b7d0-15cade04c6bc"
+            name="BehaviorExecutionSpecification5">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="d299b2a1-fdc3-4b87-8a52-543c9b7e4057"
+                LastKnownName="APA Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="aa8ff516-8eb0-4903-817e-9c54056e0714"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="B2B_Layer.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="96614634-7b61-4402-a9b8-ccbfebbc03a2"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="B2B_Layer.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="9a9b12f4-717c-407f-a6ce-89e6fac89e6f"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="B2B_Layer.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="67f61a8f-c9fc-4fde-912f-3ec14b0ebc67"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="B2B_Layer.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f7c9b63c-ab8a-445b-a841-c290c1b70580"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="B2B_Layer.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8b8dac21-6c32-4228-b6a3-72778da63198"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="B2B_Layer.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f3f172de-07f8-4099-b8be-f7eb23dc9162"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="B2B_Layer.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="727eb989-8eaf-40ad-967a-04263d63ddf5"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="B2B_Layer.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="96614634-7b61-4402-a9b8-ccbfebbc03a2"
+            name="ExecutionOccurrenceSpecification9">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d8e3582d-529a-4bd7-a3ae-6a570195721e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="d299b2a1-fdc3-4b87-8a52-543c9b7e4057"
+                LastKnownName="APA Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="898495bd-2d85-4d31-856c-b117827ef3ce"
+            name="MessageOccurrenceSpecification8">
+            <covered>
+              <lifelineMoniker
+                Id="2e4bb8a6-f809-426e-a1d5-9cbf22e25602"
+                LastKnownName="B2B Application. Main Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9a9b12f4-717c-407f-a6ce-89e6fac89e6f"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="d299b2a1-fdc3-4b87-8a52-543c9b7e4057"
+                LastKnownName="APA Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="32ddf31f-1127-4e83-9bb1-7dfd523ec565"
+            name="BehaviorExecutionSpecification6">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="6a33867d-e70c-4e4c-b216-c1d8e886c1c6"
+                LastKnownName="Configuration Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="cb671c76-b66b-499e-bebe-1f0b55ef928c"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="B2B_Layer.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="29c5d719-e232-4828-b527-4306408eb507"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="B2B_Layer.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="72346d9a-b47a-4f3b-9fcb-4c70bac4d8dc"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="B2B_Layer.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="afdada5e-7be1-487d-9288-a642a67dcb84"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="B2B_Layer.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f4f0b49e-854c-470b-8c0b-552b66f1f054"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="B2B_Layer.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="29c5d719-e232-4828-b527-4306408eb507"
+            name="ExecutionOccurrenceSpecification11">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="6e8418e6-f054-43cc-88a4-90ac909b099a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="6a33867d-e70c-4e4c-b216-c1d8e886c1c6"
+                LastKnownName="Configuration Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="72346d9a-b47a-4f3b-9fcb-4c70bac4d8dc"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="6a33867d-e70c-4e4c-b216-c1d8e886c1c6"
+                LastKnownName="Configuration Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="67f61a8f-c9fc-4fde-912f-3ec14b0ebc67"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="d299b2a1-fdc3-4b87-8a52-543c9b7e4057"
+                LastKnownName="APA Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="b10de588-5a80-4bbd-8e7a-ba1e835b13d5"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="ceb3c427-622c-40af-95ca-a67ccf5d3eab"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2e4bb8a6-f809-426e-a1d5-9cbf22e25602"
+                LastKnownName="B2B Application. Main Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="8f8e4f35-48b2-4e27-ae49-64e6d4d11087"
+            name="BehaviorExecutionSpecification12">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="8668a56e-9654-4b76-b08d-224d1a32b276"
+                LastKnownName="Save Data in DB"
+                LastKnownLocation="B2B_Layer.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="c444e6b1-f89e-4a9b-9423-b7e231601c29"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="B2B_Layer.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="0177cecd-5482-4404-9ef4-3d4ca0cb49df"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="B2B_Layer.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="03b60005-576a-43f3-bb66-27403af2d199"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="B2B_Layer.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="0177cecd-5482-4404-9ef4-3d4ca0cb49df"
+            name="ExecutionOccurrenceSpecification23">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="8aa01a77-685b-448f-a973-2398ec82b09f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8668a56e-9654-4b76-b08d-224d1a32b276"
+                LastKnownName="Save Data in DB"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="afdada5e-7be1-487d-9288-a642a67dcb84"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="6a33867d-e70c-4e4c-b216-c1d8e886c1c6"
+                LastKnownName="Configuration Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="03b60005-576a-43f3-bb66-27403af2d199"
+            name="MessageOccurrenceSpecification31">
+            <covered>
+              <lifelineMoniker
+                Id="8668a56e-9654-4b76-b08d-224d1a32b276"
+                LastKnownName="Save Data in DB"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f7c9b63c-ab8a-445b-a841-c290c1b70580"
+            name="MessageOccurrenceSpecification13">
+            <covered>
+              <lifelineMoniker
+                Id="d299b2a1-fdc3-4b87-8a52-543c9b7e4057"
+                LastKnownName="APA Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f4f0b49e-854c-470b-8c0b-552b66f1f054"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="6a33867d-e70c-4e4c-b216-c1d8e886c1c6"
+                LastKnownName="Configuration Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="cb671c76-b66b-499e-bebe-1f0b55ef928c"
+            name="ExecutionOccurrenceSpecification12">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="af278da9-a93b-4bfb-b0ea-2564502a0d1d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="6a33867d-e70c-4e4c-b216-c1d8e886c1c6"
+                LastKnownName="Configuration Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="4f22a81f-4d70-4814-980c-503bb36c09d8"
+            name="BehaviorExecutionSpecification13">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0732d224-5c88-402e-b3f7-2799ac918ebd"
+                LastKnownName="Search Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="af12df79-cce4-4201-b79c-39001ce2fcdc"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="B2B_Layer.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="7377278f-a482-42bc-add3-7764d61b368b"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="B2B_Layer.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="cc2951f5-72b1-44f4-a905-2fe2b1c39986"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="B2B_Layer.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="7f945267-2f4b-4627-a010-383abdafd4b2"
+                LastKnownName="MessageOccurrenceSpecification46"
+                LastKnownLocation="B2B_Layer.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c3cd9357-d90d-402c-9c63-22b9834a751f"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="B2B_Layer.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="7377278f-a482-42bc-add3-7764d61b368b"
+            name="ExecutionOccurrenceSpecification25">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="3ee43a83-337f-43b4-b8d6-6174d452985c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0732d224-5c88-402e-b3f7-2799ac918ebd"
+                LastKnownName="Search Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cc2951f5-72b1-44f4-a905-2fe2b1c39986"
+            name="MessageOccurrenceSpecification33">
+            <covered>
+              <lifelineMoniker
+                Id="0732d224-5c88-402e-b3f7-2799ac918ebd"
+                LastKnownName="Search Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8b8dac21-6c32-4228-b6a3-72778da63198"
+            name="MessageOccurrenceSpecification32">
+            <covered>
+              <lifelineMoniker
+                Id="d299b2a1-fdc3-4b87-8a52-543c9b7e4057"
+                LastKnownName="APA Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="c444e6b1-f89e-4a9b-9423-b7e231601c29"
+            name="ExecutionOccurrenceSpecification24">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="31f45aa4-14f4-4109-a797-8d7330e0b0ec"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8668a56e-9654-4b76-b08d-224d1a32b276"
+                LastKnownName="Save Data in DB"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="489911b2-f8ae-4e3a-993c-a49478368c4b"
+            name="BehaviorExecutionSpecification18">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="8668a56e-9654-4b76-b08d-224d1a32b276"
+                LastKnownName="Save Data in DB"
+                LastKnownLocation="B2B_Layer.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="2882421e-c519-4314-8840-8253919b3997"
+                LastKnownName="ExecutionOccurrenceSpecification36"
+                LastKnownLocation="B2B_Layer.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="83336a8f-2f0c-4367-b982-7578dde4d5ae"
+                LastKnownName="ExecutionOccurrenceSpecification35"
+                LastKnownLocation="B2B_Layer.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="c8c5e3a5-8674-4518-832d-b4c750b9c351"
+                LastKnownName="MessageOccurrenceSpecification47"
+                LastKnownLocation="B2B_Layer.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="83336a8f-2f0c-4367-b982-7578dde4d5ae"
+            name="ExecutionOccurrenceSpecification35">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e10d4f5e-a62a-4eb9-8be4-cd6f9e77e2b3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8668a56e-9654-4b76-b08d-224d1a32b276"
+                LastKnownName="Save Data in DB"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c8c5e3a5-8674-4518-832d-b4c750b9c351"
+            name="MessageOccurrenceSpecification47">
+            <covered>
+              <lifelineMoniker
+                Id="8668a56e-9654-4b76-b08d-224d1a32b276"
+                LastKnownName="Save Data in DB"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7f945267-2f4b-4627-a010-383abdafd4b2"
+            name="MessageOccurrenceSpecification46">
+            <covered>
+              <lifelineMoniker
+                Id="0732d224-5c88-402e-b3f7-2799ac918ebd"
+                LastKnownName="Search Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="cca0e5b9-37c4-4466-8f23-13adaf0d3e19"
+            name="BehaviorExecutionSpecification14">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="290b04a0-c919-47c0-941f-33621660db0f"
+                LastKnownName="Result Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="b5159df3-e027-4d76-a8c6-394088f3fe64"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="B2B_Layer.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="96b90486-94a7-46a0-a14c-2bb770e90cf2"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="B2B_Layer.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="a5ba75ca-3f31-4cd7-b087-fe9e0f6aeb1b"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="B2B_Layer.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="96b90486-94a7-46a0-a14c-2bb770e90cf2"
+            name="ExecutionOccurrenceSpecification27">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0096d251-51ca-4adf-9e1e-7af272dfc590"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="290b04a0-c919-47c0-941f-33621660db0f"
+                LastKnownName="Result Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c3cd9357-d90d-402c-9c63-22b9834a751f"
+            name="MessageOccurrenceSpecification34">
+            <covered>
+              <lifelineMoniker
+                Id="0732d224-5c88-402e-b3f7-2799ac918ebd"
+                LastKnownName="Search Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a5ba75ca-3f31-4cd7-b087-fe9e0f6aeb1b"
+            name="MessageOccurrenceSpecification35">
+            <covered>
+              <lifelineMoniker
+                Id="290b04a0-c919-47c0-941f-33621660db0f"
+                LastKnownName="Result Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="2882421e-c519-4314-8840-8253919b3997"
+            name="ExecutionOccurrenceSpecification36">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0a766517-6add-4e12-a14d-80ff5f73aa7e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8668a56e-9654-4b76-b08d-224d1a32b276"
+                LastKnownName="Save Data in DB"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="af12df79-cce4-4201-b79c-39001ce2fcdc"
+            name="ExecutionOccurrenceSpecification26">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="2f667bfb-6434-4178-9e60-768caac81a7f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0732d224-5c88-402e-b3f7-2799ac918ebd"
+                LastKnownName="Search Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="b5159df3-e027-4d76-a8c6-394088f3fe64"
+            name="ExecutionOccurrenceSpecification28">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="252ea000-1439-43c6-a2b6-d9acfaee74b4"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="290b04a0-c919-47c0-941f-33621660db0f"
+                LastKnownName="Result Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="87062b22-d774-406c-a187-db9d852a1493"
+            name="BehaviorExecutionSpecification9">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="290b04a0-c919-47c0-941f-33621660db0f"
+                LastKnownName="Result Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="f83baaca-13ce-4f7f-8b77-815e8798f8c7"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="B2B_Layer.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="01c56ea9-be4e-42ca-bfb7-d1e52024e9ea"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="B2B_Layer.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="9e253459-55b9-4a40-b9e2-c8efa2f33dc9"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="B2B_Layer.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="838cf1e8-fd8e-4818-8fc7-84aeed84f04b"
+                LastKnownName="MessageOccurrenceSpecification38"
+                LastKnownLocation="B2B_Layer.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="806304bb-bf27-483e-8e93-d17884ee11a3"
+                LastKnownName="MessageOccurrenceSpecification41"
+                LastKnownLocation="B2B_Layer.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="56c86d1f-1bc8-43be-b6ef-d3c23c983e6d"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="B2B_Layer.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="01c56ea9-be4e-42ca-bfb7-d1e52024e9ea"
+            name="ExecutionOccurrenceSpecification17">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5304a62b-9cff-498a-b432-394ab16481b3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="290b04a0-c919-47c0-941f-33621660db0f"
+                LastKnownName="Result Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f3f172de-07f8-4099-b8be-f7eb23dc9162"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="d299b2a1-fdc3-4b87-8a52-543c9b7e4057"
+                LastKnownName="APA Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9e253459-55b9-4a40-b9e2-c8efa2f33dc9"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="290b04a0-c919-47c0-941f-33621660db0f"
+                LastKnownName="Result Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="feebbc12-1055-4996-b098-336fe9f744db"
+            name="BehaviorExecutionSpecification16">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="8668a56e-9654-4b76-b08d-224d1a32b276"
+                LastKnownName="Save Data in DB"
+                LastKnownLocation="B2B_Layer.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="be973ed4-ab39-42a8-bf9a-b516ed7d19a4"
+                LastKnownName="ExecutionOccurrenceSpecification32"
+                LastKnownLocation="B2B_Layer.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="b357561f-3c9d-4079-b3f1-565ba08d38f9"
+                LastKnownName="ExecutionOccurrenceSpecification31"
+                LastKnownLocation="B2B_Layer.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="f259d75a-f150-47f8-ab7c-ebbeb4793f49"
+                LastKnownName="MessageOccurrenceSpecification39"
+                LastKnownLocation="B2B_Layer.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="4dd9192b-6ecf-41dc-b91e-9af8914582f9"
+                LastKnownName="MessageOccurrenceSpecification40"
+                LastKnownLocation="B2B_Layer.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="b357561f-3c9d-4079-b3f1-565ba08d38f9"
+            name="ExecutionOccurrenceSpecification31">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="95b9ef2c-f15b-4c4a-9bbe-1a8099c2d72f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8668a56e-9654-4b76-b08d-224d1a32b276"
+                LastKnownName="Save Data in DB"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="838cf1e8-fd8e-4818-8fc7-84aeed84f04b"
+            name="MessageOccurrenceSpecification38">
+            <covered>
+              <lifelineMoniker
+                Id="290b04a0-c919-47c0-941f-33621660db0f"
+                LastKnownName="Result Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f259d75a-f150-47f8-ab7c-ebbeb4793f49"
+            name="MessageOccurrenceSpecification39">
+            <covered>
+              <lifelineMoniker
+                Id="8668a56e-9654-4b76-b08d-224d1a32b276"
+                LastKnownName="Save Data in DB"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="806304bb-bf27-483e-8e93-d17884ee11a3"
+            name="MessageOccurrenceSpecification41">
+            <covered>
+              <lifelineMoniker
+                Id="290b04a0-c919-47c0-941f-33621660db0f"
+                LastKnownName="Result Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="4dd9192b-6ecf-41dc-b91e-9af8914582f9"
+            name="MessageOccurrenceSpecification40">
+            <covered>
+              <lifelineMoniker
+                Id="8668a56e-9654-4b76-b08d-224d1a32b276"
+                LastKnownName="Save Data in DB"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="be973ed4-ab39-42a8-bf9a-b516ed7d19a4"
+            name="ExecutionOccurrenceSpecification32">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b9513679-4c5a-4a8e-9f07-6192da93fc68"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="8668a56e-9654-4b76-b08d-224d1a32b276"
+                LastKnownName="Save Data in DB"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="727eb989-8eaf-40ad-967a-04263d63ddf5"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="d299b2a1-fdc3-4b87-8a52-543c9b7e4057"
+                LastKnownName="APA Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="56c86d1f-1bc8-43be-b6ef-d3c23c983e6d"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="290b04a0-c919-47c0-941f-33621660db0f"
+                LastKnownName="Result Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="f83baaca-13ce-4f7f-8b77-815e8798f8c7"
+            name="ExecutionOccurrenceSpecification18">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="85071975-1ba4-4e85-8002-663d1f357bc3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="290b04a0-c919-47c0-941f-33621660db0f"
+                LastKnownName="Result Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="aa8ff516-8eb0-4903-817e-9c54056e0714"
+            name="ExecutionOccurrenceSpecification10">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b4453aca-cb30-4b30-9581-be8cb96cf42d"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="d299b2a1-fdc3-4b87-8a52-543c9b7e4057"
+                LastKnownName="APA Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="2e4bb8a6-f809-426e-a1d5-9cbf22e25602"
+            name="B2B Application. Main Page"
+            isActor="false"
+            lifelineDisplayName="B2B Application. Main Page">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="f2771288-2d04-4be8-a11c-949a4821d4bb"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="B2B_Layer.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b10de588-5a80-4bbd-8e7a-ba1e835b13d5"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="B2B_Layer.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="d299b2a1-fdc3-4b87-8a52-543c9b7e4057"
+            name="APA Page"
+            isActor="false"
+            lifelineDisplayName="APA Page">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="96614634-7b61-4402-a9b8-ccbfebbc03a2"
+                LastKnownName="ExecutionOccurrenceSpecification9"
+                LastKnownLocation="B2B_Layer.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="aa8ff516-8eb0-4903-817e-9c54056e0714"
+                LastKnownName="ExecutionOccurrenceSpecification10"
+                LastKnownLocation="B2B_Layer.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="6a33867d-e70c-4e4c-b216-c1d8e886c1c6"
+            name="Configuration Page"
+            isActor="false"
+            lifelineDisplayName="Configuration Page">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="29c5d719-e232-4828-b527-4306408eb507"
+                LastKnownName="ExecutionOccurrenceSpecification11"
+                LastKnownLocation="B2B_Layer.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="cb671c76-b66b-499e-bebe-1f0b55ef928c"
+                LastKnownName="ExecutionOccurrenceSpecification12"
+                LastKnownLocation="B2B_Layer.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="0732d224-5c88-402e-b3f7-2799ac918ebd"
+            name="Search Page"
+            isActor="false"
+            lifelineDisplayName="Search Page">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="7377278f-a482-42bc-add3-7764d61b368b"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="B2B_Layer.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="af12df79-cce4-4201-b79c-39001ce2fcdc"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="B2B_Layer.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="290b04a0-c919-47c0-941f-33621660db0f"
+            name="Result Page"
+            isActor="false"
+            lifelineDisplayName="Result Page">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="96b90486-94a7-46a0-a14c-2bb770e90cf2"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="B2B_Layer.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b5159df3-e027-4d76-a8c6-394088f3fe64"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="B2B_Layer.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="01c56ea9-be4e-42ca-bfb7-d1e52024e9ea"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="B2B_Layer.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f83baaca-13ce-4f7f-8b77-815e8798f8c7"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="B2B_Layer.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="8668a56e-9654-4b76-b08d-224d1a32b276"
+            name="Save Data in DB"
+            isActor="false"
+            lifelineDisplayName="Save Data in DB">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="0177cecd-5482-4404-9ef4-3d4ca0cb49df"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="B2B_Layer.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="c444e6b1-f89e-4a9b-9423-b7e231601c29"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="B2B_Layer.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="83336a8f-2f0c-4367-b982-7578dde4d5ae"
+                LastKnownName="ExecutionOccurrenceSpecification35"
+                LastKnownLocation="B2B_Layer.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2882421e-c519-4314-8840-8253919b3997"
+                LastKnownName="ExecutionOccurrenceSpecification36"
+                LastKnownLocation="B2B_Layer.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b357561f-3c9d-4079-b3f1-565ba08d38f9"
+                LastKnownName="ExecutionOccurrenceSpecification31"
+                LastKnownLocation="B2B_Layer.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="be973ed4-ab39-42a8-bf9a-b516ed7d19a4"
+                LastKnownName="ExecutionOccurrenceSpecification32"
+                LastKnownLocation="B2B_Layer.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="fc74985c-60fb-46e3-a595-4a141504e198"
+            name="Start App"
+            messageKind="Found"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <lostFoundTargetMoniker
+                Id="1227ff22-92a9-41bd-9c34-0431147ee582"
+                LastKnownName="LostFoundTarget2"
+                LastKnownLocation="B2B_Layer.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f4c52980-a5cc-48d2-a0a9-4bf9cdb1331c"
+                LastKnownName="MessageOccurrenceSpecification6"
+                LastKnownLocation="B2B_Layer.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="225b38d2-a475-456b-ad3f-911a016d1d5f"
+            name="Click APA_button"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="898495bd-2d85-4d31-856c-b117827ef3ce"
+                LastKnownName="MessageOccurrenceSpecification8"
+                LastKnownLocation="B2B_Layer.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9a9b12f4-717c-407f-a6ce-89e6fac89e6f"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="B2B_Layer.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="80b64451-a731-4fd9-b8e1-6706e1dad797"
+            name="Click Config_button"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="67f61a8f-c9fc-4fde-912f-3ec14b0ebc67"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="B2B_Layer.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="72346d9a-b47a-4f3b-9fcb-4c70bac4d8dc"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="B2B_Layer.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="2ba1279c-07e1-4f38-adb7-a3ac8118a04a"
+            name="PostTemplatesToDatabase"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="afdada5e-7be1-487d-9288-a642a67dcb84"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="B2B_Layer.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="03b60005-576a-43f3-bb66-27403af2d199"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="B2B_Layer.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="48c5c118-1350-45c0-b521-f71722124943"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f4f0b49e-854c-470b-8c0b-552b66f1f054"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="B2B_Layer.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f7c9b63c-ab8a-445b-a841-c290c1b70580"
+                LastKnownName="MessageOccurrenceSpecification13"
+                LastKnownLocation="B2B_Layer.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="66ec8a5f-057e-4f0b-a57d-45f225b681d5"
+            name="Click Search_button"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8b8dac21-6c32-4228-b6a3-72778da63198"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="B2B_Layer.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cc2951f5-72b1-44f4-a905-2fe2b1c39986"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="B2B_Layer.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="ef7815fd-de27-45fa-a36d-310bdb91f295"
+            name="SaveResultToDatabase"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7f945267-2f4b-4627-a010-383abdafd4b2"
+                LastKnownName="MessageOccurrenceSpecification46"
+                LastKnownLocation="B2B_Layer.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c8c5e3a5-8674-4518-832d-b4c750b9c351"
+                LastKnownName="MessageOccurrenceSpecification47"
+                LastKnownLocation="B2B_Layer.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1956ee0f-07e2-4bcc-988d-02f511c7ae5d"
+            name="ShowResult"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c3cd9357-d90d-402c-9c63-22b9834a751f"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="B2B_Layer.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a5ba75ca-3f31-4cd7-b087-fe9e0f6aeb1b"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="B2B_Layer.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="79930988-fdd8-46b6-a8ab-8dd74f3952ec"
+            name="ShowResult (start, end)"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f3f172de-07f8-4099-b8be-f7eb23dc9162"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="B2B_Layer.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9e253459-55b9-4a40-b9e2-c8efa2f33dc9"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="B2B_Layer.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="53e4a5ed-f410-4e93-a5a3-76b6669610c5"
+            name="LoadResultFromDatabase"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="838cf1e8-fd8e-4818-8fc7-84aeed84f04b"
+                LastKnownName="MessageOccurrenceSpecification38"
+                LastKnownLocation="B2B_Layer.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f259d75a-f150-47f8-ab7c-ebbeb4793f49"
+                LastKnownName="MessageOccurrenceSpecification39"
+                LastKnownLocation="B2B_Layer.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="6532d080-b1c9-4cc9-a58e-a9d09996564a"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="4dd9192b-6ecf-41dc-b91e-9af8914582f9"
+                LastKnownName="MessageOccurrenceSpecification40"
+                LastKnownLocation="B2B_Layer.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="806304bb-bf27-483e-8e93-d17884ee11a3"
+                LastKnownName="MessageOccurrenceSpecification41"
+                LastKnownLocation="B2B_Layer.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="09213a21-3771-430b-814e-b99c14072113"
+            name="&lt;&lt;return&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="56c86d1f-1bc8-43be-b6ef-d3c23c983e6d"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="B2B_Layer.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="727eb989-8eaf-40ad-967a-04263d63ddf5"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="B2B_Layer.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c1b51215-b615-490b-8f6f-92a42e8bff15"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="ceb3c427-622c-40af-95ca-a67ccf5d3eab"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d8e3582d-529a-4bd7-a3ae-6a570195721e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b4453aca-cb30-4b30-9581-be8cb96cf42d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="6e8418e6-f054-43cc-88a4-90ac909b099a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="af278da9-a93b-4bfb-b0ea-2564502a0d1d"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5304a62b-9cff-498a-b432-394ab16481b3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="85071975-1ba4-4e85-8002-663d1f357bc3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="8aa01a77-685b-448f-a973-2398ec82b09f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="31f45aa4-14f4-4109-a797-8d7330e0b0ec"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="3ee43a83-337f-43b4-b8d6-6174d452985c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="2f667bfb-6434-4178-9e60-768caac81a7f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0096d251-51ca-4adf-9e1e-7af272dfc590"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="252ea000-1439-43c6-a2b6-d9acfaee74b4"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="95b9ef2c-f15b-4c4a-9bbe-1a8099c2d72f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b9513679-4c5a-4a8e-9f07-6192da93fc68"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e10d4f5e-a62a-4eb9-8be4-cd6f9e77e2b3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0a766517-6add-4e12-a14d-80ff5f73aa7e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

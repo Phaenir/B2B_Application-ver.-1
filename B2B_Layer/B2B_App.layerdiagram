@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="681519fa-9a78-4c05-b235-6466f8645e24" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="43b30c60-f9ca-4429-b455-db10fe48660d" name="General Application">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="0d05c8de-b2ce-4129-8641-ab2abfb13247" direction="Forward">
+          <layerMoniker Id="1c6c714e-e96c-4092-8eef-d5cb6dc07094" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="0b0b0c10-27d4-4931-b41b-4b74cb70bb38" name="Other Services Start" />
+        <layer Id="f338b3dc-05fb-4f82-96c0-60d99167896d" name="APA Start" />
+      </childLayers>
+    </layer>
+    <layer Id="1fb3596c-3d40-4148-8c60-91d7369ed590" name="Service Gateway">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="b2dccaaa-e408-4534-a021-ef192f1a1d1a" direction="Forward">
+          <layerMoniker Id="a19e41fe-c46a-4c3f-b62e-417f217a32f5" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="9914b1a0-ab6d-4eff-b837-a817f6f9a4e8" name="Remote Server &#xD;&#xA;/ &#xD;&#xA;Domain Model">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="a0647595-9e65-41e8-a782-019541664cbb" direction="Forward">
+          <layerMoniker Id="1fb3596c-3d40-4148-8c60-91d7369ed590" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="3a1687a9-2720-40be-9f9a-a1d87b2d32c4" name="Database" />
+        <layer Id="9a64e119-bffa-4fbe-89d9-5291879aaaeb" name="Remote Data Storage" />
+      </childLayers>
+    </layer>
+    <layer Id="1c6c714e-e96c-4092-8eef-d5cb6dc07094" name="Presentation">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="32e0b6bf-73a2-4da7-96f8-ecc58b537301" direction="Forward">
+          <layerMoniker Id="bff49e1c-7cab-44ee-a56b-df28458abafa" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="12bdfd86-f2cc-45bb-b89d-99ad13bfe645" name="Windows UI">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="98949d0a-163d-4405-83cb-3e4645c82286" direction="Forward">
+              <layerMoniker Id="70e41d24-808e-4c84-a2eb-61699e5e6286" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <childLayers>
+            <layer Id="813bf2b1-fb4a-4271-8c90-837e4756a627" name="Pages" />
+            <layer Id="863d2e7b-391b-4305-98fd-54fbc860777a" name="Controllers" />
+          </childLayers>
+        </layer>
+        <layer Id="70e41d24-808e-4c84-a2eb-61699e5e6286" name="UI Framework" />
+      </childLayers>
+    </layer>
+    <layer Id="bff49e1c-7cab-44ee-a56b-df28458abafa" name="Management">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="fd43b8f6-8dd1-4ec2-898b-b4adb5ef1610" direction="Forward">
+          <layerMoniker Id="a19e41fe-c46a-4c3f-b62e-417f217a32f5" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="888aa5ce-dde0-4806-9732-50c41d365b2a" name="Configuration" />
+        <layer Id="2ba35679-0d1d-4c9b-8a52-d6ebd88fb475" name="Exception Handling" />
+        <layer Id="2be06efb-0248-4dd0-8c64-161cda05b418" name="Result Request" />
+        <layer Id="7c250afd-3b07-4d51-8c5d-0e9dfe6edcd4" name="Result Preview" />
+      </childLayers>
+    </layer>
+    <layer Id="a19e41fe-c46a-4c3f-b62e-417f217a32f5" name="Business Logic">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="70da2280-507b-4310-a462-bc4331429ef2" direction="Forward">
+          <layerMoniker Id="66df1628-bb01-414c-86c4-b88d584afa6b" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="47b77f26-581b-4870-8cbe-8656fb82d36d" direction="Forward">
+          <layerMoniker Id="33352ac5-3e6a-4f2d-a65f-5aca084c34eb" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="95cb4551-99c1-49ce-ab10-13e961420440" direction="Bidirectional">
+          <layerMoniker Id="9914b1a0-ab6d-4eff-b837-a817f6f9a4e8" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="062030db-934e-44f0-9d9b-c66b0f094474" direction="Forward">
+          <layerMoniker Id="1c6c714e-e96c-4092-8eef-d5cb6dc07094" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="4a1be510-a8ee-4427-a018-a258f5df1498" name="Service Facade">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="1d2e2ab3-ec31-4450-9324-f96aa4b43f11" direction="Forward">
+              <layerMoniker Id="8b909f50-bea1-442f-ae2f-a718b6b69f84" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="78fd5d31-78c4-4c0e-9862-aa81374378ec" direction="Forward">
+              <layerMoniker Id="0a199a95-74f9-4c81-93a0-b37d3262eba4" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="ee76ee3a-92cd-4e31-8d91-e30d15c947a1" direction="Forward">
+              <layerMoniker Id="503859ab-1367-4ba9-903d-e503039dccfa" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="8b909f50-bea1-442f-ae2f-a718b6b69f84" name="Workflows" />
+        <layer Id="0a199a95-74f9-4c81-93a0-b37d3262eba4" name="Components" />
+        <layer Id="503859ab-1367-4ba9-903d-e503039dccfa" name="Entities" />
+      </childLayers>
+    </layer>
+    <layer Id="66df1628-bb01-414c-86c4-b88d584afa6b" name="Security">
+      <childLayers>
+        <layer Id="80dea4db-c05d-4cef-b424-b9656eac26c9" name="Database Authorization" />
+      </childLayers>
+    </layer>
+    <layer Id="33352ac5-3e6a-4f2d-a65f-5aca084c34eb" name="Resources Access">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="e7fd3c86-02f8-4f9a-915e-e6dc949bc73c" direction="Forward">
+          <layerMoniker Id="9914b1a0-ab6d-4eff-b837-a817f6f9a4e8" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="4178dbe3-d6d6-48d8-bda7-e0d6417e6c28" direction="Forward">
+          <layerMoniker Id="0d14a8bb-6e85-4fd2-aba9-c0653d42eb77" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="c3811156-32a6-46bc-8ec9-09738f789735" name="ADO" />
+        <layer Id="153cba04-35ec-4746-84b4-085ba2c74087" name="External Service Agents" />
+      </childLayers>
+    </layer>
+    <layer Id="0d14a8bb-6e85-4fd2-aba9-c0653d42eb77" name="External Services">
+      <childLayers>
+        <layer Id="586f41d1-4d4a-4416-b856-5823e997782e" name="Web Service WSDL" />
+        <layer Id="1484498b-6efe-4ec7-837e-652bfd250eb2" name="SELENIUM / WATIN" />
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

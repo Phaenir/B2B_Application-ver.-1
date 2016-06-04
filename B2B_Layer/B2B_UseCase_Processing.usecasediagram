@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="49b90374-b622-4258-ae07-c5494fe929e9" name="B2B_UseCase_Processing" linkedPackageId="e3a7b269-aa46-45ee-a52f-ccd9ea7da0f6" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="6d0fe7ac-cb88-498f-a2d7-95b002e275d2">
+      <profileInstance Id="4ce1882e-b3e4-464d-97f6-5c4fe3c9284f" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="999c3ba9-7853-4197-834d-93373eb15628">
+      <profileInstance Id="4cdf68b6-4e8f-4627-af42-5b8fb6903fee" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="1f1c2df8-0e93-4cd6-afa4-fbd5f4242c0d" name="Application operator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="142eaf06-3627-4566-9e55-c665f29223c4" />
+        <targetEnds>
+          <association Id="fc0036ee-76a1-4ec7-8aff-66d4744dbc26" isDerived="false" sourceEndRoleName="Application operator" targetEndRoleName="Start Investigation" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="168636fe-58fd-4573-8fcc-b9957242d0b5" LastKnownName="Start Investigation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="712a41e9-ba44-4470-9f5c-ae081d743068" name="Application operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="583fce46-7a06-4e7a-8f3e-c00ca8fbbea6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="88a2c37b-1b0d-43ec-8412-2b812d4e2633" name="Start Investigation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cad29b31-0a2a-4ce5-8e45-b82a69b0d37c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="29492c51-6635-41e4-9177-a712bcf4cca8" />
+          </association>
+          <association Id="e66526de-5058-4e01-a1bd-ddfeb9427668" isDerived="false" sourceEndRoleName="Application operator" targetEndRoleName="Manage with application configuration" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ed3d3be6-0c7b-43fd-91a4-33011411fd73" LastKnownName="Manage with application configuration" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4373c112-3f13-4195-b1b8-a6d49cea1b45" name="Application operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f9ad3aa9-fafa-4bb1-b10a-d38334a12d31" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b9e38539-7373-44b0-9f1b-562732c86de7" name="Manage with application configuration" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="91aa01f0-c09a-40d0-a3d1-03665235b4e9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="056ccc2e-beb4-4d38-9cc9-1f07ffd51d43" />
+          </association>
+          <association Id="12d68661-ddc7-41a1-bdbe-d1224bb4cc2f" isDerived="false" sourceEndRoleName="Application operator" targetEndRoleName="Preview Data for selected period" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8ed55815-a4e6-4fef-807d-6ef2f75e53c2" LastKnownName="Preview Data for selected period" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cb67d2bd-7038-4baa-8a11-d0aee2028b93" name="Application operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="027a703f-7f58-42fb-bd6f-1f159454825f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="29151b33-0084-4c55-82aa-356ae47fcca0" name="Preview Data for selected period" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9553d7e2-ec3c-499f-ae08-6c3d8de984f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2a968100-0d6d-4188-b41d-62a394fae0e6" />
+          </association>
+          <association Id="84326e07-ba1f-439b-a813-febf4c1f7848" isDerived="false" sourceEndRoleName="Application operator" targetEndRoleName="Open data in Excel" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4f1f23df-a128-43e9-8907-c6ac2705fcd0" LastKnownName="Open data in Excel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="06f5d48b-e6e4-4274-ba5e-be33c0589602" name="Application operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8381b4a6-2a32-41be-86ea-0852551d164d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad5eaae0-0480-4b3a-a5a4-6dc297f84efb" name="Open data in Excel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="04ce3ff0-adc0-4a93-864f-b453680d4ead" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1e10821f-b2a2-4f08-ae79-949d5d388390" />
+          </association>
+          <association Id="82431d37-4d51-451a-95a7-6ac7182f01a8" isDerived="false" sourceEndRoleName="Application operator" targetEndRoleName="Close Application" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="911946bc-263f-48df-b9dc-c5edacb96113" LastKnownName="Close Application" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f734d546-d8ca-41ff-9dea-7cebc07e031b" name="Application operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a7627f8c-db1c-48b9-801a-b91f6b959e00" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5f7a0ec8-50a4-40b8-99f5-a6668ccc5ab3" name="Close Application" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6cae76e2-9097-44fe-97ed-e23394b57556" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="33a005d9-b3fa-4c22-86e7-166216b16bd6" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="b4f42e47-6804-441e-be69-b8de029b4a58" name="Configuration" isAbstract="false" isLeaf="false" fileName="B2B_Layer\B2B_UseCase_Configuration.usecasediagram">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="88a5f15f-759d-4c5c-8e94-815378decb4f" name="specification" profile="StandardProfileL2">
+            <elementDefinition Id="72932ee0-ef40-474a-948b-00aec59ff3ec" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="62bbe8c8-b62b-40d3-ac61-98c42331a7b5" />
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ed3d3be6-0c7b-43fd-91a4-33011411fd73" name="Manage with application configuration" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="289b5b68-7e15-4bd3-bd47-ec54dedc076d" />
+        <suppliersInternal>
+          <dependency Id="7fb0edb9-52d7-45e5-a053-8cc9a30ef48d">
+            <artifactMoniker Id="b4f42e47-6804-441e-be69-b8de029b4a58" LastKnownName="Configuration" />
+            <elementDefinition Id="8e0ab4fb-b069-4420-a6c2-688d0ae75ed8" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5f4b6b65-fd34-45bb-83fd-b8d50f9dfed7" name="Load properties" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4af2d6a0-c981-4209-a861-c6c9cdd3453c" />
+        <suppliersInternal>
+          <dependency Id="f3615db6-94b7-4bd7-a8aa-47bc16eb2b7f">
+            <artifactMoniker Id="b4f42e47-6804-441e-be69-b8de029b4a58" LastKnownName="Configuration" />
+            <elementDefinition Id="786ab982-4457-42fb-8b7e-bc0e581c79d6" />
+          </dependency>
+        </suppliersInternal>
+        <additions>
+          <include Id="164bab97-2969-47b5-8682-3cd1a885a28b">
+            <useCaseMoniker Id="a9ff98ca-324c-4510-922a-9fdb5cbe5c05" LastKnownName="Load Website" />
+            <elementDefinition Id="8adf9b54-7d36-4566-836d-e59a5be8b9e4" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a9ff98ca-324c-4510-922a-9fdb5cbe5c05" name="Load Website" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8d9ba415-a7e1-489c-b824-a9b8133f538e" />
+        <suppliersInternal>
+          <dependency Id="f473ba0d-c3b8-4494-a0b8-4ff1962886df">
+            <useCaseMoniker Id="d0438091-07b9-4716-8333-454ee5b98a37" LastKnownName="Fill Form" />
+            <elementDefinition Id="38d3f59e-bb45-4bca-95c1-2fbca16a1416" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="f4dcd359-57d9-4804-b816-6c95e31db360" LastKnownName="Parse WebSite" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="dc7227c5-7166-4e68-b9b3-10383c18ef0a" name="Send request to WebService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f2426ea4-7782-4c9b-8c8a-d857b18acd53" />
+        <suppliersInternal>
+          <dependency Id="5fa724ef-820b-4bbe-a79f-5b9d11e1b8ec">
+            <artifactMoniker Id="e9d5d86e-9631-4533-8a7c-a91881a4cfde" LastKnownName="WebService in WSDL" />
+            <elementDefinition Id="91058c5a-a533-4642-938b-13968b906a23" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="1818fac8-2faa-4001-bd18-75ab5c05ab76" LastKnownName="WebService processing" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="d0438091-07b9-4716-8333-454ee5b98a37" name="Fill Form" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="def81fb9-934e-4d15-979a-b0716f964e80" />
+        <suppliersInternal>
+          <dependency Id="8ec87c9f-7047-408f-b55a-65c9fdcd07ec">
+            <useCaseMoniker Id="28017760-bb49-4454-b6ad-d6010e28e3ef" LastKnownName="Send request on website" />
+            <elementDefinition Id="4892b795-fb49-4941-a251-f93e2c74e10d" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="f4dcd359-57d9-4804-b816-6c95e31db360" LastKnownName="Parse WebSite" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="28017760-bb49-4454-b6ad-d6010e28e3ef" name="Send request on website" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2e09e4ac-0f3b-4e89-a947-2b1f2a5bb25c" />
+        <suppliersInternal>
+          <dependency Id="4992e92e-f30b-47c4-92a6-e8221eba5388">
+            <useCaseMoniker Id="f2edb660-a484-4d15-828c-08efb552315d" LastKnownName="loading DOM of website" />
+            <elementDefinition Id="a85a6735-6011-432a-b1a8-6a35c8e8fa7e" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="f4dcd359-57d9-4804-b816-6c95e31db360" LastKnownName="Parse WebSite" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="385bcfe5-bdfc-43ea-b7fd-7196249efd1b" name="Obtain result page" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="66b55bb2-7bf0-44cb-a76e-3f2406a952d0" />
+        <extendedCases>
+          <extend Id="f0e8fe94-a1e0-4d89-8a4c-c8d872a5a894">
+            <useCaseMoniker Id="28017760-bb49-4454-b6ad-d6010e28e3ef" LastKnownName="Send request on website" />
+            <elementDefinition Id="8c4b6ec7-3276-4e2e-ad24-16934a960824" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="f4dcd359-57d9-4804-b816-6c95e31db360" LastKnownName="Parse WebSite" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2a8afe40-5b0a-4655-a0fa-aba12cea9d2d" name="Detail page filters" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0d78b7d5-48ff-4457-a17d-ab9e16058541" />
+        <additions>
+          <include Id="c098a2ab-3747-4008-a808-45500ae1ecef">
+            <useCaseMoniker Id="28017760-bb49-4454-b6ad-d6010e28e3ef" LastKnownName="Send request on website" />
+            <elementDefinition Id="bcf229a6-e948-4e63-ae15-ef9b1b1dfc31" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="f4dcd359-57d9-4804-b816-6c95e31db360" LastKnownName="Parse WebSite" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f2edb660-a484-4d15-828c-08efb552315d" name="loading DOM of website" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="12393c7a-969c-4876-a5e1-81d7782481f0" />
+        <suppliersInternal>
+          <dependency Id="650c6220-365e-4d26-b0e8-5d623fdaefe9">
+            <useCaseMoniker Id="13846069-1085-4a64-9240-99a1847d205f" LastKnownName="Parse Web Page" />
+            <elementDefinition Id="1420bf27-7fab-414f-8b5d-0a5b09e7654d" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="f4dcd359-57d9-4804-b816-6c95e31db360" LastKnownName="Parse WebSite" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="13846069-1085-4a64-9240-99a1847d205f" name="Parse Web Page" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="44750ecb-e599-431f-be21-4cdd1b5d1786" />
+        <suppliersInternal>
+          <dependency Id="19ad156f-9653-4c09-bd58-f21174232c9a">
+            <useCaseMoniker Id="f27bc297-6138-4678-a25e-47aa454dc62d" LastKnownName="Save data in Database" />
+            <elementDefinition Id="39371a3e-c3c4-462d-9053-a23b60b06e5c" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="f4dcd359-57d9-4804-b816-6c95e31db360" LastKnownName="Parse WebSite" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="009555bb-0bda-4c24-8555-71df02b65f6f" name="Parse Responce from WebService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b5dcf731-e720-440a-a26d-f3bbda821815" />
+        <suppliersInternal>
+          <dependency Id="11bff7af-c93a-4c05-af5e-99661042ccc0">
+            <artifactMoniker Id="e9d5d86e-9631-4533-8a7c-a91881a4cfde" LastKnownName="WebService in WSDL" />
+            <elementDefinition Id="7e9908f1-84cd-4cc9-917e-b988f738f8a1" />
+          </dependency>
+          <dependency Id="fe0c73bf-745d-4077-8414-b1c29aa5e409">
+            <useCaseMoniker Id="f27bc297-6138-4678-a25e-47aa454dc62d" LastKnownName="Save data in Database" />
+            <elementDefinition Id="fccae976-dad9-4de4-a7ac-65e957a1dd55" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="1818fac8-2faa-4001-bd18-75ab5c05ab76" LastKnownName="WebService processing" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="894a87f7-0af6-43df-96d2-55a26d3fa047" name="Check correctness of obtained data" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="14494def-590b-4010-a6df-fad34d6b36d0" />
+        <additions>
+          <include Id="e1a35036-c86f-4f3d-9947-aac1b12f0711">
+            <useCaseMoniker Id="f27bc297-6138-4678-a25e-47aa454dc62d" LastKnownName="Save data in Database" />
+            <elementDefinition Id="a83061d8-1c87-471c-8cc5-b6b8bb3e79c6" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f27bc297-6138-4678-a25e-47aa454dc62d" name="Save data in Database" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="572c9dd0-5bbc-41db-bf14-9c34de8c78ed" />
+        <suppliersInternal>
+          <dependency Id="824b5ec8-2bf5-4531-b226-4dcc7418b27c">
+            <useCaseMoniker Id="be4b8950-1579-4750-9c5d-47a9c5ac016c" LastKnownName="Send &quot;Insert&quot; request" />
+            <elementDefinition Id="f137efb4-254e-4241-8a4c-266f7cfec430" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1f1b707c-624a-40d3-bb89-d1f47474fb27" name="Send &quot;Select&quot; request" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="004fe827-56fc-4c51-b59d-90ddcc4f7e1d" />
+        <subjects>
+          <subsystemMoniker Id="9af5646c-103d-47b5-a86a-398666fec162" LastKnownName="DataBase processing" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="be4b8950-1579-4750-9c5d-47a9c5ac016c" name="Send &quot;Insert&quot; request" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="664ce49c-0872-4d5f-9b78-9cc58a326882" />
+        <subjects>
+          <subsystemMoniker Id="9af5646c-103d-47b5-a86a-398666fec162" LastKnownName="DataBase processing" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4f1f23df-a128-43e9-8907-c6ac2705fcd0" name="Open data in Excel" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="615758c1-9cfe-4d41-9d69-44f02a2f60ab" />
+        <suppliersInternal>
+          <dependency Id="9fd6af87-a9cf-478c-acf7-7a380f36c238">
+            <useCaseMoniker Id="1f1b707c-624a-40d3-bb89-d1f47474fb27" LastKnownName="Send &quot;Select&quot; request" />
+            <elementDefinition Id="fd2f5cb3-a280-4072-9ec0-3bd3c37fc915" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8ed55815-a4e6-4fef-807d-6ef2f75e53c2" name="Preview Data for selected period" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7bf9ccba-a4a9-48c9-9e01-d8bae93083ac" />
+        <suppliersInternal>
+          <dependency Id="2828dd40-1a12-4fbc-b8ac-646b1aadddd2">
+            <useCaseMoniker Id="1f1b707c-624a-40d3-bb89-d1f47474fb27" LastKnownName="Send &quot;Select&quot; request" />
+            <elementDefinition Id="4e1c50a5-a2ec-4bcd-b07c-e2d05c6b1cd9" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="168636fe-58fd-4573-8fcc-b9957242d0b5" name="Start Investigation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ccf1553b-e62c-4b7f-89e6-91c87e9d5bee" />
+        <suppliersInternal>
+          <dependency Id="0f3cb705-f604-46c6-9716-8f52d6b7d419">
+            <useCaseMoniker Id="a9ff98ca-324c-4510-922a-9fdb5cbe5c05" LastKnownName="Load Website" />
+            <elementDefinition Id="c8272a87-6b6d-4393-a425-27599bae2b79" />
+          </dependency>
+          <dependency Id="c3775810-2c42-4abd-9487-42f4347b3f3e">
+            <useCaseMoniker Id="dc7227c5-7166-4e68-b9b3-10383c18ef0a" LastKnownName="Send request to WebService" />
+            <elementDefinition Id="024979fb-006a-431b-b3ee-024b186cfb93" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="45cd0f17-8e25-41a8-b201-78603f54f053" name="Fill search form" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="588a2623-0a43-4a69-8157-e919901a48fe" />
+        <extendedCases>
+          <extend Id="524ac475-0b76-4b3f-89de-4b5cc3376384">
+            <useCaseMoniker Id="168636fe-58fd-4573-8fcc-b9957242d0b5" LastKnownName="Start Investigation" />
+            <elementDefinition Id="cc5bedbb-e297-4192-a595-51958ea97353" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="f4dcd359-57d9-4804-b816-6c95e31db360" name="Parse WebSite" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e05d9a96-411e-4fc0-9dd0-eaafd31713c6" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="ca138bc8-e10e-46c0-aa30-44d3cf4986ee" name="WatIn" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="9ad7276d-ec38-4d4b-ad8c-fffdc4dafc6e" name="library" profile="StandardProfileL2">
+            <elementDefinition Id="fec0230e-c45e-430c-ac29-51197e0f87b3" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="99762c5f-f518-44ad-b04c-dfdfb4fda58e" />
+        <targetEnds>
+          <association Id="aa39f35e-ae2b-41a9-9ea3-89d630e6a515" isDerived="false" sourceEndRoleName="WatIn" targetEndRoleName="Fill Form" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d0438091-07b9-4716-8333-454ee5b98a37" LastKnownName="Fill Form" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="85c98903-08df-4735-959e-fa41724bc4ba" name="WatIn" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5f68b01f-12fc-4693-95a1-c10372b883ef" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="83fa19fb-1af6-416a-abc2-cdb76de228a4" name="Fill Form" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a226e58e-4092-4c97-b35b-12c21b7be130" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="be275440-af3c-465f-979c-85d3a54f323e" />
+          </association>
+        </targetEnds>
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="cf6d533d-554b-448a-ae83-23ab494033f1" name="Selenium" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="d002dfb0-602c-45eb-9e3e-a7edfb4badd0" name="library" profile="StandardProfileL2">
+            <elementDefinition Id="e3cd2c81-3631-4998-a1e1-a047af09e60b" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="9bb21ad9-6971-4642-8450-0be7969c64c4" />
+        <targetEnds>
+          <association Id="fa9b1e01-f9b3-4a8a-a372-ffa46978e257" isDerived="false" sourceEndRoleName="Selenium" targetEndRoleName="Fill Form" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d0438091-07b9-4716-8333-454ee5b98a37" LastKnownName="Fill Form" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3109ddd4-39da-4a4e-806a-2e556f1b3837" name="Selenium" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b2de8a93-d6b3-447f-bd92-e93b91ac772d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dc086231-ee8c-4739-8e23-f46c7fd352dd" name="Fill Form" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5fc2b7c7-126a-402a-bd01-25b4bd89b924" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1dcc3855-e48e-4e04-b793-2a8c0e8a9704" />
+          </association>
+        </targetEnds>
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="5bf5658c-97ed-439a-88ad-ee0e5c727f91" name="HtmlAgilityPack" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="d80a4fd5-212d-4d98-a117-1d37de1c312c" name="library" profile="StandardProfileL2">
+            <elementDefinition Id="1ead79b4-0db4-48f4-92f0-4ad8bfb46eb2" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="2024c280-db9c-4d02-922d-6dd8f790c909" />
+        <targetEnds>
+          <association Id="0579963c-2616-4a37-812c-688195d24cd7" isDerived="false" sourceEndRoleName="HtmlAgilityPack" targetEndRoleName="Parse Web Page" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="13846069-1085-4a64-9240-99a1847d205f" LastKnownName="Parse Web Page" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7f8df980-284f-4ca6-ba21-eaa662dcaac5" name="HtmlAgilityPack" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dcf8ebce-4b85-4cd2-9d5d-fce8d5de46a2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3ed25ed8-178c-41c4-85f4-70625ab18e0f" name="Parse Web Page" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="47931f22-9a67-4951-97f7-b39d4bf6f97b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6d4f0761-162a-4616-9d6e-135e2c6a72d2" />
+          </association>
+        </targetEnds>
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="1818fac8-2faa-4001-bd18-75ab5c05ab76" name="WebService processing" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a7a86431-a130-449a-a840-f8248010ca1a" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="e9d5d86e-9631-4533-8a7c-a91881a4cfde" name="WebService in WSDL" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="8604b9ad-aed8-4fab-8ced-b71d27935934" name="library" profile="StandardProfileL2">
+            <elementDefinition Id="410bb7d2-6d17-4f30-8871-9b0cd96d6d5b" />
+          </stereotypeInstance>
+          <stereotypeInstance Id="2a3ea746-93b3-4b14-aeb5-307a1c544ee8" name="executable" profile="StandardProfileL2">
+            <elementDefinition Id="6625406b-06e9-41f2-9ffc-2ac69d3e94ca" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="eadce6c6-db1f-4493-ace4-d639b68df412" />
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="9af5646c-103d-47b5-a86a-398666fec162" name="DataBase processing" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="74ede737-c606-4759-838f-dfedd8e1a9dc" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="911946bc-263f-48df-b9dc-c5edacb96113" name="Close Application" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c71562b0-cfc1-4fed-be03-09a858d25f35" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="e3a7b269-aa46-45ee-a52f-ccd9ea7da0f6" name="B2B_Layer">
+    <elementDefinition Id="6334b896-b2eb-4a07-b196-4632115d1af9" />
+  </package>
+</useCaseModelRoot>

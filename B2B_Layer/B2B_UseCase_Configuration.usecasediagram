@@ -1,0 +1,598 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="9136bb6c-bae9-4a8a-aa17-561b53b64959" name="B2B_UseCase_Configuration" linkedPackageId="3c039f41-e5da-4253-803f-94c7c4dd6d64" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="7183c7ec-4219-4c47-a2b2-2a25712e2e47" name="Application Operator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d30bb838-5685-4459-88e8-c2c422ec8ec5" />
+        <targetEnds>
+          <association Id="e798c379-d308-4fb1-80cf-f95ac52db477" isDerived="false" sourceEndRoleName="Application Operator" targetEndRoleName="configure common properties" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="15865c40-0d92-46a5-8d9c-88ca80de9ba1" LastKnownName="configure common properties" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4fd7f63b-6f17-4194-b283-c2ed9296d34b" name="Application Operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ee1f126e-fbac-4901-931e-dd6b288d16ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4cedeac6-78ce-4275-869b-3fa5ca0558ce" name="configure common properties" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="33f46dc9-96a1-45b4-97ba-70f5ad4ab9cf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0cf01965-fcb2-4ade-830a-78f30943543a" />
+          </association>
+          <association Id="9ff809b8-4494-4088-b4b9-a95a090d9c5f" isDerived="false" sourceEndRoleName="Application Operator" targetEndRoleName="Open Template" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0b453900-0073-4b6c-bef9-67adeefb9fed" LastKnownName="Open Template" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9f1efa13-461a-42ac-85f0-3502ca2d0f71" name="Application Operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="84fdbdca-9983-45e7-bd7a-d244e6f19df9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c2329f4a-8451-48b5-8ef9-3fb1aab16d0e" name="Open Template" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2f2faded-9984-4c15-8862-ad16ff93184a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6aca7dbc-82ae-4764-8e0d-bc8a80eedfea" />
+          </association>
+          <association Id="dd3a56fe-e3da-4017-aa31-2413d2c57df5" isDerived="false" sourceEndRoleName="Application Operator" targetEndRoleName="Create Template" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ca193286-3755-4deb-b97b-c2c8f34112d4" LastKnownName="Create Template" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f8e78cd2-3663-4780-97f4-4e9d5bb6a84e" name="Application Operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="67e4a388-0fb4-4286-941d-820410aa5a94" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f2a82093-e7d7-4671-9758-f68ba145f0d6" name="Create Template" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1635f106-ecc0-429e-8922-66e6131b1f8c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7f3fcc73-c86a-45f4-86d2-f68fb2ebd049" />
+          </association>
+          <association Id="09254e54-5df7-4e2a-8010-88a778945b5d" isDerived="false" sourceEndRoleName="Application Operator" targetEndRoleName="Delete Template" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9d2bdff5-eaa2-4659-a314-6b8b4e3e0b2e" LastKnownName="Delete Template" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6bb74afa-f13c-43fe-9ffe-edcbead497fa" name="Application Operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="972756fc-621e-4181-96c6-f3b26032b8fa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8551c2e5-382f-4289-9693-41abf6b3e080" name="Delete Template" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="13ae3a62-0592-418a-93cf-632ece410256" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0265d47d-f881-4c82-8aad-e1f90190283f" />
+          </association>
+          <association Id="eb92a3e6-136c-41f9-a378-367efb7cad0d" isDerived="false" sourceEndRoleName="Application Operator" targetEndRoleName="Use preferable routes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e6ce8596-e06b-4b73-b8b7-21effb1563cc" LastKnownName="Use preferable routes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8518cdca-97e2-4079-9118-5aaab73646bf" name="Application Operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ed114022-0d87-4ee2-b443-20d2a1631ff0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="57b62b0b-c9b0-4c41-8d71-4507d53ad273" name="Use preferable routes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f15b5db6-6285-441f-9574-90862010b71a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a86ab171-e413-41ed-b4b6-19c9c4b3460c" />
+          </association>
+          <association Id="9c40e769-350c-4e39-b847-336423a4cfa6" isDerived="false" sourceEndRoleName="Application Operator" targetEndRoleName="Create List of preferable routes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2213830b-5ad8-493e-9a35-e13f2fe4d47a" LastKnownName="Create List of preferable routes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dcbd2b14-4e1c-42ec-bafd-8ee9549e7133" name="Application Operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a03089b0-7a88-48de-b6b2-a245476be150" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5757de12-f89f-4622-99e3-227f2222546e" name="Create List of preferable routes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ab6dc9c3-48a3-49af-8ffc-7b9fc84b4655" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3a8ed950-845a-4927-828b-3330ad6b8b71" />
+          </association>
+          <association Id="f1597432-0fd7-48f0-83ed-e80c317ce0ff" isDerived="false" sourceEndRoleName="Application Operator" targetEndRoleName="Start Search" isLeaf="false" isAbstract="false">
+            <artifactMoniker Id="8875822a-6eda-4b80-a48e-d982610d9441" LastKnownName="Start Search" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c5b00a5d-d1d4-4a03-b744-b87791e0bf97" name="Application Operator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e9783355-8774-40d2-bab3-216df4d3f4a1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f6d28c3f-ec15-4798-b5e9-d65b3a4abb15" name="Start Search" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9ec397fb-87d2-4d97-87b7-281fb39cce71" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="58455fb6-b965-4047-b931-126c71d02897" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="15865c40-0d92-46a5-8d9c-88ca80de9ba1" name="configure common properties" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="22a0ced0-3b0c-438a-a14a-6fa8e5dba565" />
+        <suppliersInternal>
+          <dependency Id="069544b2-0f01-488e-b074-a193f0cdc4da">
+            <useCaseMoniker Id="a561e615-9932-4371-8b69-2b2477aec7fd" LastKnownName="Change properties" />
+            <elementDefinition Id="b92387f2-4eed-4a67-8e44-6c4a7e036884" />
+          </dependency>
+          <dependency Id="d19fc1fa-f321-487a-a97b-db0921905106">
+            <useCaseMoniker Id="2c96e45b-ef03-452e-a445-36c7f61f8af2" LastKnownName="Load user properties in Application" />
+            <elementDefinition Id="0af1f167-ace1-47d5-bae2-f66234527a74" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="95a901fb-dfe1-4beb-9cc5-927e9bbcd2b2" name="WriteAndRead XML data" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="86fbc278-e208-4370-b777-6906e4aa87ef" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="89b63d99-0460-4ffa-a6f3-a9fd8be693e3" name="Load XML schema" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="97a748eb-487d-4724-a684-f0052f22eb2b" />
+        <additions>
+          <include Id="3ef84a38-9e43-4aca-adfa-394d8f65dc59">
+            <useCaseMoniker Id="6a433ffa-63b0-4f66-951f-c8cc8d27b215" LastKnownName="Find properties" />
+            <elementDefinition Id="eea867fe-2dba-40f3-b860-b119f9b585af" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="95a901fb-dfe1-4beb-9cc5-927e9bbcd2b2" LastKnownName="WriteAndRead XML data" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6a433ffa-63b0-4f66-951f-c8cc8d27b215" name="Find properties" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7c7873aa-c176-4e98-bb88-777884ccd2bd" />
+        <extendedCases>
+          <extend Id="5b72dda5-ff19-44c9-979c-76a426b63cb2">
+            <useCaseMoniker Id="a561e615-9932-4371-8b69-2b2477aec7fd" LastKnownName="Change properties" />
+            <elementDefinition Id="2589832b-a7dc-40ae-97e5-c6ff1851d819" />
+          </extend>
+          <extend Id="403580e8-0932-4e60-8b2a-b304490c77df">
+            <useCaseMoniker Id="2c96e45b-ef03-452e-a445-36c7f61f8af2" LastKnownName="Load user properties in Application" />
+            <elementDefinition Id="309248a0-e925-425c-a911-1ae88557c9b1" />
+          </extend>
+          <extend Id="67288dc1-33d4-47ad-946a-bc428efcd7e1">
+            <useCaseMoniker Id="7dbeb496-59ab-4b01-adf5-283ee8d42161" LastKnownName="Load List of templates" />
+            <elementDefinition Id="b24dd2c8-dee4-4ac2-9787-dbe0eceb46cd" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="95a901fb-dfe1-4beb-9cc5-927e9bbcd2b2" LastKnownName="WriteAndRead XML data" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2c96e45b-ef03-452e-a445-36c7f61f8af2" name="Load user properties in Application" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="43441849-0d32-402a-930e-a6a79e0f2c63" />
+        <subjects>
+          <subsystemMoniker Id="95a901fb-dfe1-4beb-9cc5-927e9bbcd2b2" LastKnownName="WriteAndRead XML data" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="a561e615-9932-4371-8b69-2b2477aec7fd" name="Change properties" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5cfdb8d6-72ed-4f50-abca-a8f0e366c6c1" />
+        <suppliersInternal>
+          <dependency Id="b5f43646-dddb-46d2-8e0a-deaeaa513e67">
+            <useCaseMoniker Id="b5bb7bc4-9fe4-4d0e-b16d-d4553963b16b" LastKnownName="Save properties" />
+            <elementDefinition Id="26f57d54-0ffb-4f4f-94d0-a7f9823769a9" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="95a901fb-dfe1-4beb-9cc5-927e9bbcd2b2" LastKnownName="WriteAndRead XML data" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b5bb7bc4-9fe4-4d0e-b16d-d4553963b16b" name="Save properties" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b34f3e69-acb3-4583-8b36-39ceecaf066e" />
+        <subjects>
+          <subsystemMoniker Id="95a901fb-dfe1-4beb-9cc5-927e9bbcd2b2" LastKnownName="WriteAndRead XML data" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0b453900-0073-4b6c-bef9-67adeefb9fed" name="Open Template" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="85edfda8-2ab7-4f79-83a6-2db53f43bf61" />
+        <suppliersInternal>
+          <dependency Id="2025aae6-980a-4012-a4fb-60ea1429110d">
+            <useCaseMoniker Id="7dbeb496-59ab-4b01-adf5-283ee8d42161" LastKnownName="Load List of templates" />
+            <elementDefinition Id="65897a67-837b-4e77-b1f6-61735a2cd7f1" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ca193286-3755-4deb-b97b-c2c8f34112d4" name="Create Template" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="19b33633-6160-459e-8282-beb9917cc125" />
+        <suppliersInternal>
+          <dependency Id="8130f35f-2a07-4a4a-a8cd-009be6f39872">
+            <useCaseMoniker Id="a561e615-9932-4371-8b69-2b2477aec7fd" LastKnownName="Change properties" />
+            <elementDefinition Id="de5862b5-3315-404f-8bc1-75d45a331a51" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="37d39226-d052-415a-a2c4-9111f4e91888" name="DataBase processing" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="31ef35de-ba9c-4652-a948-25c162afad21" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7dbeb496-59ab-4b01-adf5-283ee8d42161" name="Load List of templates" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4f257ad0-956f-4e29-ab92-775b86f4b448" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="84936ca9-9951-4caa-82c0-1fe8e0b06bd5" name="Send &quot;Select&quot; Request" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b2ecf1b5-8a18-479a-a9a8-414328d0d396" />
+        <extendedCases>
+          <extend Id="927c33a1-c94f-4def-940f-a7d87c5a81c2">
+            <useCaseMoniker Id="7dbeb496-59ab-4b01-adf5-283ee8d42161" LastKnownName="Load List of templates" />
+            <elementDefinition Id="e05ff88f-113d-43bd-b04e-de8c6c0eb027" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="37d39226-d052-415a-a2c4-9111f4e91888" LastKnownName="DataBase processing" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <artifact Id="7c71b563-504b-4ff3-b85d-723b778fd204" name="XSD schema" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="9ec6b0a4-2b1c-4766-9871-1f6596414c99" name="document" profile="StandardProfileL2">
+            <elementDefinition Id="179f44c2-aae0-4655-ac9c-fbec560b5b53" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="d827c21e-b666-4344-badf-ff7544a53b07" />
+        <targetEnds>
+          <association Id="52e485f2-ca04-4b91-9d0b-d2890d1656ed" isDerived="false" sourceEndRoleName="XSD schema" targetEndRoleName="Load XML schema" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="89b63d99-0460-4ffa-a6f3-a9fd8be693e3" LastKnownName="Load XML schema" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7725a4f4-0c72-4bbc-8ed7-8647a512ce43" name="XSD schema" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="acdac0f4-e39e-4f22-a896-1a75b0124609" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a963889d-ea35-48c7-85e9-131900a51a43" name="Load XML schema" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="048d4d6c-216f-41c0-815a-93efe2d0e776" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4c5bafe1-9e0a-47ab-bcbf-7d5f3472c048" />
+          </association>
+        </targetEnds>
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="48de4324-5786-4715-9e89-49937f7b01b9" name="XML files" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="dba20a23-596a-4aaa-b4cb-f0bdca095c7a" name="document" profile="StandardProfileL2">
+            <elementDefinition Id="b61d4821-87a4-43bf-8eed-66d380baff5a" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="fcda4cca-f8a8-45aa-81e5-c62592df7f2a" />
+        <targetEnds>
+          <association Id="98e23b43-9e7c-4cc0-a6fb-a7ca8ae02d14" isDerived="false" sourceEndRoleName="XML files" targetEndRoleName="Save properties" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b5bb7bc4-9fe4-4d0e-b16d-d4553963b16b" LastKnownName="Save properties" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6fdaaf17-05d0-43eb-abf6-301a023e1dfd" name="XML files" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="37f18a32-3c73-4472-afef-ff1c45f4b6de" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="653ff117-ee35-4987-8c44-4f213d1377ae" name="Save properties" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cd30c63a-e139-4a0e-94d7-3bdddda821c8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ee6f284d-85ff-422f-99ad-d21d8daf21e8" />
+          </association>
+        </targetEnds>
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="8a4ea418-1ddb-4fcc-ae9a-13c3241078cd" name="Database" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="b7aee273-89a4-48e6-9190-a14837e1d8e4" name="executable" profile="StandardProfileL2">
+            <elementDefinition Id="60ae4435-c6be-42e3-81a9-fb0544f5cc6e" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="74caaa61-5ddf-4fae-b093-000f225765fc" />
+        <targetEnds>
+          <association Id="ac788555-1ac2-4e39-b134-d914d92b95f5" isDerived="false" sourceEndRoleName="Database" targetEndRoleName="Send &quot;Select&quot; Request" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="84936ca9-9951-4caa-82c0-1fe8e0b06bd5" LastKnownName="Send &quot;Select&quot; Request" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="142ea3ac-4518-4262-bbfd-9d7bdc78a8c0" name="Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="39a524d5-020a-4784-9195-0d676ad2ea36" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7c30b919-1e58-4c94-b186-834f479aed37" name="Send &quot;Select&quot; Request" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e8ec8dda-0a6b-47d1-87c9-a585baec327a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="437c4d9e-c2d7-4cd7-870d-255e3a5f41ac" />
+          </association>
+          <association Id="7dfc19b8-4522-4ab0-8511-832b0efce0ab" isDerived="false" sourceEndRoleName="Database" targetEndRoleName="Send &quot;Input&quot; Request" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ec0adcd7-49b4-4a26-97ff-f829033f9e7d" LastKnownName="Send &quot;Insert&quot; Request" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5a56dc3e-8a9a-4b6f-9e22-947781db4c0f" name="Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="493283f0-c3a4-4d22-b753-a8285429aa2b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="79ead7a5-eb34-45f3-bedf-bb8651a6cd4a" name="Send &quot;Input&quot; Request" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="52c47749-2256-4613-a290-981b10b60963" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9daa27fe-9f77-4be2-8d1a-8afe1d4362c7" />
+          </association>
+          <association Id="1eb4ec03-8b49-480a-80c0-802a52ec45e0" isDerived="false" sourceEndRoleName="Database" targetEndRoleName="Send &quot;Delete&quot; Request" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f3b3885e-0a15-4f4b-a96e-324fbe4c2834" LastKnownName="Send &quot;Delete&quot; Request" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f6536747-9940-4f40-a2c6-80b3838bb1f4" name="Database" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="16c8cfbf-fd71-4aa6-85f0-06390484c92c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f6d13c1d-6172-461f-a549-28ef90704d77" name="Send &quot;Delete&quot; Request" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dd18cab1-8de9-47b7-bdfa-ef6d88958ab5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c8a08c9d-f46c-4677-a0cc-43ae04aef50d" />
+          </association>
+        </targetEnds>
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="ec0adcd7-49b4-4a26-97ff-f829033f9e7d" name="Send &quot;Insert&quot; Request" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c17ac55c-9bff-425d-baa1-e05c7e1db4d8" />
+        <extendedCases>
+          <extend Id="8332173d-e245-4cf3-a8b0-e7315cdc307d">
+            <useCaseMoniker Id="ca193286-3755-4deb-b97b-c2c8f34112d4" LastKnownName="Create Template" />
+            <elementDefinition Id="db6c9319-2320-4071-815e-7f8d1c8bccb0" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="37d39226-d052-415a-a2c4-9111f4e91888" LastKnownName="DataBase processing" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9d2bdff5-eaa2-4659-a314-6b8b4e3e0b2e" name="Delete Template" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="17215f2a-f460-4c38-811f-cf3db3507dca" />
+        <suppliersInternal>
+          <dependency Id="d62a52e3-6f91-465d-b450-6d508afdd56c">
+            <useCaseMoniker Id="7dbeb496-59ab-4b01-adf5-283ee8d42161" LastKnownName="Load List of templates" />
+            <elementDefinition Id="f9037108-a689-46c4-8ed1-abe040fb27b6" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="f3b3885e-0a15-4f4b-a96e-324fbe4c2834" name="Send &quot;Delete&quot; Request" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="43510cf0-16dd-4d38-ac26-605458d0eb79" />
+        <extendedCases>
+          <extend Id="419e30af-d55c-4967-a3cc-c6ad201f8493">
+            <useCaseMoniker Id="9d2bdff5-eaa2-4659-a314-6b8b4e3e0b2e" LastKnownName="Delete Template" />
+            <elementDefinition Id="2ff86cc7-2d09-4eec-b32e-09e5f782f951" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="37d39226-d052-415a-a2c4-9111f4e91888" LastKnownName="DataBase processing" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <useCase Id="f9d6a386-7498-4398-a67d-4778124c46fe" name="Load List of Preferable routes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="baa5c4ca-ae69-40f3-8759-7f27c2cb217b" />
+        <suppliersInternal>
+          <dependency Id="71e2b7a9-a487-4559-be97-8dc7812852cb">
+            <useCaseMoniker Id="9d3797b9-7751-41f5-b477-e07b7bbf7376" LastKnownName="Load of file names" />
+            <elementDefinition Id="5e8eddc3-97e7-45cf-b46e-2e09cb1b9687" />
+          </dependency>
+        </suppliersInternal>
+        <extendedCases>
+          <extend Id="65ec17eb-3d42-46a9-b025-5efd49779319">
+            <useCaseMoniker Id="e6ce8596-e06b-4b73-b8b7-21effb1563cc" LastKnownName="Use preferable routes" />
+            <elementDefinition Id="50b231d7-1282-4288-9f48-a734d7deee0f" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2213830b-5ad8-493e-9a35-e13f2fe4d47a" name="Create List of preferable routes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6f045720-e0c3-44cb-9a67-37d5a854e0ae" />
+        <suppliersInternal>
+          <dependency Id="210ed0f1-ce01-4d5e-944f-3db1bedc6465">
+            <useCaseMoniker Id="cdf0f64e-9f3b-4189-812a-29a5c4588876" LastKnownName="Write data in file" />
+            <elementDefinition Id="33849ef5-cc5a-4a3a-bfc9-edcd902f3dd8" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="9a545df7-5a55-4aaa-bb05-52a1cf4e10ef" name="File Manager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3e6befef-eb0a-4d2c-b172-eca4dd2b5334" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="9d3797b9-7751-41f5-b477-e07b7bbf7376" name="Load of file names" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bb2a9c68-6ce5-4486-b247-e51bfb27978c" />
+        <extendedCases>
+          <extend Id="a3da4905-5929-41c1-87dc-d9fcd1a3c2ff">
+            <useCaseMoniker Id="df7273aa-271e-4397-9051-839d612e81c6" LastKnownName="Check that file is unique" />
+            <elementDefinition Id="c74dc5e6-ac78-4d95-900b-76d661b0bb0d" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="9a545df7-5a55-4aaa-bb05-52a1cf4e10ef" LastKnownName="File Manager" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="36f79012-9688-47a0-84c9-c37de298a2d7" name="Load files" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2b2dd14e-8491-4268-9aa2-d3a8a0417ed6" />
+        <additions>
+          <include Id="ad5b07e9-78ae-4d6a-92e9-f8dac6cbcb5a">
+            <useCaseMoniker Id="2c4af662-ce6e-40e7-96da-1d9719ef22fa" LastKnownName="Read data from file" />
+            <elementDefinition Id="0680f02b-2d44-4790-8cfc-872ab53ec4c6" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="9a545df7-5a55-4aaa-bb05-52a1cf4e10ef" LastKnownName="File Manager" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e6ce8596-e06b-4b73-b8b7-21effb1563cc" name="Use preferable routes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="790cdc28-5a39-457a-9bf9-cb4d8d3b91ce" />
+        <suppliersInternal>
+          <dependency Id="5c7e1f71-5d92-40a9-a7c4-384c879c41da">
+            <useCaseMoniker Id="2c4af662-ce6e-40e7-96da-1d9719ef22fa" LastKnownName="Read data from file" />
+            <elementDefinition Id="6c7f3141-9615-48ed-be00-3b667946a66a" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="2c4af662-ce6e-40e7-96da-1d9719ef22fa" name="Read data from file" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="562ce0c4-ac83-43ac-a3a5-46ce77b35867" />
+        <subjects>
+          <subsystemMoniker Id="9a545df7-5a55-4aaa-bb05-52a1cf4e10ef" LastKnownName="File Manager" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="cdf0f64e-9f3b-4189-812a-29a5c4588876" name="Write data in file" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7b3d7b24-043b-4d45-9594-12d0d6350e51" />
+        <subjects>
+          <subsystemMoniker Id="9a545df7-5a55-4aaa-bb05-52a1cf4e10ef" LastKnownName="File Manager" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="df7273aa-271e-4397-9051-839d612e81c6" name="Check that file is unique" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a2133f5b-d138-4867-bf17-dad8984240ad" />
+        <additions>
+          <include Id="9e704578-5310-413e-8c26-cebbeb3b5e1c">
+            <useCaseMoniker Id="cdf0f64e-9f3b-4189-812a-29a5c4588876" LastKnownName="Write data in file" />
+            <elementDefinition Id="e77f50b1-8eb2-4616-a503-3451168eacc3" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="9a545df7-5a55-4aaa-bb05-52a1cf4e10ef" LastKnownName="File Manager" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4b3955f8-5223-494e-8aee-5e08e57572b2" name="Save file" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5ba771e3-02ad-4a4a-98cd-8f8a317350da" />
+        <additions>
+          <include Id="e3d077bf-36a0-4136-bd3d-9aff8861e61f">
+            <useCaseMoniker Id="cdf0f64e-9f3b-4189-812a-29a5c4588876" LastKnownName="Write data in file" />
+            <elementDefinition Id="cb7d71f3-1ac0-44d9-9341-920a471ac4d0" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="9a545df7-5a55-4aaa-bb05-52a1cf4e10ef" LastKnownName="File Manager" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <artifact Id="41b80fc0-cc8a-4fa0-9454-dc52e6825818" name="CSV files" isAbstract="false" isLeaf="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="72d5d834-cd99-474d-bb0f-c00dfce6d8fe" name="document" profile="StandardProfileL2">
+            <elementDefinition Id="2cd1045a-3733-4095-ac24-433ada76bb24" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="531ac60f-9778-4029-94ed-eaa675d834cc" />
+        <targetEnds>
+          <association Id="81afa799-3d87-4dec-8388-a2cc610df87b" isDerived="false" sourceEndRoleName="CSV files" targetEndRoleName="Load files" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="36f79012-9688-47a0-84c9-c37de298a2d7" LastKnownName="Load files" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fd92dea6-8151-4a29-918d-b7c9b9e440cf" name="CSV files" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="871ab76a-7001-4827-9ba7-3331694c3569" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="16d5dbc3-0157-4525-933f-6155fd8cd57c" name="Load files" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="583c71a5-013a-4d09-86a0-d95c752a6087" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8a87ad1e-469c-45d5-88a9-31e5bad524e9" />
+          </association>
+          <association Id="2da4d6ab-f486-4c25-ab57-dd31f2f93800" isDerived="false" sourceEndRoleName="CSV files" targetEndRoleName="Save file" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4b3955f8-5223-494e-8aee-5e08e57572b2" LastKnownName="Save file" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="39dbdb9f-55a8-4754-b7f0-410195e60dfe" name="CSV files" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ffacabe1-a5d2-442d-8056-7f3bea5f560d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b5b8ef40-459a-47a7-a62b-22d81cc4c71c" name="Save file" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9c387758-42da-4284-8468-6a2ad3060f68" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f492a2a8-c22e-40e6-af40-b2d7ad1a3f01" />
+          </association>
+        </targetEnds>
+      </artifact>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="8875822a-6eda-4b80-a48e-d982610d9441" name="Start Search" isAbstract="false" isLeaf="false" fileName="B2B_Layer\B2B_UseCase_Processing.usecasediagram">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="c94f1bfb-2b9c-4d85-a20b-36308768c11c" name="specification" profile="StandardProfileL2">
+            <elementDefinition Id="54ef4788-2270-42b5-bcd7-3a6ee1f9a66e" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="788a0b50-a050-4701-a99c-01c09c77d7e5" />
+      </artifact>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="3c039f41-e5da-4253-803f-94c7c4dd6d64" name="B2B_Layer">
+    <elementDefinition Id="6334b896-b2eb-4a07-b196-4632115d1af9" />
+    <profileInstances>
+      <packageHasProfileInstances Id="cbc3032d-f519-46e7-b8e2-9279f7d130a0">
+        <profileInstance Id="aeeeb7d2-fdb5-4454-9857-001e95b2552d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="f391a25e-9df2-4c64-bf04-826bf0df2149">
+        <profileInstance Id="31774d1e-4d4a-43a8-9a76-af838f615c6a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

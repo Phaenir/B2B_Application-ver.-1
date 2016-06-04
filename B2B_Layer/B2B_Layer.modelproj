@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7a44089d-9dc2-4ac1-8108-e386c02d0b01}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>B2B_Layer</Name>
+    <RootNamespace>B2B_Layer</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="B2B_Activity.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="B2B_Activity.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>B2B_Activity.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="B2B_Component.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="B2B_Component.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>B2B_Component.componentdiagram</DependentUpon>
+    </Content>
+    <Content Include="B2B_Sequence_Common.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="B2B_Sequence_Common.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>B2B_Sequence_Common.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="B2B_Sequence_GeneralPreferences.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="B2B_Sequence_GeneralPreferences.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>B2B_Sequence_GeneralPreferences.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="B2B_Sequence_PreferableRoutes.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="B2B_Sequence_PreferableRoutes.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>B2B_Sequence_PreferableRoutes.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="B2B_Sequence_ProcessingWithTemplates.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="B2B_Sequence_ProcessingWithTemplates.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>B2B_Sequence_ProcessingWithTemplates.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="B2B_Sequence_WebServiceProcessing.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="B2B_Sequence_WebServiceProcessing.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>B2B_Sequence_WebServiceProcessing.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="B2B_Sequence_WebSiteParsingProcess.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="B2B_Sequence_WebSiteParsingProcess.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>B2B_Sequence_WebSiteParsingProcess.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="B2B_UseCase_Configuration.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="B2B_UseCase_Configuration.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>B2B_UseCase_Configuration.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="B2B_UseCase_Processing.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="B2B_UseCase_Processing.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>B2B_UseCase_Processing.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\B2B_Layer.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="B2B_App.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="B2B_App.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>B2B_App.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="B2B_App.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>B2B_App.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+</Project>
