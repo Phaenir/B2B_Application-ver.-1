@@ -1,1 +1,26 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="a018c9c7-40b4-47ca-8ed6-9e26574c814f" name="B2B_Component" linkedPackageId="c23dcf1e-1b7d-428d-82b4-23ef3bffadd9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="b04f0334-30f4-4cc6-96b1-4b74e3eb7da7">
+      <profileInstance Id="8e399447-ebe7-491b-a4fb-1b2a096c8912" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="dd609dce-79ab-4725-a402-2b53b1ebfd1b">
+      <profileInstance Id="3d3be97e-15d3-485d-b057-9ee3a5542418" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="006caa82-9add-46c1-b2d7-4bbb7d2ffd26">
+      <profileInstance Id="f6daf457-f435-4c50-97e0-ad4af8c5453f" name="TextTemplateBindings">
+        <elementDefinition Id="00aa08a2-bb23-4241-adbd-37279893dff8" />
+      </profileInstance>
+      <elementDefinition Id="0f3ad382-ef34-4fa7-a2c2-e7fa3572a31d" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <package Id="c23dcf1e-1b7d-428d-82b4-23ef3bffadd9" name="B2B_Layer">
+    <elementDefinition Id="6334b896-b2eb-4a07-b196-4632115d1af9" />
+  </package>
+</componentModel>

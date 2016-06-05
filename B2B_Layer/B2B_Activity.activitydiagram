@@ -1,27 +1,484 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="23f14b65-8aac-4152-8c00-bf5042902f1c" name="B2B_Activity" linkedPackageId="272a4a9e-1d9e-4fe8-bea9-7a4b5a28bc36" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="93b98c64-943f-4d5a-bbe6-7c94c5af59dd">
-      <profileInstance Id="6b2571d0-b2ef-48d3-bd15-cc5ef73e2192" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="5817751a-ca82-4cb4-857a-2c1a6c701dcf">
-      <profileInstance Id="246c1e89-1ae8-423a-9682-ae5acd8bd860" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <activityRootModelHasActivity>
       <activity Id="19b4e80b-acc9-445e-8ee3-978dffa093d8" name="B2B_Activity" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
         <elementDefinition Id="75f1f3fb-992a-4711-a798-4116cc5169ea" />
+        <nodes>
+          <initialNode Id="8ba766c3-3279-4818-b7b8-55d0d352fdb4" name="Initial1" isLeaf="false">
+            <elementDefinition Id="22e800a4-d1f5-4453-89dc-48f552670019" />
+            <flowNodeTargets>
+              <controlFlow Id="b125a752-84fe-4d04-96ed-22bc8396194f" isLeaf="false">
+                <opaqueActionMoniker Id="aeb66eec-aade-4e9e-9813-62d134947e9d" LastKnownName="Start Application" />
+                <elementDefinition Id="ac3ef2f3-5402-4925-a0ee-8d48cf195de7" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="aeb66eec-aade-4e9e-9813-62d134947e9d" name="Start Application" isLeaf="false">
+            <elementDefinition Id="ac3c10d6-c2aa-4e8c-8f39-563be00e56a6" />
+            <flowNodeTargets>
+              <controlFlow Id="918fb324-271b-4c4a-9f43-d2059d5121d1" isLeaf="false">
+                <opaqueActionMoniker Id="5f74d8d1-02ed-4990-9ea2-413d02af7dbf" LastKnownName="Click_Button_APA" />
+                <elementDefinition Id="8f747fb0-69c0-4c06-abe6-c3207b1628e1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5f74d8d1-02ed-4990-9ea2-413d02af7dbf" name="Click_Button_APA" isLeaf="false">
+            <elementDefinition Id="b65c627a-9260-4945-91c2-0578e2b6f2f6" />
+            <flowNodeTargets>
+              <controlFlow Id="dd8d4bdb-20ae-4a14-bbdf-e6d97d007c87" isLeaf="false">
+                <opaqueActionMoniker Id="d90d67ec-b1ec-4cd2-a61e-73bc743a4c6c" LastKnownName="Open_Page(APA)" />
+                <elementDefinition Id="210caded-aada-4b53-837c-b5353797bf46" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d90d67ec-b1ec-4cd2-a61e-73bc743a4c6c" name="Open_Page(APA)" isLeaf="false">
+            <elementDefinition Id="bec895b5-f2c1-4877-bec0-56e3e0093f68" />
+            <objectFlowTargets>
+              <objectFlow Id="1421e51b-c64c-41e6-8a24-01de1b1e44d5" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="29b1757c-0912-4e17-b3ee-bae0fc911a74" LastKnownName="APA_MainPage" />
+                <elementDefinition Id="7ae8681a-977b-46ce-bdde-93741f5f2c8c" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode Id="a74c5a80-f0e4-487a-a75a-17ec9d8c2b5a" name="Configuration Page link" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="37c59b78-cf5b-4c7a-b4ca-14a1ca7a9682" />
+            <objectFlowTargets>
+              <objectFlow Id="1940851b-444c-4673-99ce-30a4ff4f1185" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="919597ba-3a82-4f02-a754-0ea30d9ea865" LastKnownName="Submit_Link" />
+                <elementDefinition Id="70ea8978-a7fd-4971-b653-99bdb8f4a01c" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="6ea7d39c-7349-48be-be99-f1a07362fb31" name="2147483647" value="2147483647">
+                <elementDefinition Id="32fefed8-3029-4e5e-ae39-3677c3d7db08" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="a6f2dae1-16e5-40e4-bf02-4be6f572f887" name="Search Page link" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="0981591b-279f-49fc-b620-ccaf247500dd" />
+            <objectFlowTargets>
+              <objectFlow Id="04f9f12c-781a-4db7-8237-4b8f5af2b30c" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="919597ba-3a82-4f02-a754-0ea30d9ea865" LastKnownName="Submit_Link" />
+                <elementDefinition Id="423bd89a-617a-420b-873d-c99f51ee3b14" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="9704dd51-6993-4ad3-bb3a-05cb39178870" name="2147483647" value="2147483647">
+                <elementDefinition Id="a4a04c4f-9205-4f16-b880-7bad5be8fb76" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="abd52404-edcd-460d-bd84-78f3dea0d614" name="Result Page link" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="cd49ee53-d19b-4376-8657-3a3cf18ba27f" />
+            <objectFlowTargets>
+              <objectFlow Id="05687cbf-7574-4d50-b654-a66ee67c8187" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="919597ba-3a82-4f02-a754-0ea30d9ea865" LastKnownName="Submit_Link" />
+                <elementDefinition Id="2e43b828-ab60-4a89-a640-7168c86c3327" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="6a73d57e-683e-4b3e-b6ce-31d338e4bbcf" name="2147483647" value="2147483647">
+                <elementDefinition Id="73c15622-9cb9-4e2f-919e-a64df4c6cd7c" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="29b1757c-0912-4e17-b3ee-bae0fc911a74" name="APA_MainPage" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="bd42abb1-d375-4fa4-912e-53cd895602d8" />
+            <objectFlowTargets>
+              <objectFlow Id="bdec149d-471c-4e9a-964c-bb8891a753c9" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="fbf1a8d7-c568-4c73-95c2-f3acee058508" LastKnownName="Load_PageObjects" />
+                <elementDefinition Id="44a9dbc0-407d-4a8e-b18c-735d94f1fb29" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="5391a96d-e4f7-4e7b-89df-9ffece139637" name="2147483647" value="2147483647">
+                <elementDefinition Id="a8995f58-06bc-436f-bf47-8077d9b341ab" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="fbf1a8d7-c568-4c73-95c2-f3acee058508" name="Load_PageObjects" isLeaf="false">
+            <elementDefinition Id="357ac82a-f6ad-4e3a-b585-a240b80f16a6" />
+            <flowNodeTargets>
+              <controlFlow Id="b4d57661-2fb1-4791-9909-bb223024d0d9" isLeaf="false">
+                <forkNodeMoniker Id="8856a951-3116-46eb-86aa-923d5efbf47a" LastKnownName="Fork1" />
+                <elementDefinition Id="65d34e0d-648f-466a-85c3-058624cce52f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="8856a951-3116-46eb-86aa-923d5efbf47a" name="Fork1" isLeaf="false">
+            <elementDefinition Id="8b7b7545-3d6c-4acf-92f5-fde8068be137" />
+            <objectFlowTargets>
+              <objectFlow Id="9e09ac96-2e93-4e59-9bb1-b7f701ca7f2e" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="a74c5a80-f0e4-487a-a75a-17ec9d8c2b5a" LastKnownName="Configuration Page link" />
+                <elementDefinition Id="e28ce5a5-183a-4ede-8410-d6b51c2ff70c" />
+              </objectFlow>
+              <objectFlow Id="91397f37-46ec-4204-b614-6d1dc0f82c42" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="a6f2dae1-16e5-40e4-bf02-4be6f572f887" LastKnownName="Search Page link" />
+                <elementDefinition Id="599c6291-0ef7-4997-b238-d8ea79c98f6d" />
+              </objectFlow>
+              <objectFlow Id="0132797e-75f4-4b63-9f74-39f1638844d8" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="abd52404-edcd-460d-bd84-78f3dea0d614" LastKnownName="Result Page link" />
+                <elementDefinition Id="5641a526-a315-4e46-be06-8609eaf79184" />
+              </objectFlow>
+            </objectFlowTargets>
+          </forkNode>
+          <opaqueAction Id="919597ba-3a82-4f02-a754-0ea30d9ea865" name="Submit_Link" isLeaf="false">
+            <elementDefinition Id="aafbb88b-e118-4d90-bbda-65dd1fc0cdd3" />
+            <flowNodeTargets>
+              <controlFlow Id="ae792a4f-3df4-4806-880f-76e50e8ceff6" isLeaf="false">
+                <opaqueActionMoniker Id="24b0c9fe-79c5-4518-b3d1-42fbdfd13075" LastKnownName="Load_Page(pageName)" />
+                <elementDefinition Id="eb776426-7aeb-4b2d-b308-193c6e2ed27e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="24b0c9fe-79c5-4518-b3d1-42fbdfd13075" name="Load_Page(pageName)" isLeaf="false">
+            <elementDefinition Id="6bde2fab-3034-4444-9de3-6f4ac8e2708d" />
+            <flowNodeTargets>
+              <controlFlow Id="c81f6604-8053-4f0b-bc32-e52c137a2919" isLeaf="false">
+                <forkNodeMoniker Id="143dc112-60f6-42ec-a4d2-009e9de68f13" LastKnownName="Fork2" />
+                <elementDefinition Id="82acf07c-bd2e-4394-a45b-c2d66b5f4220" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="143dc112-60f6-42ec-a4d2-009e9de68f13" name="Fork2" isLeaf="false">
+            <elementDefinition Id="ac8d61c1-07b9-4689-a14c-74952731b0a2" />
+            <objectFlowTargets>
+              <objectFlow Id="8df2496c-61f4-4aa4-99ac-ed292193a5c0" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="f34bf50e-6bdc-47de-b32b-9edcfaa40d3f" LastKnownName="Result Page" />
+                <elementDefinition Id="33254333-572c-4b73-83bc-ae520a7ce411" />
+              </objectFlow>
+              <objectFlow Id="79a7fd99-b24c-488a-a46f-a101ed9ae33d" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="475f0670-f6ea-413e-890d-fb26abffa006" LastKnownName="Search Page" />
+                <elementDefinition Id="2c9c933e-a92b-4607-ba77-f01dd1402817" />
+              </objectFlow>
+              <objectFlow Id="16870aff-5535-49dd-bb5e-e64a17b1d89f" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="06156092-26df-424d-b7e4-e4b65c0e6c0d" LastKnownName="Configuration Page" />
+                <elementDefinition Id="eba9beef-be6e-46cd-a4b3-afb5f757bcf9" />
+              </objectFlow>
+            </objectFlowTargets>
+          </forkNode>
+          <objectNode Id="06156092-26df-424d-b7e4-e4b65c0e6c0d" name="Configuration Page" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="42f10dda-b9c0-42fd-a39a-359d7917d037" />
+            <objectFlowTargets>
+              <objectFlow Id="bce5b34c-2006-47c2-957b-9c3349b41d29" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="1026678c-a9de-4db7-bf53-6d98c259fefa" LastKnownName="Make_Choice" />
+                <elementDefinition Id="dcc88e11-7ebc-418e-b844-194edd67e00f" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="7e4030f4-62cf-4967-a587-af7fb0f0e8c9" name="2147483647" value="2147483647">
+                <elementDefinition Id="dc6bb2b9-45cf-4222-b11a-7106a88e2626" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="475f0670-f6ea-413e-890d-fb26abffa006" name="Search Page" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="a3be2243-0515-4e8a-b960-7e79c4f3c734" />
+            <upperBound>
+              <literalInteger Id="0c0530e4-a715-4fbe-a971-b53644470a09" name="2147483647" value="2147483647">
+                <elementDefinition Id="0a85a25b-6553-47ea-97a1-4476ec33c49d" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="f34bf50e-6bdc-47de-b32b-9edcfaa40d3f" name="Result Page" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="4e96a964-81ff-4379-84ee-8295b3258e74" />
+            <upperBound>
+              <literalInteger Id="51d8f7ba-42fb-4c2f-98f9-86a30e6f95b1" name="2147483647" value="2147483647">
+                <elementDefinition Id="cdcb612d-4d9d-44d5-b071-7b0f4b4649e9" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="1026678c-a9de-4db7-bf53-6d98c259fefa" name="Make_Choice" isLeaf="false">
+            <elementDefinition Id="fd921b95-7d6d-4261-801e-c394f6f7a51d" />
+            <flowNodeTargets>
+              <controlFlow Id="eed7d401-dd89-4364-bc5c-b1e2430b771b" isLeaf="false">
+                <forkNodeMoniker Id="3a18bad5-75d0-4465-ac9b-1be4899dbb68" LastKnownName="Fork3" />
+                <elementDefinition Id="a6beec2e-20b2-4ca0-ae2c-6c1e3f2d0b6a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode Id="08f053fa-397b-4937-88f8-fd9302b9eca6" name="Common Configuration" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="14853be8-84b8-4e08-b0b9-9790ced6098e" />
+            <objectFlowTargets>
+              <objectFlow Id="a265879d-6c47-48ad-ae8e-63125805282a" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="d604412c-5d64-4625-97ba-52737c69bfb1" LastKnownName="Load Form" />
+                <elementDefinition Id="252e5a11-2f10-4ffd-b568-bf548b33c61e" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="610a7a42-a504-42a2-a059-3714d4c17143" name="2147483647" value="2147483647">
+                <elementDefinition Id="be7774b4-9ff4-41a1-ba02-11ebe05c5bb0" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="01768e49-4881-4e67-9f03-4e024ef0f10a" name="Preferable Routes" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="b1ec0239-a333-4e57-a93b-2f5b8e59fa73" />
+            <objectFlowTargets>
+              <objectFlow Id="62268582-10f1-49b6-a18e-919b47895b9a" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="2d9dda42-d956-4e94-8f74-c9a5d8bec843" LastKnownName="Open Database Connection" />
+                <elementDefinition Id="a8d04e2f-9edd-4554-814c-6410e85a7833" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="a485f592-691c-4808-af25-733f3c0a63cd" name="2147483647" value="2147483647">
+                <elementDefinition Id="3db5beef-8128-4d94-9384-241c545f6838" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="defc93ae-c9ea-4775-8423-7c0ad60f70ab" name="Templates" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="62909df6-97c6-488f-9faa-5a67de647bbd" />
+            <upperBound>
+              <literalInteger Id="c9db74ba-71b8-4a3e-bb13-659b806fa735" name="2147483647" value="2147483647">
+                <elementDefinition Id="1aaea496-164d-41b7-9960-91f00c68db8f" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="d604412c-5d64-4625-97ba-52737c69bfb1" name="Load Form" isLeaf="false">
+            <elementDefinition Id="502e7761-11b6-46f4-892f-ef154980d714" />
+            <flowNodeTargets>
+              <controlFlow Id="55531375-c112-4ed2-9a20-6bf2c31692be" isLeaf="false">
+                <opaqueActionMoniker Id="1c469114-c51b-487d-a45e-8dc3c8eda828" LastKnownName="GetProperties" />
+                <elementDefinition Id="a13d840e-2f38-4c6c-9562-d60106528b24" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1c469114-c51b-487d-a45e-8dc3c8eda828" name="GetProperties" isLeaf="false">
+            <elementDefinition Id="c5cb2994-d2ee-4aaa-a734-afa224f926ad" />
+            <flowNodeTargets>
+              <controlFlow Id="5b0185ab-f915-4913-bc55-e1eac2deecac" isLeaf="false">
+                <opaqueActionMoniker Id="46ebd228-fbaa-4156-ae13-5ca2688d48a4" LastKnownName="Make changes" />
+                <elementDefinition Id="dd98dd3c-8b1d-4c60-bc53-58cd1b9487bd" />
+              </controlFlow>
+            </flowNodeTargets>
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="fc7be334-8837-417b-bd1f-734de028f20d" name="XML" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="17fbe312-bd81-4d50-9c24-d9b7dfb46ae4" />
+                  <upperBound>
+                    <literalInteger Id="a1381767-8572-41ae-b4d8-f8a6a8aa6863" name="2147483647" value="2147483647">
+                      <elementDefinition Id="40352862-9bf5-49ca-b9e4-d6e7c92a3ea0" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+            </pins>
+          </opaqueAction>
+          <objectNode Id="5f649d22-423c-4c4c-9cce-5b491d3d6d19" name="Object1" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="315234eb-7f26-4448-a1d1-6151e9825045" />
+            <upperBound>
+              <literalInteger Id="3cc45cec-9dee-4b98-88b0-6a3434969f8f" name="2147483647" value="2147483647">
+                <elementDefinition Id="1f5759e5-35a6-41f1-a1d6-bf9c2fb8887b" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <forkNode Id="3a18bad5-75d0-4465-ac9b-1be4899dbb68" name="Fork3" isLeaf="false">
+            <elementDefinition Id="1035bc71-18c7-4749-bdf1-efc0f2845afd" />
+            <objectFlowTargets>
+              <objectFlow Id="d68e605b-0afd-49c5-b25e-9cab99385477" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="08f053fa-397b-4937-88f8-fd9302b9eca6" LastKnownName="Common Configuration" />
+                <elementDefinition Id="cde5b738-c31f-487e-b666-b46316aad295" />
+              </objectFlow>
+              <objectFlow Id="64fb5836-4510-4c4c-a402-8a5e3fbc6dd3" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="defc93ae-c9ea-4775-8423-7c0ad60f70ab" LastKnownName="Templates" />
+                <elementDefinition Id="c2f41112-a070-44a2-b771-7d9f2d4e5724" />
+              </objectFlow>
+              <objectFlow Id="47e7fae2-bd53-4eb9-8fc1-bbb374f7c9ad" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="01768e49-4881-4e67-9f03-4e024ef0f10a" LastKnownName="Preferable Routes" />
+                <elementDefinition Id="f8e45fd4-8e96-472d-ad6d-0b8e573274ed" />
+              </objectFlow>
+            </objectFlowTargets>
+          </forkNode>
+          <opaqueAction Id="46ebd228-fbaa-4156-ae13-5ca2688d48a4" name="Make changes" isLeaf="false">
+            <elementDefinition Id="75430403-3dbb-4a2b-941a-cbb04d49e4aa" />
+            <flowNodeTargets>
+              <controlFlow Id="7b0f523c-a5b6-44ec-a456-c956300dfe37" isLeaf="false">
+                <decisionNodeMoniker Id="6d54cfb6-edb7-4ee9-bdd6-46c8321b222f" LastKnownName="Decision1" />
+                <elementDefinition Id="da338267-e0aa-4079-a974-c9fc4a4cc26c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="6d54cfb6-edb7-4ee9-bdd6-46c8321b222f" name="Decision1" isLeaf="false">
+            <elementDefinition Id="f22392d2-9245-4f8e-becc-ad6308184e81" />
+            <flowNodeTargets>
+              <controlFlow Id="91ed399d-fd5f-45b6-a1aa-6347a1e3e832" isLeaf="false">
+                <opaqueActionMoniker Id="d90d67ec-b1ec-4cd2-a61e-73bc743a4c6c" LastKnownName="Open_Page(APA)" />
+                <description>False</description>
+                <elementDefinition Id="6f06a877-390c-4b8e-9b1f-1a379a7022cb" />
+              </controlFlow>
+              <controlFlow Id="23a17b3a-21dc-4a78-a473-4e9dd51800cb" isLeaf="false">
+                <opaqueActionMoniker Id="e340baf4-a580-4e6d-9683-1df44f378f0a" LastKnownName="Save changes" />
+                <elementDefinition Id="03a9128d-20d2-4f45-98af-bc6ecc15d384" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="e340baf4-a580-4e6d-9683-1df44f378f0a" name="Save changes" isLeaf="false">
+            <elementDefinition Id="3de0ec0d-8d19-4bc2-bfe9-c0cfd44a3d76" />
+            <flowNodeTargets>
+              <controlFlow Id="e19567bf-ebf3-4db2-a465-5c9d7b5c6af5" isLeaf="false">
+                <opaqueActionMoniker Id="d90d67ec-b1ec-4cd2-a61e-73bc743a4c6c" LastKnownName="Open_Page(APA)" />
+                <elementDefinition Id="709153c7-e248-46cf-a1dd-4769c570bdcb" />
+              </controlFlow>
+            </flowNodeTargets>
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="aa305db4-3c36-4e8b-8fc8-8cc8e59c610a" name="XML" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="13b466c7-7885-45c8-ae1e-448218aa7fde" />
+                  <upperBound>
+                    <literalInteger Id="82a8c2d4-6243-49cc-9a7d-e3702e7cc86f" name="2147483647" value="2147483647">
+                      <elementDefinition Id="53a746e0-8f4b-4616-ac06-f6fba21cc959" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction Id="2d9dda42-d956-4e94-8f74-c9a5d8bec843" name="Open Database Connection" isLeaf="false">
+            <elementDefinition Id="1219a865-75c2-4c73-8756-4d91ee2162c8" />
+            <flowNodeTargets>
+              <controlFlow Id="53e7415a-25e0-40e3-9f3f-68f7ddd3eeb6" isLeaf="false">
+                <opaqueActionMoniker Id="ddaf2add-8dcb-490a-a259-d36892b379d3" LastKnownName="Load List of cities and airports" />
+                <elementDefinition Id="94288378-1780-4809-b80c-a825b93421fe" />
+              </controlFlow>
+            </flowNodeTargets>
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="2f6751f3-b2db-445e-a02a-5df55ef705ce" name="DB" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="4ff096d6-d8ca-4ce1-af35-8181ffbef21a" />
+                  <upperBound>
+                    <literalInteger Id="36e7909f-72f4-4896-8825-db2462a99781" name="2147483647" value="2147483647">
+                      <elementDefinition Id="d31d2bed-9103-460e-8651-1a8fac54d786" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction Id="ddaf2add-8dcb-490a-a259-d36892b379d3" name="Load List of cities and airports" isLeaf="false">
+            <elementDefinition Id="cdf62a89-6506-42cd-b6c4-b91684f39ff0" />
+            <flowNodeTargets>
+              <controlFlow Id="32c8baca-be11-4796-a643-8f39ee0960fe" isLeaf="false">
+                <opaqueActionMoniker Id="88edd822-6dee-4b55-9696-0c6bc786ba10" LastKnownName="Select routes" />
+                <elementDefinition Id="cd0a8603-67dc-41fa-9541-fc34177c2a5f" />
+              </controlFlow>
+            </flowNodeTargets>
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="863d1baf-371c-4138-b889-f2fddaaeb24f" name="cities_table" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="b2316c0c-16e4-4b96-a15b-7e5d5b8144bf" />
+                  <upperBound>
+                    <literalInteger Id="60a8c024-da29-44ea-9d08-394c23c79082" name="2147483647" value="2147483647">
+                      <elementDefinition Id="dd9effe0-d339-4c77-8364-fcc58e4e9101" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+              <opaqueActionHasInputValues>
+                <inputPin Id="9bf455b8-8b03-4ad2-b24b-97eb41a3cee7" name="airports_table" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="b92b66b0-5dd8-409d-ac7d-1ee4fc00085a" />
+                  <upperBound>
+                    <literalInteger Id="6d036875-ad53-4c9d-b9f4-6e113f105139" name="2147483647" value="2147483647">
+                      <elementDefinition Id="2df3d072-455a-4d7c-9952-3d752ec29787" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction Id="88edd822-6dee-4b55-9696-0c6bc786ba10" name="Select routes" isLeaf="false">
+            <elementDefinition Id="d946378a-c9eb-4def-816b-e375fae0977f" />
+            <flowNodeTargets>
+              <controlFlow Id="f0d86e8a-490d-4944-b132-dd3001947201" isLeaf="false">
+                <opaqueActionMoniker Id="c9188b4d-9a4d-4812-9e05-eb3475f103e8" LastKnownName="Set name of the List with preferable routes" />
+                <elementDefinition Id="e11897fb-530c-4322-98e5-4d254954b0a5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c9188b4d-9a4d-4812-9e05-eb3475f103e8" name="Set name of the List with preferable routes" isLeaf="false">
+            <elementDefinition Id="8235f1c6-2431-4353-a9e2-aea36ff64701" />
+            <flowNodeTargets>
+              <controlFlow Id="7e31867f-d128-4674-90fe-49433f2170ff" isLeaf="false">
+                <opaqueActionMoniker Id="7d41f61b-4cd0-4c83-833c-c87befb1919a" LastKnownName="Check. that name is free for use" />
+                <elementDefinition Id="f6bdcf4c-db3d-4de8-aa5b-d25495e042f3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7d41f61b-4cd0-4c83-833c-c87befb1919a" name="Check. that name is free for use" isLeaf="false">
+            <elementDefinition Id="2adf7564-c905-48f2-a174-8d82b7c8fa75" />
+            <flowNodeTargets>
+              <controlFlow Id="d1380c4e-cffd-4398-97e6-58aa742faaf5" isLeaf="false">
+                <forkNodeMoniker Id="eec37d28-d65a-488e-81b3-c6329f56983c" LastKnownName="Fork4" />
+                <elementDefinition Id="2564f328-3073-4284-a1cf-018a86db91ee" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8a70c4cf-c89d-4bd5-8f1d-3ee550600eba" name="Save File in CSV format" isLeaf="false">
+            <elementDefinition Id="753ef238-4fd2-41b5-acb0-9e7e54991028" />
+            <flowNodeTargets>
+              <controlFlow Id="06e8d9f0-0d34-4a0a-9783-20f3f695051c" isLeaf="false">
+                <opaqueActionMoniker Id="d90d67ec-b1ec-4cd2-a61e-73bc743a4c6c" LastKnownName="Open_Page(APA)" />
+                <elementDefinition Id="d98e30e9-c0b6-4169-b632-718b892cb2c6" />
+              </controlFlow>
+            </flowNodeTargets>
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="38d3c2d2-a334-4a13-a797-c3e600b6fa36" name="CSV" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="abaea4c2-0ee8-404f-9e7e-bd8f514afa57" />
+                  <upperBound>
+                    <literalInteger Id="36bf35d3-5b76-43ed-8f46-f2a97a4cd2a6" name="2147483647" value="2147483647">
+                      <elementDefinition Id="0645a779-48dd-4348-a3e0-54128dc3a639" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction Id="dc0c3d1b-ab23-42e4-924c-f0e7d2683c4d" name="Cancel" isLeaf="false">
+            <elementDefinition Id="3f23ad1e-201a-4d3f-ae1d-6741701f701c" />
+            <flowNodeTargets>
+              <controlFlow Id="25c2db3d-5055-452b-9c30-4e1a31e5c42a" isLeaf="false">
+                <opaqueActionMoniker Id="d90d67ec-b1ec-4cd2-a61e-73bc743a4c6c" LastKnownName="Open_Page(APA)" />
+                <elementDefinition Id="08ae5388-147b-488b-97fe-40277c887bba" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="eec37d28-d65a-488e-81b3-c6329f56983c" name="Fork4" isLeaf="false">
+            <elementDefinition Id="b717b9b5-8b3c-4f75-b632-9305067a9da9" />
+            <flowNodeTargets>
+              <controlFlow Id="f5afc78b-81fd-471d-9c1f-74d0b7ff0ff2" isLeaf="false">
+                <opaqueActionMoniker Id="dc0c3d1b-ab23-42e4-924c-f0e7d2683c4d" LastKnownName="Cancel" />
+                <elementDefinition Id="bf5e3aee-19b9-4ddc-85c9-e5834ed9a524" />
+              </controlFlow>
+              <controlFlow Id="3d20a54e-972b-427a-9646-0ef6b06a5b90" isLeaf="false">
+                <opaqueActionMoniker Id="8a70c4cf-c89d-4bd5-8f1d-3ee550600eba" LastKnownName="Save File in CSV format" />
+                <elementDefinition Id="5442c560-213a-473c-b05a-6a5499a3d8e6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+        </nodes>
       </activity>
     </activityRootModelHasActivity>
   </packagedElements>
   <package Id="272a4a9e-1d9e-4fe8-bea9-7a4b5a28bc36" name="B2B_Layer">
     <elementDefinition Id="6334b896-b2eb-4a07-b196-4632115d1af9" />
+    <profileInstances>
+      <packageHasProfileInstances Id="93b98c64-943f-4d5a-bbe6-7c94c5af59dd">
+        <profileInstance Id="6b2571d0-b2ef-48d3-bd15-cc5ef73e2192" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5817751a-ca82-4cb4-857a-2c1a6c701dcf">
+        <profileInstance Id="246c1e89-1ae8-423a-9682-ae5acd8bd860" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="dea80e7f-4e24-4242-af42-507adec3d47d">
+        <profileInstance Id="11274024-166b-4da0-9a1b-0e189f1f64bd" name="TextTemplateBindings">
+          <elementDefinition Id="00aa08a2-bb23-4241-adbd-37279893dff8" />
+        </profileInstance>
+        <elementDefinition Id="0f3ad382-ef34-4fa7-a2c2-e7fa3572a31d" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>
