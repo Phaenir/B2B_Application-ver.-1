@@ -15679,6 +15679,77 @@
         Id="3cbd1f42-ce1f-449a-a172-ffe7d2909bf4"
         name="ExecutionEvent" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="3943f047-b367-41ac-b5ea-03e06ba4dce5"
+        name="Component1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="4b5c697d-0544-4178-bff8-92ed44646bef"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="be14ed15-8920-461a-9fc9-b1924cc99a08"
+                LastKnownName="Interface1"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="738b056a-a5c8-41ce-a4f2-c1b6e8e91855"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="23c36863-2d9b-4dc6-9f6b-d2a361980651"
+                LastKnownName="Interface2"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="be14ed15-8920-461a-9fc9-b1924cc99a08"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="23c36863-2d9b-4dc6-9f6b-d2a361980651"
+        name="Interface2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="679eb04f-5864-4961-a6dd-07642b028f66"
+        name="Component2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
