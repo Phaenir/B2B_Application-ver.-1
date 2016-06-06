@@ -33,6 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <EntityDeploy Include="APA_DBmodel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>APA_DBmodel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="APA_DBmodel.edmx.diagram">
+      <DependentUpon>APA_DBmodel.edmx</DependentUpon>
+    </None>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -43,7 +50,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Data" />
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -51,6 +60,83 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="airline.cs">
+      <DependentUpon>APA_DBmodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="airports.cs">
+      <DependentUpon>APA_DBmodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APA_DBmodel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>APA_DBmodel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APA_DBmodel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>APA_DBmodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APA_DBmodel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>APA_DBmodel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="cities.cs">
+      <DependentUpon>APA_DBmodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contributors_type.cs">
+      <DependentUpon>APA_DBmodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="roundtrip.cs">
+      <DependentUpon>APA_DBmodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="search_result.cs">
+      <DependentUpon>APA_DBmodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="service_class.cs">
+      <DependentUpon>APA_DBmodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="stops.cs">
+      <DependentUpon>APA_DBmodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="templates_storage.cs">
+      <DependentUpon>APA_DBmodel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\..\..\..\Program Files %28x86%29\Microsoft Visual Studio 14.0\Common7\IDE\ItemTemplatesCache\CSharp\MySQL\CSharpWinform_ItemTemplate.zip\Resources\bindingNavigatorAddNewItem.Image.png">
+      <Link>Resources\bindingNavigatorAddNewItem.Image.png</Link>
+    </Content>
+    <Content Include="..\..\..\..\..\..\Program Files %28x86%29\Microsoft Visual Studio 14.0\Common7\IDE\ItemTemplatesCache\CSharp\MySQL\CSharpWinform_ItemTemplate.zip\Resources\bindingNavigatorDeleteItem.Image.png">
+      <Link>Resources\bindingNavigatorDeleteItem.Image.png</Link>
+    </Content>
+    <Content Include="..\..\..\..\..\..\Program Files %28x86%29\Microsoft Visual Studio 14.0\Common7\IDE\ItemTemplatesCache\CSharp\MySQL\CSharpWinform_ItemTemplate.zip\Resources\bindingNavigatorMoveFirstItem.Image.png">
+      <Link>Resources\bindingNavigatorMoveFirstItem.Image.png</Link>
+    </Content>
+    <Content Include="..\..\..\..\..\..\Program Files %28x86%29\Microsoft Visual Studio 14.0\Common7\IDE\ItemTemplatesCache\CSharp\MySQL\CSharpWinform_ItemTemplate.zip\Resources\bindingNavigatorMoveLastItem.Image.png">
+      <Link>Resources\bindingNavigatorMoveLastItem.Image.png</Link>
+    </Content>
+    <Content Include="..\..\..\..\..\..\Program Files %28x86%29\Microsoft Visual Studio 14.0\Common7\IDE\ItemTemplatesCache\CSharp\MySQL\CSharpWinform_ItemTemplate.zip\Resources\bindingNavigatorMoveNextItem.Image.png">
+      <Link>Resources\bindingNavigatorMoveNextItem.Image.png</Link>
+    </Content>
+    <Content Include="..\..\..\..\..\..\Program Files %28x86%29\Microsoft Visual Studio 14.0\Common7\IDE\ItemTemplatesCache\CSharp\MySQL\CSharpWinform_ItemTemplate.zip\Resources\bindingNavigatorMovePreviousItem.Image.png">
+      <Link>Resources\bindingNavigatorMovePreviousItem.Image.png</Link>
+    </Content>
+    <Content Include="..\..\..\..\..\..\Program Files %28x86%29\Microsoft Visual Studio 14.0\Common7\IDE\ItemTemplatesCache\CSharp\MySQL\CSharpWinform_ItemTemplate.zip\Resources\bindingNavigatorSaveItem.Image.png">
+      <Link>Resources\bindingNavigatorSaveItem.Image.png</Link>
+    </Content>
+    <Content Include="APA_DBmodel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>APA_DBmodel.edmx</DependentUpon>
+      <LastGenOutput>APA_DBmodel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="APA_DBmodel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>APA_DBmodel.edmx</DependentUpon>
+      <LastGenOutput>APA_DBmodel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
