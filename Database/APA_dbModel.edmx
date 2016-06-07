@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="b2b_supportModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="airline">
+          <Key>
+            <PropertyRef Name="iata" />
+          </Key>
+          <Property Name="iata" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="150" Nullable="false" />
+        </EntityType>
+        <EntityType Name="airports">
+          <Key>
+            <PropertyRef Name="iata" />
+          </Key>
+          <Property Name="iata" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="coordinates" Type="varchar" MaxLength="250" />
+          <Property Name="timezone" Type="varchar" MaxLength="100" />
+          <Property Name="parent_name" Type="varchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="cities">
+          <Key>
+            <PropertyRef Name="iata" />
+          </Key>
+          <Property Name="iata" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="coordinates" Type="varchar" MaxLength="250" />
+          <Property Name="timezone" Type="varchar" MaxLength="100" />
+          <Property Name="parent_name" Type="varchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="contributors_type">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="type" Type="varchar" MaxLength="45" Nullable="false" />
+        </EntityType>
+        <EntityType Name="roundtrip">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="search_id" Type="int" Nullable="false" />
+          <Property Name="departure" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="arrival" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="dep_date" Type="date" Nullable="false" />
+          <Property Name="dep_time" Type="time" Precision="0" Nullable="false" />
+          <Property Name="arr_date" Type="date" Nullable="false" />
+          <Property Name="arr_time" Type="time" Precision="0" Nullable="false" />
+          <Property Name="serviceClass" Type="int" Nullable="false" />
+          <Property Name="validate_carrier" Type="varchar" MaxLength="3" />
+          <Property Name="validateFlight_number" Type="varchar" MaxLength="4" />
+          <Property Name="operate_carrier" Type="varchar" MaxLength="3" />
+          <Property Name="operateFlight_number" Type="varchar" MaxLength="4" />
+          <Property Name="travelDuration" Type="int" />
+        </EntityType>
+        <EntityType Name="search_result">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="search_time" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="150" />
+          <Property Name="type" Type="int" Nullable="false" />
+          <Property Name="departure" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="arrival" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="dep_date" Type="date" Nullable="false" />
+          <Property Name="det_time" Type="time" Precision="0" Nullable="false" />
+          <Property Name="arr_date" Type="date" Nullable="false" />
+          <Property Name="arr_time" Type="time" Precision="0" Nullable="false" />
+          <Property Name="roundtrip" Type="bool" Nullable="false" />
+          <Property Name="roundtrip_id" Type="int" />
+          <Property Name="serviceClass" Type="int" Nullable="false" />
+          <Property Name="validate_carrier" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="validateFlight_number" Type="int" Nullable="false" />
+          <Property Name="operate_carrier" Type="varchar" MaxLength="3" />
+          <Property Name="operateFlight_number" Type="int" />
+          <Property Name="travelDuration" Type="int" Nullable="false" />
+          <Property Name="tariff" Type="decimal" Precision="20" Scale="4" Nullable="false" />
+          <Property Name="taxes" Type="decimal" Precision="20" Scale="4" Nullable="false" />
+          <Property Name="fee" Type="decimal" Precision="20" Scale="4" />
+          <Property Name="charges" Type="decimal" Precision="20" Scale="4" />
+          <Property Name="price" Type="decimal" Precision="20" Scale="4" Nullable="false" />
+        </EntityType>
+        <EntityType Name="service_class">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="serviceClass_name" Type="varchar" MaxLength="45" Nullable="false" />
+        </EntityType>
+        <EntityType Name="stops">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="search_id" Type="int" Nullable="false" />
+          <Property Name="arrival" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="arr_date" Type="date" Nullable="false" />
+          <Property Name="arr_time" Type="time" Precision="0" Nullable="false" />
+          <Property Name="operate_carrier" Type="varchar" MaxLength="3" />
+          <Property Name="operateFlight_number" Type="int" />
+          <Property Name="departure" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="dep_date" Type="date" Nullable="false" />
+          <Property Name="dep_time" Type="time" Precision="0" Nullable="false" />
+          <Property Name="roundtrip_leg" Type="bool" Nullable="false" />
+        </EntityType>
+        <EntityType Name="templates_storage">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="folder_path" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="file_name" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <Association Name="roundtrip_fk">
+          <End Role="roundtrip" Type="Self.roundtrip" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="search_result" Type="Self.search_result" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="roundtrip">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="search_result">
+              <PropertyRef Name="roundtrip_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="search_fk">
+          <End Role="search_result" Type="Self.search_result" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="roundtrip" Type="Self.roundtrip" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="search_result">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="roundtrip">
+              <PropertyRef Name="search_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="searchResult_FK">
+          <End Role="search_result" Type="Self.search_result" Multiplicity="1" />
+          <End Role="stops" Type="Self.stops" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="search_result">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="stops">
+              <PropertyRef Name="search_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="serviceClass">
+          <End Role="service_class" Type="Self.service_class" Multiplicity="1" />
+          <End Role="roundtrip" Type="Self.roundtrip" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="service_class">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="roundtrip">
+              <PropertyRef Name="serviceClass" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="serviceclass_fk">
+          <End Role="service_class" Type="Self.service_class" Multiplicity="1" />
+          <End Role="search_result" Type="Self.search_result" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="service_class">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="search_result">
+              <PropertyRef Name="serviceClass" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="type">
+          <End Role="contributors_type" Type="Self.contributors_type" Multiplicity="1" />
+          <End Role="search_result" Type="Self.search_result" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="contributors_type">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="search_result">
+              <PropertyRef Name="type" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="b2b_supportModelStoreContainer">
+          <EntitySet Name="airline" EntityType="Self.airline" Schema="b2b_support" store:Type="Tables" />
+          <EntitySet Name="airports" EntityType="Self.airports" Schema="b2b_support" store:Type="Tables" />
+          <EntitySet Name="cities" EntityType="Self.cities" Schema="b2b_support" store:Type="Tables" />
+          <EntitySet Name="contributors_type" EntityType="Self.contributors_type" Schema="b2b_support" store:Type="Tables" />
+          <EntitySet Name="roundtrip" EntityType="Self.roundtrip" Schema="b2b_support" store:Type="Tables" />
+          <EntitySet Name="search_result" EntityType="Self.search_result" Schema="b2b_support" store:Type="Tables" />
+          <EntitySet Name="service_class" EntityType="Self.service_class" Schema="b2b_support" store:Type="Tables" />
+          <EntitySet Name="stops" EntityType="Self.stops" Schema="b2b_support" store:Type="Tables" />
+          <EntitySet Name="templates_storage" EntityType="Self.templates_storage" Schema="b2b_support" store:Type="Tables" />
+          <AssociationSet Name="roundtrip_fk" Association="Self.roundtrip_fk">
+            <End Role="roundtrip" EntitySet="roundtrip" />
+            <End Role="search_result" EntitySet="search_result" />
+          </AssociationSet>
+          <AssociationSet Name="search_fk" Association="Self.search_fk">
+            <End Role="search_result" EntitySet="search_result" />
+            <End Role="roundtrip" EntitySet="roundtrip" />
+          </AssociationSet>
+          <AssociationSet Name="searchResult_FK" Association="Self.searchResult_FK">
+            <End Role="search_result" EntitySet="search_result" />
+            <End Role="stops" EntitySet="stops" />
+          </AssociationSet>
+          <AssociationSet Name="serviceClass" Association="Self.serviceClass">
+            <End Role="service_class" EntitySet="service_class" />
+            <End Role="roundtrip" EntitySet="roundtrip" />
+          </AssociationSet>
+          <AssociationSet Name="serviceclass_fk" Association="Self.serviceclass_fk">
+            <End Role="service_class" EntitySet="service_class" />
+            <End Role="search_result" EntitySet="search_result" />
+          </AssociationSet>
+          <AssociationSet Name="type" Association="Self.type">
+            <End Role="contributors_type" EntitySet="contributors_type" />
+            <End Role="search_result" EntitySet="search_result" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="b2b_supportModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="airline">
+          <Key>
+            <PropertyRef Name="iata" />
+          </Key>
+          <Property Name="iata" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="airports">
+          <Key>
+            <PropertyRef Name="iata" />
+          </Key>
+          <Property Name="iata" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="coordinates" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="timezone" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="parent_name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="cities">
+          <Key>
+            <PropertyRef Name="iata" />
+          </Key>
+          <Property Name="iata" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="coordinates" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="timezone" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="parent_name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="contributors_type">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="type" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="search_result" Relationship="Self.type" FromRole="contributors_type" ToRole="search_result" />
+        </EntityType>
+        <EntityType Name="roundtrip">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="search_id" Type="Int32" Nullable="false" />
+          <Property Name="departure" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="arrival" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dep_date" Type="DateTime" Nullable="false" />
+          <Property Name="dep_time" Type="Time" Nullable="false" />
+          <Property Name="arr_date" Type="DateTime" Nullable="false" />
+          <Property Name="arr_time" Type="Time" Nullable="false" />
+          <Property Name="serviceClass" Type="Int32" Nullable="false" />
+          <Property Name="validate_carrier" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="validateFlight_number" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="operate_carrier" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="operateFlight_number" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+          <Property Name="travelDuration" Type="Int32" />
+          <NavigationProperty Name="search_result" Relationship="Self.roundtrip_fk" FromRole="roundtrip" ToRole="search_result" />
+          <NavigationProperty Name="search_result1" Relationship="Self.search_fk" FromRole="roundtrip" ToRole="search_result" />
+          <NavigationProperty Name="service_class" Relationship="Self.serviceClass" FromRole="roundtrip" ToRole="service_class" />
+        </EntityType>
+        <EntityType Name="search_result">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="search_time" Type="DateTime" Nullable="false" />
+          <Property Name="url" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="type" Type="Int32" Nullable="false" />
+          <Property Name="departure" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="arrival" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dep_date" Type="DateTime" Nullable="false" />
+          <Property Name="det_time" Type="Time" Nullable="false" />
+          <Property Name="arr_date" Type="DateTime" Nullable="false" />
+          <Property Name="arr_time" Type="Time" Nullable="false" />
+          <Property Name="roundtrip" Type="Boolean" Nullable="false" />
+          <Property Name="roundtrip_id" Type="Int32" />
+          <Property Name="serviceClass" Type="Int32" Nullable="false" />
+          <Property Name="validate_carrier" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="validateFlight_number" Type="Int32" Nullable="false" />
+          <Property Name="operate_carrier" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="operateFlight_number" Type="Int32" />
+          <Property Name="travelDuration" Type="Int32" Nullable="false" />
+          <Property Name="tariff" Type="Decimal" Nullable="false" />
+          <Property Name="taxes" Type="Decimal" Nullable="false" />
+          <Property Name="fee" Type="Decimal" />
+          <Property Name="charges" Type="Decimal" />
+          <Property Name="price" Type="Decimal" Nullable="false" />
+          <NavigationProperty Name="contributors_type" Relationship="Self.type" FromRole="search_result" ToRole="contributors_type" />
+          <NavigationProperty Name="roundtrip1" Relationship="Self.roundtrip_fk" FromRole="search_result" ToRole="roundtrip" />
+          <NavigationProperty Name="roundtrip2" Relationship="Self.search_fk" FromRole="search_result" ToRole="roundtrip" />
+          <NavigationProperty Name="stops" Relationship="Self.searchResult_FK" FromRole="search_result" ToRole="stops" />
+          <NavigationProperty Name="service_class" Relationship="Self.serviceclass_fk" FromRole="search_result" ToRole="service_class" />
+        </EntityType>
+        <EntityType Name="service_class">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="serviceClass_name" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="roundtrip" Relationship="Self.serviceClass" FromRole="service_class" ToRole="roundtrip" />
+          <NavigationProperty Name="search_result" Relationship="Self.serviceclass_fk" FromRole="service_class" ToRole="search_result" />
+        </EntityType>
+        <EntityType Name="stops">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="search_id" Type="Int32" Nullable="false" />
+          <Property Name="arrival" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="arr_date" Type="DateTime" Nullable="false" />
+          <Property Name="arr_time" Type="Time" Nullable="false" />
+          <Property Name="operate_carrier" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="operateFlight_number" Type="Int32" />
+          <Property Name="departure" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dep_date" Type="DateTime" Nullable="false" />
+          <Property Name="dep_time" Type="Time" Nullable="false" />
+          <Property Name="roundtrip_leg" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="search_result" Relationship="Self.searchResult_FK" FromRole="stops" ToRole="search_result" />
+        </EntityType>
+        <EntityType Name="templates_storage">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="folder_path" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="file_name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <Association Name="type">
+          <End Role="contributors_type" Type="Self.contributors_type" Multiplicity="1" />
+          <End Role="search_result" Type="Self.search_result" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="contributors_type">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="search_result">
+              <PropertyRef Name="type" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="roundtrip_fk">
+          <End Role="roundtrip" Type="Self.roundtrip" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="search_result" Type="Self.search_result" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="roundtrip">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="search_result">
+              <PropertyRef Name="roundtrip_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="search_fk">
+          <End Role="search_result" Type="Self.search_result" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="roundtrip" Type="Self.roundtrip" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="search_result">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="roundtrip">
+              <PropertyRef Name="search_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="serviceClass">
+          <End Role="service_class" Type="Self.service_class" Multiplicity="1" />
+          <End Role="roundtrip" Type="Self.roundtrip" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="service_class">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="roundtrip">
+              <PropertyRef Name="serviceClass" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="searchResult_FK">
+          <End Role="search_result" Type="Self.search_result" Multiplicity="1" />
+          <End Role="stops" Type="Self.stops" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="search_result">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="stops">
+              <PropertyRef Name="search_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="serviceclass_fk">
+          <End Role="service_class" Type="Self.service_class" Multiplicity="1" />
+          <End Role="search_result" Type="Self.search_result" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="service_class">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="search_result">
+              <PropertyRef Name="serviceClass" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="b2b_supportEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="airline" EntityType="Self.airline" />
+          <EntitySet Name="airports" EntityType="Self.airports" />
+          <EntitySet Name="cities" EntityType="Self.cities" />
+          <EntitySet Name="contributors_type" EntityType="Self.contributors_type" />
+          <EntitySet Name="roundtrip" EntityType="Self.roundtrip" />
+          <EntitySet Name="search_result" EntityType="Self.search_result" />
+          <EntitySet Name="service_class" EntityType="Self.service_class" />
+          <EntitySet Name="stops" EntityType="Self.stops" />
+          <EntitySet Name="templates_storage" EntityType="Self.templates_storage" />
+          <AssociationSet Name="type" Association="Self.type">
+            <End Role="contributors_type" EntitySet="contributors_type" />
+            <End Role="search_result" EntitySet="search_result" />
+          </AssociationSet>
+          <AssociationSet Name="roundtrip_fk" Association="Self.roundtrip_fk">
+            <End Role="roundtrip" EntitySet="roundtrip" />
+            <End Role="search_result" EntitySet="search_result" />
+          </AssociationSet>
+          <AssociationSet Name="search_fk" Association="Self.search_fk">
+            <End Role="search_result" EntitySet="search_result" />
+            <End Role="roundtrip" EntitySet="roundtrip" />
+          </AssociationSet>
+          <AssociationSet Name="serviceClass" Association="Self.serviceClass">
+            <End Role="service_class" EntitySet="service_class" />
+            <End Role="roundtrip" EntitySet="roundtrip" />
+          </AssociationSet>
+          <AssociationSet Name="searchResult_FK" Association="Self.searchResult_FK">
+            <End Role="search_result" EntitySet="search_result" />
+            <End Role="stops" EntitySet="stops" />
+          </AssociationSet>
+          <AssociationSet Name="serviceclass_fk" Association="Self.serviceclass_fk">
+            <End Role="service_class" EntitySet="service_class" />
+            <End Role="search_result" EntitySet="search_result" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="b2b_supportModelStoreContainer" CdmEntityContainer="b2b_supportEntities1">
+          <EntitySetMapping Name="airline">
+            <EntityTypeMapping TypeName="b2b_supportModel.airline">
+              <MappingFragment StoreEntitySet="airline">
+                <ScalarProperty Name="iata" ColumnName="iata" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="airports">
+            <EntityTypeMapping TypeName="b2b_supportModel.airports">
+              <MappingFragment StoreEntitySet="airports">
+                <ScalarProperty Name="iata" ColumnName="iata" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="coordinates" ColumnName="coordinates" />
+                <ScalarProperty Name="timezone" ColumnName="timezone" />
+                <ScalarProperty Name="parent_name" ColumnName="parent_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cities">
+            <EntityTypeMapping TypeName="b2b_supportModel.cities">
+              <MappingFragment StoreEntitySet="cities">
+                <ScalarProperty Name="iata" ColumnName="iata" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="coordinates" ColumnName="coordinates" />
+                <ScalarProperty Name="timezone" ColumnName="timezone" />
+                <ScalarProperty Name="parent_name" ColumnName="parent_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="contributors_type">
+            <EntityTypeMapping TypeName="b2b_supportModel.contributors_type">
+              <MappingFragment StoreEntitySet="contributors_type">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="type" ColumnName="type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="roundtrip">
+            <EntityTypeMapping TypeName="b2b_supportModel.roundtrip">
+              <MappingFragment StoreEntitySet="roundtrip">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="search_id" ColumnName="search_id" />
+                <ScalarProperty Name="departure" ColumnName="departure" />
+                <ScalarProperty Name="arrival" ColumnName="arrival" />
+                <ScalarProperty Name="dep_date" ColumnName="dep_date" />
+                <ScalarProperty Name="dep_time" ColumnName="dep_time" />
+                <ScalarProperty Name="arr_date" ColumnName="arr_date" />
+                <ScalarProperty Name="arr_time" ColumnName="arr_time" />
+                <ScalarProperty Name="serviceClass" ColumnName="serviceClass" />
+                <ScalarProperty Name="validate_carrier" ColumnName="validate_carrier" />
+                <ScalarProperty Name="validateFlight_number" ColumnName="validateFlight_number" />
+                <ScalarProperty Name="operate_carrier" ColumnName="operate_carrier" />
+                <ScalarProperty Name="operateFlight_number" ColumnName="operateFlight_number" />
+                <ScalarProperty Name="travelDuration" ColumnName="travelDuration" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="search_result">
+            <EntityTypeMapping TypeName="b2b_supportModel.search_result">
+              <MappingFragment StoreEntitySet="search_result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="search_time" ColumnName="search_time" />
+                <ScalarProperty Name="url" ColumnName="url" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="departure" ColumnName="departure" />
+                <ScalarProperty Name="arrival" ColumnName="arrival" />
+                <ScalarProperty Name="dep_date" ColumnName="dep_date" />
+                <ScalarProperty Name="det_time" ColumnName="det_time" />
+                <ScalarProperty Name="arr_date" ColumnName="arr_date" />
+                <ScalarProperty Name="arr_time" ColumnName="arr_time" />
+                <ScalarProperty Name="roundtrip" ColumnName="roundtrip" />
+                <ScalarProperty Name="roundtrip_id" ColumnName="roundtrip_id" />
+                <ScalarProperty Name="serviceClass" ColumnName="serviceClass" />
+                <ScalarProperty Name="validate_carrier" ColumnName="validate_carrier" />
+                <ScalarProperty Name="validateFlight_number" ColumnName="validateFlight_number" />
+                <ScalarProperty Name="operate_carrier" ColumnName="operate_carrier" />
+                <ScalarProperty Name="operateFlight_number" ColumnName="operateFlight_number" />
+                <ScalarProperty Name="travelDuration" ColumnName="travelDuration" />
+                <ScalarProperty Name="tariff" ColumnName="tariff" />
+                <ScalarProperty Name="taxes" ColumnName="taxes" />
+                <ScalarProperty Name="fee" ColumnName="fee" />
+                <ScalarProperty Name="charges" ColumnName="charges" />
+                <ScalarProperty Name="price" ColumnName="price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="service_class">
+            <EntityTypeMapping TypeName="b2b_supportModel.service_class">
+              <MappingFragment StoreEntitySet="service_class">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="serviceClass_name" ColumnName="serviceClass_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stops">
+            <EntityTypeMapping TypeName="b2b_supportModel.stops">
+              <MappingFragment StoreEntitySet="stops">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="search_id" ColumnName="search_id" />
+                <ScalarProperty Name="arrival" ColumnName="arrival" />
+                <ScalarProperty Name="arr_date" ColumnName="arr_date" />
+                <ScalarProperty Name="arr_time" ColumnName="arr_time" />
+                <ScalarProperty Name="operate_carrier" ColumnName="operate_carrier" />
+                <ScalarProperty Name="operateFlight_number" ColumnName="operateFlight_number" />
+                <ScalarProperty Name="departure" ColumnName="departure" />
+                <ScalarProperty Name="dep_date" ColumnName="dep_date" />
+                <ScalarProperty Name="dep_time" ColumnName="dep_time" />
+                <ScalarProperty Name="roundtrip_leg" ColumnName="roundtrip_leg" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="templates_storage">
+            <EntityTypeMapping TypeName="b2b_supportModel.templates_storage">
+              <MappingFragment StoreEntitySet="templates_storage">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="folder_path" ColumnName="folder_path" />
+                <ScalarProperty Name="file_name" ColumnName="file_name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
