@@ -1,26 +1,99 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="a018c9c7-40b4-47ca-8ed6-9e26574c814f" name="B2B_Component" linkedPackageId="c23dcf1e-1b7d-428d-82b4-23ef3bffadd9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="b04f0334-30f4-4cc6-96b1-4b74e3eb7da7">
-      <profileInstance Id="8e399447-ebe7-491b-a4fb-1b2a096c8912" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="dd609dce-79ab-4725-a402-2b53b1ebfd1b">
-      <profileInstance Id="3d3be97e-15d3-485d-b057-9ee3a5542418" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="006caa82-9add-46c1-b2d7-4bbb7d2ffd26">
-      <profileInstance Id="f6daf457-f435-4c50-97e0-ad4af8c5453f" name="TextTemplateBindings">
-        <elementDefinition Id="00aa08a2-bb23-4241-adbd-37279893dff8" />
-      </profileInstance>
-      <elementDefinition Id="0f3ad382-ef34-4fa7-a2c2-e7fa3572a31d" />
-    </packageHasProfileInstances>
-  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="d5a1e3df-fdec-4e48-9e16-ce735c8c4dfe" name="B2B Application MainPage" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2e6570fe-0927-4fb9-add1-2ce5edf266ca" />
+        <ownedAttributesInternal>
+          <providedInterface Id="3ad7eda4-cca8-4f8b-8070-444094a13cb9" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="f74d147f-08bb-485b-9964-de687390f24c" />
+            <type_NamedElement>
+              <interfaceMoniker Id="2b2a9470-5a2a-4c4b-82c6-2d65442f5c5f" LastKnownName="ClickButton" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b17d3bba-a81d-4c98-9e94-0fcb968228d2" name="APA MainPage" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="42e56484-1ad2-446d-b61d-a8f87d02d1fc" />
+        <suppliersInternal>
+          <dependency Id="e0aaa74c-3851-4d67-8431-6adab599329d">
+            <componentMoniker Id="3e100df6-dc47-45a1-b082-88bb8a74fe62" LastKnownName="Configuration Page" />
+            <elementDefinition Id="14d44da4-e246-4be6-8515-cd847fdd6286" />
+          </dependency>
+          <dependency Id="aa74d054-96cb-4961-8c91-b641fff761d5">
+            <componentMoniker Id="f0015499-e519-450f-b124-8a3a15651ad1" LastKnownName="Component5" />
+            <elementDefinition Id="ef8a4b5e-000f-42e9-ba7b-6e51dfaad48a" />
+          </dependency>
+          <dependency Id="465b23bb-dea4-4973-9e22-3eb377c042e2">
+            <componentMoniker Id="443690cb-1129-4ac6-bd1a-b45f96089ef4" LastKnownName="Component3" />
+            <elementDefinition Id="19e51ac3-7b66-4679-a150-9f6bf73e9df0" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <requiredInterface Id="9756922f-4ec1-4b2a-8bd8-7f11c52a82ff" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="649b07bb-cfe6-428f-abc8-3893d7fdccbb" />
+            <suppliersInternal>
+              <dependency Id="146f230c-f131-4e31-9ee5-f8f31da48f7b">
+                <providedInterfaceMoniker Id="3ad7eda4-cca8-4f8b-8070-444094a13cb9" LastKnownName="Port1" />
+                <elementDefinition Id="202db9d5-9861-448a-b167-700afa294a1d" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="2774e5e0-52dc-468a-8d34-d7f9103cef9b" LastKnownName="LoadPage" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="f0015499-e519-450f-b124-8a3a15651ad1" name="Component5" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="765bb3f5-edc5-4276-942f-8209bed5d1fd" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="3e100df6-dc47-45a1-b082-88bb8a74fe62" name="Configuration Page" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a0f2379e-e903-4ea1-858b-7c4369d6465a" />
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="2b2a9470-5a2a-4c4b-82c6-2d65442f5c5f" name="ClickButton" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cf181d7f-7c08-4947-803e-82c4307f6f12" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="2774e5e0-52dc-468a-8d34-d7f9103cef9b" name="LoadPage" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e7fd8ebd-f962-4c48-9d8f-143c3b6986f8" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="443690cb-1129-4ac6-bd1a-b45f96089ef4" name="Component3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2fbdbfaa-248b-4c99-9c56-7dd3c8d5a9fb" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
   <package Id="c23dcf1e-1b7d-428d-82b4-23ef3bffadd9" name="B2B_Layer">
     <elementDefinition Id="6334b896-b2eb-4a07-b196-4632115d1af9" />
+    <profileInstances>
+      <packageHasProfileInstances Id="b04f0334-30f4-4cc6-96b1-4b74e3eb7da7">
+        <profileInstance Id="8e399447-ebe7-491b-a4fb-1b2a096c8912" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="dd609dce-79ab-4725-a402-2b53b1ebfd1b">
+        <profileInstance Id="3d3be97e-15d3-485d-b057-9ee3a5542418" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="006caa82-9add-46c1-b2d7-4bbb7d2ffd26">
+        <profileInstance Id="f6daf457-f435-4c50-97e0-ad4af8c5453f" name="TextTemplateBindings">
+          <elementDefinition Id="00aa08a2-bb23-4241-adbd-37279893dff8" />
+        </profileInstance>
+        <elementDefinition Id="0f3ad382-ef34-4fa7-a2c2-e7fa3572a31d" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </componentModel>

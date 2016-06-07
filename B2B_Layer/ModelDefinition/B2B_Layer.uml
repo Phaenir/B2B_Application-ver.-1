@@ -2090,7 +2090,7 @@
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="ac3ef2f3-5402-4925-a0ee-8d48cf195de7"
+                Id="b8f88f32-762e-44e7-9b00-95d2b0e2f0c5"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="ac3c10d6-c2aa-4e8c-8f39-563be00e56a6"
@@ -2396,6 +2396,18 @@
             isLeaf="false"
             ordering="Unordered"
             isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="78cf9a8c-f7c1-4d3a-bf02-514045f9b153"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <forkNodeMoniker
+                  Id="2f528471-9b7f-4a6f-acc8-628cbd2fa36e"
+                  LastKnownName="Fork5"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </objectFlow>
+            </objectFlowTargets>
             <upperBound>
               <literalInteger
                 Id="0a85a25b-6553-47ea-97a1-4476ec33c49d"
@@ -2409,6 +2421,18 @@
             isLeaf="false"
             ordering="Unordered"
             isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="f8c6022e-2ba2-4818-8fb0-746130993515"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="61a35a9a-0904-4d15-91f3-9b1c021a303f"
+                  LastKnownName="load Page"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </objectFlow>
+            </objectFlowTargets>
             <upperBound>
               <literalInteger
                 Id="cdcb612d-4d9d-44d5-b071-7b0f4b4649e9"
@@ -2487,6 +2511,18 @@
             isLeaf="false"
             ordering="Unordered"
             isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="131f029b-33de-4891-9fa1-db87ddda52c7"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="2f80df44-6db7-4cf5-88fa-f02b9ac66f1c"
+                  LastKnownName="Create Template"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </objectFlow>
+            </objectFlowTargets>
             <upperBound>
               <literalInteger
                 Id="1aaea496-164d-41b7-9960-91f00c68db8f"
@@ -2542,19 +2578,6 @@
               </opaqueActionHasInputValues>
             </pins>
           </opaqueAction>
-          <objectNode
-            Id="315234eb-7f26-4448-a1d1-6151e9825045"
-            name="Object1"
-            isLeaf="false"
-            ordering="Unordered"
-            isControlType="false">
-            <upperBound>
-              <literalInteger
-                Id="1f5759e5-35a6-41f1-a1d6-bf9c2fb8887b"
-                name="2147483647"
-                value="2147483647" />
-            </upperBound>
-          </objectNode>
           <forkNode
             Id="1035bc71-18c7-4749-bdf1-efc0f2845afd"
             name="Fork3"
@@ -2805,6 +2828,18 @@
                   LastKnownLocation="B2B_Layer.uml" />
               </controlFlow>
             </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="391ba9b2-42f7-4e62-9301-249e48280786"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="361bea8e-048b-422d-8554-a3b0273cc263"
+                  LastKnownName="CSV file"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </objectFlow>
+            </objectFlowTargets>
             <pins>
               <opaqueActionHasOutputValues>
                 <outputPin
@@ -2853,7 +2888,7 @@
                   LastKnownLocation="B2B_Layer.uml" />
               </controlFlow>
               <controlFlow
-                Id="5442c560-213a-473c-b05a-6a5499a3d8e6"
+                Id="feba7e90-fb8c-40a5-9ef9-cd32ef37ccb4"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="753ef238-4fd2-41b5-acb0-9e7e54991028"
@@ -2862,6 +2897,781 @@
               </controlFlow>
             </flowNodeTargets>
           </forkNode>
+          <opaqueAction
+            Id="2f80df44-6db7-4cf5-88fa-f02b9ac66f1c"
+            name="Create Template"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ca006601-473e-44c7-a82e-eb30884b16db"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="709d8c24-1c88-4cbd-99c5-790b65003231"
+                  LastKnownName="Load Page"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="709d8c24-1c88-4cbd-99c5-790b65003231"
+            name="Load Page"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="c3b33efa-5bd2-44b1-b6bd-3ab478610a18"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7d713bfc-9b62-4eee-9281-eb6ba4407e89"
+                  LastKnownName="Fill Form"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7d713bfc-9b62-4eee-9281-eb6ba4407e89"
+            name="Fill Form"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a664f74e-297f-4955-85ad-5ec05b8b3a0d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d7463a25-9b49-4598-ab5b-8fdfa13b79f4"
+                  LastKnownName="Validate data in form"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="d7463a25-9b49-4598-ab5b-8fdfa13b79f4"
+            name="Validate data in form"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6d15af25-8c82-4448-8963-558d3012c9b5"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="a33658cb-0b21-449d-b263-bb6ff0825bad"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="a33658cb-0b21-449d-b263-bb6ff0825bad"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="72d5b12e-4002-40c5-941f-59bf296c62c1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7d713bfc-9b62-4eee-9281-eb6ba4407e89"
+                  LastKnownName="Fill Form"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="88161377-0fdd-4584-8068-2c012f81a2dd"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1c56aad5-f647-440d-94be-90fc05dc2a9e"
+                  LastKnownName="Save template"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="1c56aad5-f647-440d-94be-90fc05dc2a9e"
+            name="Save template"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="daccf4b2-1571-4ff7-81eb-16042d4e47c8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0730d1ca-f8c1-4ec0-8583-bee512e25a69"
+                  LastKnownName="Open connection to Remote Server"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0730d1ca-f8c1-4ec0-8583-bee512e25a69"
+            name="Open connection to Remote Server"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="e65c06e1-b8f6-4ef8-9dd6-150325fe87e2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="21f52e18-5087-4bc0-800d-014a33e1ccfa"
+                  LastKnownName="Save File as XML "
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b77d6e1d-2a34-4b14-9f36-0a3df79875da"
+            name="include XSD schema"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="36af1773-e96a-4fa6-abcc-b6ada345b9c6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="709d8c24-1c88-4cbd-99c5-790b65003231"
+                  LastKnownName="Load Page"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="21f52e18-5087-4bc0-800d-014a33e1ccfa"
+            name="Save File as XML "
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="2c5eb284-bdfa-463e-8895-8c1bc37c3893"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="440ffb4a-35d0-446d-84ec-1b16f07b80af"
+                  LastKnownName="Open database connection"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow
+                Id="615983ff-431d-4352-9c8d-a56a4214e67a"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <objectNodeMoniker
+                  Id="168e8f46-2213-4a3f-81f3-c7ef8623e27f"
+                  LastKnownName="XML file"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin
+                  Id="90f0427d-baa0-4752-86bf-5bda4f5c61f6"
+                  name="XML"
+                  isLeaf="false"
+                  ordering="Unordered"
+                  isControlType="false"
+                  isControl="false">
+                  <upperBound>
+                    <literalInteger
+                      Id="654eb9d2-c30f-48e2-ae73-ac936e06812d"
+                      name="2147483647"
+                      value="2147483647" />
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <objectNode
+            Id="168e8f46-2213-4a3f-81f3-c7ef8623e27f"
+            name="XML file"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="48c36e8f-8b19-4f59-b567-268c1ee1c2e9"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <opaqueAction
+            Id="940e4b00-6306-42cb-92c1-66fff82fedbf"
+            name="Load template lists"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="cf8c67a8-1aff-449e-ac39-4ea2d090dcc5"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="49f11569-2e6d-4e4b-89d7-d2804ef8556d"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="94274cdc-3a0a-4edc-bf5d-70474f18c8b8"
+            name="Load cities lists"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7efa2c15-744c-40ae-a3eb-03263a62f873"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="49f11569-2e6d-4e4b-89d7-d2804ef8556d"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c5de0fde-f28f-47c7-8771-8c05c7a63856"
+            name="Load airports lists"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="510d7508-19cc-4419-a844-e95bafcd2fb6"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="49f11569-2e6d-4e4b-89d7-d2804ef8556d"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="cae4854a-a342-4c20-84ba-8684711a7579"
+            name="Load page"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f2a882a4-ad66-41d6-bd31-d6b93f968eed"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f426a8eb-485b-4fcc-9ff3-5369fb7746cb"
+                  LastKnownName="Set search data"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f426a8eb-485b-4fcc-9ff3-5369fb7746cb"
+            name="Set search data"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="043b85e4-29a5-4bf9-8c0b-d580836b6222"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="fbfea4d5-898e-4dfe-8ca8-afce685e5c9b"
+                  LastKnownName="Load common properties"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="2f528471-9b7f-4a6f-acc8-628cbd2fa36e"
+            name="Fork5"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5c7a8313-a1db-4b0a-8dc6-0f38cf44597d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="940e4b00-6306-42cb-92c1-66fff82fedbf"
+                  LastKnownName="Load template lists"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="769a2178-569c-4a16-8d22-dab1affb3b29"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c5de0fde-f28f-47c7-8771-8c05c7a63856"
+                  LastKnownName="Load airports lists"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="8221f112-57ed-4025-aab3-d3f85ca7ae15"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="94274cdc-3a0a-4edc-bf5d-70474f18c8b8"
+                  LastKnownName="Load cities lists"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <mergeNode
+            Id="49f11569-2e6d-4e4b-89d7-d2804ef8556d"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="64c3b85e-ece2-45f6-b3d4-5e96d842de53"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="cae4854a-a342-4c20-84ba-8684711a7579"
+                  LastKnownName="Load page"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="5ede7457-ed76-4584-bc22-7b7b7dfe6833"
+            name="load API"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="34961888-1a07-4354-9b9d-250f39d71943"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="d7662f72-d916-447e-b478-8b7e0d4c3657"
+                  LastKnownName="Fork6"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="fbfea4d5-898e-4dfe-8ca8-afce685e5c9b"
+            name="Load common properties"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6292d9ed-6b7f-4081-a38f-8795cd209682"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5ede7457-ed76-4584-bc22-7b7b7dfe6833"
+                  LastKnownName="load API"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="a417bf1c-1704-4926-b499-2bf63565e688"
+            name="fill forms in WebSites"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7f4041ec-ccf4-43eb-9e43-02b27a8622c2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0be6dfa7-cc98-4203-82b9-2bb2b3c3f340"
+                  LastKnownName="parse Result page"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="35438b99-e816-4f45-822a-67ae185d1089"
+            name="get Data from WSDL SOAP"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="f0decf58-d115-416a-bcbe-0a9cdbff58ae"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e2047b6e-33b3-4377-86d4-be33c3369f85"
+                  LastKnownName="Validate data"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <objectNode
+            Id="e97e9d44-1654-43db-b68d-ca5b25a6ba89"
+            name="SELENIUM API"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="df698a3c-71ac-43ee-9f28-a0c6cf32ae88"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="5ede7457-ed76-4584-bc22-7b7b7dfe6833"
+                  LastKnownName="load API"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="5bea3203-96a3-4d39-b679-bce7cfc78977"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="d971ad6f-ebba-4bd1-bf4d-472deaad8a72"
+            name="WatIn"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="ae9e82f3-6d07-457e-8b21-d73b0690b0e3"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="5ede7457-ed76-4584-bc22-7b7b7dfe6833"
+                  LastKnownName="load API"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="b41a1b2f-0402-44e9-81fa-9bd0d84f1b47"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <objectNode
+            Id="1ffca94e-bd06-49b8-9c86-77ea3aae6a10"
+            name="WebService"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <objectFlowTargets>
+              <objectFlow
+                Id="68329fc0-4ab7-48fb-8983-a4d1e52b839a"
+                isLeaf="false"
+                isMulticast="false"
+                isMultireceive="false">
+                <opaqueActionMoniker
+                  Id="5ede7457-ed76-4584-bc22-7b7b7dfe6833"
+                  LastKnownName="load API"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger
+                Id="19ca9e86-d66f-479e-85b8-2eab77848617"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
+          <forkNode
+            Id="d7662f72-d916-447e-b478-8b7e0d4c3657"
+            name="Fork6"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="153cb9f0-40ca-4439-ae28-bf624fde80cb"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a417bf1c-1704-4926-b499-2bf63565e688"
+                  LastKnownName="fill forms in WebSites"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="36d697f4-9592-441b-b478-825588939dbf"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="35438b99-e816-4f45-822a-67ae185d1089"
+                  LastKnownName="get Data from WSDL SOAP"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="0be6dfa7-cc98-4203-82b9-2bb2b3c3f340"
+            name="parse Result page"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="726cf3bc-5feb-45a4-93a0-1b4e99dbfe2b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e2047b6e-33b3-4377-86d4-be33c3369f85"
+                  LastKnownName="Validate data"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e2047b6e-33b3-4377-86d4-be33c3369f85"
+            name="Validate data"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b6f9801b-df53-455c-9525-62694b9fcff0"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3e11cf98-b65d-43a7-92f1-512f5c6f3f02"
+                  LastKnownName="open database connection"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="3e11cf98-b65d-43a7-92f1-512f5c6f3f02"
+            name="open database connection"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="687f2f3c-dd8b-4d1a-95cb-bfda7380d1ed"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="296fd144-92e7-4477-b28d-0c69db992071"
+                  LastKnownName="start transaction"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="296fd144-92e7-4477-b28d-0c69db992071"
+            name="start transaction"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="26fdb932-b628-4650-ae3e-ac63f2a4090f"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="90a35883-521b-4adf-b89f-56aba5fdf88a"
+                  LastKnownName="save data in DB"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="90a35883-521b-4adf-b89f-56aba5fdf88a"
+            name="save data in DB"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="88bbc381-5b50-46af-8860-0d289f1dd709"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0c026af9-e4e4-49b0-bcd5-4dd9a90e1f6b"
+                  LastKnownName="close DB connection"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="0c026af9-e4e4-49b0-bcd5-4dd9a90e1f6b"
+            name="close DB connection"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="18647c2e-ee0f-4f28-b8e0-8d3b865a7e14"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1a115982-1750-4682-a8e0-e5b99d1dec92"
+                  LastKnownName="exit2"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="440ffb4a-35d0-446d-84ec-1b16f07b80af"
+            name="Open database connection"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3f220019-6de9-48c8-ba45-d66380bef9ad"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7e7ddc18-0313-404e-9e65-145870d019ae"
+                  LastKnownName="save template name in DB"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="7e7ddc18-0313-404e-9e65-145870d019ae"
+            name="save template name in DB"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0a504ba0-2f5b-4561-9b8d-a4b1621ee7a8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f69fafe5-6807-4b65-9c89-02fdb9f967b3"
+                  LastKnownName="close database connection"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f69fafe5-6807-4b65-9c89-02fdb9f967b3"
+            name="close database connection"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="800b9851-d0b7-4bc6-9165-5a1506cf265d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="685d171d-cd58-4e4a-9d6a-032aefb2a475"
+                  LastKnownName="exit1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="61a35a9a-0904-4d15-91f3-9b1c021a303f"
+            name="load Page"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1d6b901d-4918-413d-85da-02010a89012d"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="21151418-7aeb-4aff-8cd2-8736a5e02e48"
+                  LastKnownName="open database connection"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1fcee73b-1dc1-4671-ac4d-e81036bf0438"
+            name="get search result"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="de90ed64-0fb9-47b6-b366-393934d4a141"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="70e7898c-30a8-4c8d-b898-a8a2c53296b6"
+                  LastKnownName="show table in page"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="21151418-7aeb-4aff-8cd2-8736a5e02e48"
+            name="open database connection"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="324ca22c-00c5-4382-a91f-6a23180e0726"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="062fd383-96bf-4234-931f-22c319de8fe2"
+                  LastKnownName="load form"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5cdd5480-7fa9-419c-a57e-6f4d01122dea"
+            name="open DataSet"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="180ab810-5f0b-449f-a76c-5242b4d63f97"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1fcee73b-1dc1-4671-ac4d-e81036bf0438"
+                  LastKnownName="get search result"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="062fd383-96bf-4234-931f-22c319de8fe2"
+            name="load form"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8c760e90-132d-48b0-8d50-d01ab0fc67be"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5cdd5480-7fa9-419c-a57e-6f4d01122dea"
+                  LastKnownName="open DataSet"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="42165d77-9448-4b3e-9e90-1e167e2a4e12"
+            name="close database connection"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="15151a1c-f7a7-40fa-9069-2f7873b8b266"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="c7c7cda1-c575-4a97-8393-3f5c0ac07197"
+                  LastKnownName="exit"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="70e7898c-30a8-4c8d-b898-a8a2c53296b6"
+            name="show table in page"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="220e3145-a895-45d1-9a52-6bf0e8cb5932"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="42165d77-9448-4b3e-9e90-1e167e2a4e12"
+                  LastKnownName="close database connection"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="c7c7cda1-c575-4a97-8393-3f5c0ac07197"
+            name="exit"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fc5a30f1-4af7-49a6-93c4-979636b36cb0"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="b1e75cf9-dd83-44e3-8c70-8446f388c8df"
+                  LastKnownName="ActivityFinal3"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="685d171d-cd58-4e4a-9d6a-032aefb2a475"
+            name="exit1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="847c5ef2-06ab-427e-b40a-15de92253900"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="4da84593-2cac-4fe2-8024-70c2c3bab036"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1a115982-1750-4682-a8e0-e5b99d1dec92"
+            name="exit2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b0941a05-f887-401e-9cd3-aaaa944b976f"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="78174c4b-e396-4977-b361-947d1fc6cb26"
+                  LastKnownName="ActivityFinal2"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="4da84593-2cac-4fe2-8024-70c2c3bab036"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <activityFinalNode
+            Id="78174c4b-e396-4977-b361-947d1fc6cb26"
+            name="ActivityFinal2"
+            isLeaf="false" />
+          <activityFinalNode
+            Id="b1e75cf9-dd83-44e3-8c70-8446f388c8df"
+            name="ActivityFinal3"
+            isLeaf="false" />
+          <objectNode
+            Id="361bea8e-048b-422d-8554-a3b0273cc263"
+            name="CSV file"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="d031e1e0-f1c3-46f0-90bc-24b88b119120"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </objectNode>
         </nodes>
       </activity>
     </packageHasNamedElement>
@@ -15746,6 +16556,136 @@
       <component
         Id="679eb04f-5864-4961-a6dd-07642b028f66"
         name="Component2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2e6570fe-0927-4fb9-add1-2ce5edf266ca"
+        name="B2B Application MainPage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="f74d147f-08bb-485b-9964-de687390f24c"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="cf181d7f-7c08-4947-803e-82c4307f6f12"
+                LastKnownName="ClickButton"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="42e56484-1ad2-446d-b61d-a8f87d02d1fc"
+        name="APA MainPage"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="14d44da4-e246-4be6-8515-cd847fdd6286">
+            <componentMoniker
+              Id="a0f2379e-e903-4ea1-858b-7c4369d6465a"
+              LastKnownName="Configuration Page"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+          <dependency
+            Id="ef8a4b5e-000f-42e9-ba7b-6e51dfaad48a">
+            <componentMoniker
+              Id="765bb3f5-edc5-4276-942f-8209bed5d1fd"
+              LastKnownName="Component5"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+          <dependency
+            Id="19e51ac3-7b66-4679-a150-9f6bf73e9df0">
+            <componentMoniker
+              Id="2fbdbfaa-248b-4c99-9c56-7dd3c8d5a9fb"
+              LastKnownName="Component3"
+              LastKnownLocation="B2B_Layer.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="649b07bb-cfe6-428f-abc8-3893d7fdccbb"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="202db9d5-9861-448a-b167-700afa294a1d">
+                <providedInterfaceMoniker
+                  Id="f74d147f-08bb-485b-9964-de687390f24c"
+                  LastKnownName="Port1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="e7fd8ebd-f962-4c48-9d8f-143c3b6986f8"
+                LastKnownName="LoadPage"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="765bb3f5-edc5-4276-942f-8209bed5d1fd"
+        name="Component5"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="a0f2379e-e903-4ea1-858b-7c4369d6465a"
+        name="Configuration Page"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="cf181d7f-7c08-4947-803e-82c4307f6f12"
+        name="ClickButton"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e7fd8ebd-f962-4c48-9d8f-143c3b6986f8"
+        name="LoadPage"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2fbdbfaa-248b-4c99-9c56-7dd3c8d5a9fb"
+        name="Component3"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
