@@ -16599,24 +16599,24 @@
         isActiveClass="false">
         <suppliersInternal>
           <dependency
-            Id="14d44da4-e246-4be6-8515-cd847fdd6286">
-            <componentMoniker
-              Id="a0f2379e-e903-4ea1-858b-7c4369d6465a"
-              LastKnownName="Configuration Page"
+            Id="422071b4-adac-4357-bda7-80d512a8bfd7">
+            <providedInterfaceMoniker
+              Id="fbe62cb2-4061-4e11-96e6-fd882b394482"
+              LastKnownName="Port1"
               LastKnownLocation="B2B_Layer.uml" />
           </dependency>
           <dependency
-            Id="ef8a4b5e-000f-42e9-ba7b-6e51dfaad48a">
-            <componentMoniker
-              Id="765bb3f5-edc5-4276-942f-8209bed5d1fd"
-              LastKnownName="Component5"
+            Id="abbcb699-743b-4e2b-8a8f-1f301cf0cf19">
+            <providedInterfaceMoniker
+              Id="2b215a73-46d5-4e45-bbbb-e77b0e8352ee"
+              LastKnownName="Port1"
               LastKnownLocation="B2B_Layer.uml" />
           </dependency>
           <dependency
-            Id="19e51ac3-7b66-4679-a150-9f6bf73e9df0">
-            <componentMoniker
-              Id="2fbdbfaa-248b-4c99-9c56-7dd3c8d5a9fb"
-              LastKnownName="Component3"
+            Id="e3c7a99a-594b-4570-a181-d6711e5ae46f">
+            <providedInterfaceMoniker
+              Id="97311d6b-cd48-4351-bd2c-00bf6db750eb"
+              LastKnownName="Port1"
               LastKnownLocation="B2B_Layer.uml" />
           </dependency>
         </suppliersInternal>
@@ -16655,10 +16655,51 @@
     <packageHasNamedElement>
       <component
         Id="765bb3f5-edc5-4276-942f-8209bed5d1fd"
-        name="Component5"
+        name="Search Page"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="2b215a73-46d5-4e45-bbbb-e77b0e8352ee"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="04d0762b-b498-4eef-9ad4-9ed8dbf8453f"
+                LastKnownName="LoadPage"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="8c017066-8347-4a65-8352-ea3d0a15cd1d"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="ac07cf3d-81fc-4bbe-b376-69c4a0efc2fc"
+                LastKnownName="Load Form"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <component
@@ -16666,7 +16707,71 @@
         name="Configuration Page"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="fbe62cb2-4061-4e11-96e6-fd882b394482"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="6733104d-61c6-43c9-86f4-b27e4abdbafb"
+                LastKnownName="LoadPage"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="33e32dc8-88c3-46d9-acaa-6d198b0bcfc6"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="3b4e4e21-0e5d-451c-995b-bb619128d5f2">
+                <providedInterfaceMoniker
+                  Id="55d50b51-987b-4dea-af03-98c6a08be7c6"
+                  LastKnownName="Port1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+              <dependency
+                Id="ec68dcc9-4538-4fdb-a817-df0cf5391511">
+                <providedInterfaceMoniker
+                  Id="296b6890-2b5b-4a99-9e3f-67fd9bf7f035"
+                  LastKnownName="Port1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+              <dependency
+                Id="8f848b1d-92c5-419e-8286-b89f3e46fb45">
+                <providedInterfaceMoniker
+                  Id="b8e475e7-2a10-4b9f-aa7c-044e04e79696"
+                  LastKnownName="Port1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="f44e4760-5380-4d5b-b645-6305d4252c7a"
+                LastKnownName="Click Button"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <Interface
@@ -16685,10 +16790,1444 @@
     <packageHasNamedElement>
       <component
         Id="2fbdbfaa-248b-4c99-9c56-7dd3c8d5a9fb"
-        name="Component3"
+        name="Result Page"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="97311d6b-cd48-4351-bd2c-00bf6db750eb"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="f9b0d1e1-309e-4f26-94c4-c6d472bf8dd9"
+                LastKnownName="LoadPage"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="a1fa0929-b2bf-4bd0-a2e2-f0ed67b81339"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="378207f6-9cee-4f53-9a60-d8cf93a0218b">
+                <providedInterfaceMoniker
+                  Id="46cfcbbf-3618-4b0a-9883-27a6c7b69870"
+                  LastKnownName="Port1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="5ad8a95c-29ec-4b54-ae31-eed49a51f7b1"
+                LastKnownName="Open Database Connection"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="2bd5b773-92cf-4dca-b127-1562e0069bab"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="26286493-2e87-4b7e-8fd7-5d9d33191034">
+                <providedInterfaceMoniker
+                  Id="324b4342-e34f-4f57-97dd-bb9dbfe863fa"
+                  LastKnownName="Port2"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="2cf1102f-c550-4275-8fe8-218fca5d2ee6"
+                LastKnownName="Show Result"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="6733104d-61c6-43c9-86f4-b27e4abdbafb"
+        name="LoadPage"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="04d0762b-b498-4eef-9ad4-9ed8dbf8453f"
+        name="LoadPage"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f9b0d1e1-309e-4f26-94c4-c6d472bf8dd9"
+        name="LoadPage"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="ae2b4fa1-ff99-44e0-98bd-9e7f488b0d59"
+        name="Common Preferencies Page"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="55d50b51-987b-4dea-af03-98c6a08be7c6"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="c2833e82-1eaa-4258-ab61-3839c8352b8c"
+                LastKnownName="Load Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="c0a1c578-f67a-4da4-ba00-da731723c093"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="67a7c29f-dd88-442e-b4c4-d2276bad80f1">
+                <providedInterfaceMoniker
+                  Id="b8870203-6073-4f8e-b64b-aafbda464df6"
+                  LastKnownName="Port1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="2491c9fd-511c-452e-a51a-31425a7a3593"
+                LastKnownName="Get Preferencies"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="0069c669-df45-4368-a94d-7d5310638992"
+        name="Create Template Page"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="296b6890-2b5b-4a99-9e3f-67fd9bf7f035"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="f320dd9f-328e-4d88-96ee-bf1dc8990298"
+                LastKnownName="Load Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="2008f1df-7397-4c6a-b16c-fea0804f6851"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="42e10348-893d-46f2-8aaf-d891f144effc">
+                <providedInterfaceMoniker
+                  Id="f33cbd22-2a00-4a04-8bf6-b3320e2c1ba6"
+                  LastKnownName="Port1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="b42f51a9-edfb-4d6a-8ac0-e7d20f532d30"
+                LastKnownName="Create Template"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="e9df818a-1a00-4b69-b2a1-11b983c7659b"
+        name="Preferable Routes Page"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="b8e475e7-2a10-4b9f-aa7c-044e04e79696"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="523d3a28-00fd-4437-9e9d-607fdddac010"
+                LastKnownName="Load Page"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="5dc4a72a-6cab-4cb3-bff3-990c5dd21f7c"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="67e17881-6c89-49e6-87df-389b116294b0">
+                <providedInterfaceMoniker
+                  Id="f768f0f2-8740-43d2-bb9d-2dea11a0b168"
+                  LastKnownName="Port1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="40b95130-b096-420a-93f1-85348e09b998"
+                LastKnownName="Set Preferable List"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="d3c25c7e-b112-4765-ab27-1e7e0c14a8be"
+        name="Preferencies Settle Processing "
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="91e14409-cf96-4a89-beef-18ed20ba869e"
+            name="service"
+            profile="StandardProfileL2" />
+          <stereotypeInstance
+            Id="661cfea7-6003-4704-97e6-9499b878c987"
+            name="process"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="b8870203-6073-4f8e-b64b-aafbda464df6"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="12a8222f-3ec9-4b7c-9bba-dee6f30324fd"
+                LastKnownName="Set Preferencies"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f44e4760-5380-4d5b-b645-6305d4252c7a"
+        name="Click Button"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="c2833e82-1eaa-4258-ab61-3839c8352b8c"
+        name="Load Page"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="2491c9fd-511c-452e-a51a-31425a7a3593"
+        name="Get Preferencies"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="12a8222f-3ec9-4b7c-9bba-dee6f30324fd"
+        name="Set Preferencies"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f320dd9f-328e-4d88-96ee-bf1dc8990298"
+        name="Load Page"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="523d3a28-00fd-4437-9e9d-607fdddac010"
+        name="Load Page"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="c82f034b-80bd-4877-b9a4-72013bde2215"
+        name="Template Creation Processing"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="58f4cf0c-3f24-43bf-8b1d-d9af6ef04380"
+            name="process"
+            profile="StandardProfileL2" />
+          <stereotypeInstance
+            Id="1a64a8ea-0120-4931-a531-c441b6a33716"
+            name="service"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="f33cbd22-2a00-4a04-8bf6-b3320e2c1ba6"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="fc088f48-120d-4f23-b056-da7869133dba"
+                LastKnownName="Save Template"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="04bfa21d-726d-4944-80d8-c9ef864d3522"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="3ccb1077-f75a-46dc-aff8-1a8b9637f180"
+                LastKnownName="Save Name"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="fc088f48-120d-4f23-b056-da7869133dba"
+        name="Save Template"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b42f51a9-edfb-4d6a-8ac0-e7d20f532d30"
+        name="Create Template"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="78b5d290-fe02-421f-824d-4ca6e8e7bfe7"
+        name="Preferable Routes List Processing"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e1269f99-ca4a-49b3-a0c2-7f2165a005ab"
+            name="process"
+            profile="StandardProfileL2" />
+          <stereotypeInstance
+            Id="a0575833-c6bd-4cbf-81c6-a1796b96f8c2"
+            name="service"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="f768f0f2-8740-43d2-bb9d-2dea11a0b168"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="a9f308b4-4098-4740-9015-e69e4e3499d7"
+                LastKnownName="Get Preferable List"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="1a098a1f-2d8c-4784-9c4d-76921beb7055"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="6ffcfacf-a6c3-4b01-b97a-57767c048c0a">
+                <providedInterfaceMoniker
+                  Id="02aa1a6c-9fc1-45bd-8f91-b795992070cd"
+                  LastKnownName="Port2"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="68aee315-dc89-48b0-bafb-07b34a2f376b"
+                LastKnownName="Get Airports and Cities Lists"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a9f308b4-4098-4740-9015-e69e4e3499d7"
+        name="Get Preferable List"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="40b95130-b096-420a-93f1-85348e09b998"
+        name="Set Preferable List"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="7f0ae217-b882-4c80-bd4f-57c1a330caac"
+        name="Database Processing"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d85eac2e-8b96-49e3-a482-263f3f53dd80"
+            name="service"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="46cfcbbf-3618-4b0a-9883-27a6c7b69870"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="ef67fd85-6b23-4443-b897-2c249b49f5a9"
+                LastKnownName="Set Status &quot;GREEN&quot;"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface
+            Id="02aa1a6c-9fc1-45bd-8f91-b795992070cd"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="3968d5f8-3a40-4a14-901d-d9a84751166a"
+                LastKnownName="Get  data"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="d2712541-e374-4cd0-b4c1-6fc126351f1a"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="33e95061-d3c6-4082-b5ca-7652e5a735fb">
+                <providedInterfaceMoniker
+                  Id="04bfa21d-726d-4944-80d8-c9ef864d3522"
+                  LastKnownName="Port2"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="3fcbf04e-b7f3-41e8-8632-c9fd8f01cbe6"
+                LastKnownName="Store Data"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface
+            Id="19a4292a-e88e-48d5-8387-00418ddc6efa"
+            name="Port4"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="c95f2cec-8248-4470-b05d-31f7b5a4d01c"
+                LastKnownName="Storage Data"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="90f2f613-61f6-49b9-89de-8877c5cef0e8"
+        name="Show Result Processing"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="13f417f8-5df4-48a4-88d5-2cd80560739b"
+            name="process"
+            profile="StandardProfileL2" />
+          <stereotypeInstance
+            Id="a185c5ca-7246-4ef5-9f22-e9d999e9b68b"
+            name="service"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="7cced19b-9b53-4a2e-ac66-1fa91146c318"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="22d617e3-767f-47cf-b9ee-68dd5fab5102">
+                <providedInterfaceMoniker
+                  Id="02aa1a6c-9fc1-45bd-8f91-b795992070cd"
+                  LastKnownName="Port2"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="034804e9-9534-4fd3-b0ed-43c83d95ac4a"
+                LastKnownName="Make DataSet"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface
+            Id="324b4342-e34f-4f57-97dd-bb9dbfe863fa"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="3445ea39-86c2-4280-9184-00772d4c9a38"
+                LastKnownName="Organise Result Form"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ef67fd85-6b23-4443-b897-2c249b49f5a9"
+        name="Set Status &quot;GREEN&quot;"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="5ad8a95c-29ec-4b54-ae31-eed49a51f7b1"
+        name="Open Database Connection"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="2cf1102f-c550-4275-8fe8-218fca5d2ee6"
+        name="Show Result"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="034804e9-9534-4fd3-b0ed-43c83d95ac4a"
+        name="Make DataSet"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="3968d5f8-3a40-4a14-901d-d9a84751166a"
+        name="Get  data"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="3445ea39-86c2-4280-9184-00772d4c9a38"
+        name="Organise Result Form"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="3ccb1077-f75a-46dc-aff8-1a8b9637f180"
+        name="Save Name"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="3fcbf04e-b7f3-41e8-8632-c9fd8f01cbe6"
+        name="Store Data"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="68aee315-dc89-48b0-bafb-07b34a2f376b"
+        name="Get Airports and Cities Lists"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2d497d8b-c465-4cd7-bf86-7d08847ca47c"
+        name="Load Properties"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="614b4949-6bef-4270-a8a5-c9b83763bf70"
+            name="process"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="f0f27232-b234-4b19-91d3-a9b52b1e7d16"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="21bfdd6a-d692-4c92-a512-04216c56475b">
+                <providedInterfaceMoniker
+                  Id="2d17f01d-3bba-4dca-9cab-a694ac8fca83"
+                  LastKnownName="Port2"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="09f130e6-a377-4e70-a983-9d3e4fded4c9"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="26447a45-fef8-42c9-ab57-ecd2680bcd81"
+        name="Create Form"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e1fb939c-7ae8-4d97-8ef0-7917ad007c83"
+            name="process"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="eb76528f-55ed-4a3f-ba5d-c1ac44e465b8"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="0ce6abe4-c868-4d13-b2b5-66dbd9b255bb">
+                <providedInterfaceMoniker
+                  Id="8c017066-8347-4a65-8352-ea3d0a15cd1d"
+                  LastKnownName="Port2"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="8c83fa54-1ac5-4a65-a723-01791d908d79"
+                LastKnownName="Construct Form"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <providedInterface
+            Id="2d17f01d-3bba-4dca-9cab-a694ac8fca83"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="a902d464-32a7-4e18-ab25-b1bdc8d261b8"
+                LastKnownName="Get Properties"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="fe3781ff-5d9e-4465-9c39-2bba8fbec494"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="9464fbbd-38cd-417f-83da-fa142a3025fa">
+                <providedInterfaceMoniker
+                  Id="433012a8-c573-461f-95b3-4274b0981c10"
+                  LastKnownName="Port1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="ab32dacb-206b-44d2-b3f0-303d858b7a7e"
+                LastKnownName="Search Flight"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="08004072-544b-4985-9092-d79de04d8cdf"
+            name="Port4"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="5ba429b8-6d44-418c-a956-8caea3c5a4e9">
+                <providedInterfaceMoniker
+                  Id="3550ca26-1d2c-4a1a-a6d9-1e28d6db055f"
+                  LastKnownName="Port1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="354c8416-0fec-4b0b-b334-0f3f22cbd19c"
+                LastKnownName="Search Flight"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="eee74008-d00b-41ad-8436-67ceedb997b4"
+        name="Website Parsing"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c0114a57-4565-44fe-aa05-6cd5c67019dd"
+            name="process"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="3550ca26-1d2c-4a1a-a6d9-1e28d6db055f"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="0485e742-b48a-44d4-9535-a4b8aed28438"
+                LastKnownName="ParseSite(List templates)"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="a5f1874f-5eb0-4f47-824b-db357a849e0e"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="89f743b8-5527-400a-bc2e-17f622defa98">
+                <providedInterfaceMoniker
+                  Id="e7263877-89c2-40ef-8a4e-d632ae7be0c5"
+                  LastKnownName="Port1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="26a9073f-31b1-4d64-a0fc-f5d92e14960f"
+                LastKnownName="Use API"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface
+            Id="40d92342-0cfb-44be-bd83-3351ff1fc5d6"
+            name="Port3"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="0fe31f40-41b7-4f87-a82e-a1cad45e4bdc">
+                <providedInterfaceMoniker
+                  Id="50ed6d85-5ebd-4e2c-a2a1-cb5e632056c1"
+                  LastKnownName="Port1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="9cdae0c0-bc6d-4cd3-b9d7-8a2ad405c5d2"
+                LastKnownName="Validate Data"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="be3088aa-9d7e-4d25-92e0-a44fdd7faa97"
+        name="WebService Processing"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2b67cad0-335c-4d02-ac9c-1aafe299a2a3"
+            name="process"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="433012a8-c573-461f-95b3-4274b0981c10"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="ea55826d-936a-4cc4-8540-42cf81b0c5a0"
+                LastKnownName="WSDL.searchFlight"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="7e95164c-b483-4cc2-81d2-a918594e3911"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="539eab69-470d-4086-8d4e-3b7bd4694e8d">
+                <providedInterfaceMoniker
+                  Id="502d38b7-e80d-4251-a8ad-3ac2c029b124"
+                  LastKnownName="Port1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="6e3d0808-b75a-4331-b795-2dd39adfdc69"
+                LastKnownName="Connect to WDSL"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="f0493e57-0514-4013-93f1-e708baeccfd0"
+        name="SELENIUM / WATIN"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="492a8f22-8768-4ac2-9dcd-88e3b11d6da3"
+            name="service"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="e7263877-89c2-40ef-8a4e-d632ae7be0c5"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="14324516-b8fa-475f-bb30-b0b381280d46"
+                LastKnownName="Get Objects"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="e548b159-0b6d-444b-8860-0740f40c5bfe"
+        name="WSDL BERLOGIC"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6963233c-d8e2-4342-a49c-f570023f15b8"
+            name="service"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="502d38b7-e80d-4251-a8ad-3ac2c029b124"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="5f06f31a-385c-402d-bbe0-984d4de65507"
+                LastKnownName="GetObjects"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="0576cbbd-00fd-417b-a6be-15b8abbc2524"
+        name="Obtained result processing"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="618520bd-9d43-4db1-b063-8fa2019a1006"
+            name="process"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="50ed6d85-5ebd-4e2c-a2a1-cb5e632056c1"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="ad284a15-e40a-4f89-864d-e132e9870fae"
+                LastKnownName="Data to List&lt;Object&gt;"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="2bb0bb0e-e3f4-4e71-b42d-6294356a93fd"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="6aa45974-f8c5-40c0-95d2-e868e3290a53">
+                <providedInterfaceMoniker
+                  Id="97ca93be-73c2-4d73-84e3-499a08e1f443"
+                  LastKnownName="Port1"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="0dfa02a8-7103-4d94-9f1d-6e2485107067"
+                LastKnownName="Save Data"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="3f9efd29-8c4e-40d8-a1a5-fb5f970ebece"
+        name="Save data"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="30ca4db3-abce-4128-a09a-a1e2c6575ba5"
+            name="process"
+            profile="StandardProfileL2" />
+          <stereotypeInstance
+            Id="eb380166-3318-4a8d-9bfa-601621f725d7"
+            name="service"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="97ca93be-73c2-4d73-84e3-499a08e1f443"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="94f02ade-7d81-4a29-aa37-30a2efe8a869"
+                LastKnownName="Create Transaction"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface
+            Id="3c5dbd57-55bb-4970-97b4-ba060c913cb7"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="502a3d07-80cd-4a35-a291-6bb9f63a99ab">
+                <providedInterfaceMoniker
+                  Id="19a4292a-e88e-48d5-8387-00418ddc6efa"
+                  LastKnownName="Port4"
+                  LastKnownLocation="B2B_Layer.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="f5988193-4adc-43e3-a0bd-83d44cb61527"
+                LastKnownName="Connect to Database"
+                LastKnownLocation="B2B_Layer.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ac07cf3d-81fc-4bbe-b376-69c4a0efc2fc"
+        name="Load Form"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="8c83fa54-1ac5-4a65-a723-01791d908d79"
+        name="Construct Form"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="09f130e6-a377-4e70-a983-9d3e4fded4c9"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a902d464-32a7-4e18-ab25-b1bdc8d261b8"
+        name="Get Properties"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="03a3b15e-fe91-4822-beb8-880dcc670bcf"
+        name="Interface7"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="574dbc74-0bd0-45f8-bf3b-6068e1f8426c"
+        name="Interface8"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e8d81302-0862-47b7-9990-191b1c2ae663"
+        name="Interface9"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="6f1de864-a1cd-4ae2-99df-283fbc8a7e47"
+        name="Interface10"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="b411c508-373a-440b-9a4a-096a43156b27"
+        name="Interface11"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="0485e742-b48a-44d4-9535-a4b8aed28438"
+        name="ParseSite(List templates)"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ea55826d-936a-4cc4-8540-42cf81b0c5a0"
+        name="WSDL.searchFlight"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ab32dacb-206b-44d2-b3f0-303d858b7a7e"
+        name="Search Flight"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="354c8416-0fec-4b0b-b334-0f3f22cbd19c"
+        name="Search Flight"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="6e3d0808-b75a-4331-b795-2dd39adfdc69"
+        name="Connect to WDSL"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="5f06f31a-385c-402d-bbe0-984d4de65507"
+        name="GetObjects"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="42b00995-dd9a-44e2-bd90-45db525a6dc1"
+        name="Interface5"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="26a9073f-31b1-4d64-a0fc-f5d92e14960f"
+        name="Use API"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="14324516-b8fa-475f-bb30-b0b381280d46"
+        name="Get Objects"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="9cdae0c0-bc6d-4cd3-b9d7-8a2ad405c5d2"
+        name="Validate Data"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ad284a15-e40a-4f89-864d-e132e9870fae"
+        name="Data to List&lt;Object&gt;"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="0dfa02a8-7103-4d94-9f1d-6e2485107067"
+        name="Save Data"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="94f02ade-7d81-4a29-aa37-30a2efe8a869"
+        name="Create Transaction"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f5988193-4adc-43e3-a0bd-83d44cb61527"
+        name="Connect to Database"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="c95f2cec-8248-4470-b05d-31f7b5a4d01c"
+        name="Storage Data"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
