@@ -39,7 +39,19 @@
     <Compile Include="APA_program.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="NLog">
+      <HintPath>..\packages\NLog.4.3.0\lib\net45\NLog.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Loginizer\Loginizer.csproj">
+      <Project>{67f54539-c0e3-497c-b0e5-8a62acec744d}</Project>
+      <Name>Loginizer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\..\..\..\..\..\Program Files %28x86%29\Microsoft.NET\Primary Interop Assemblies\Microsoft.mshtml.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
