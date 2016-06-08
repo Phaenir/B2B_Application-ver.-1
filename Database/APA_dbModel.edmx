@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="b2b_supportModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="Хранилище b2b_supportModel" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="airline">
           <Key>
             <PropertyRef Name="iata" />
@@ -194,7 +194,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="b2b_supportModelStoreContainer">
+        <EntityContainer Name="Хранилище b2b_supportModelContainer">
           <EntitySet Name="airline" EntityType="Self.airline" Schema="b2b_support" store:Type="Tables" />
           <EntitySet Name="airports" EntityType="Self.airports" Schema="b2b_support" store:Type="Tables" />
           <EntitySet Name="cities" EntityType="Self.cities" Schema="b2b_support" store:Type="Tables" />
@@ -435,7 +435,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="b2b_supportEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="apa_dbModel" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="airline" EntityType="Self.airline" />
           <EntitySet Name="airports" EntityType="Self.airports" />
           <EntitySet Name="cities" EntityType="Self.cities" />
@@ -475,7 +475,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="b2b_supportModelStoreContainer" CdmEntityContainer="b2b_supportEntities1">
+        <EntityContainerMapping StorageEntityContainer="Хранилище b2b_supportModelContainer" CdmEntityContainer="apa_dbModel">
           <EntitySetMapping Name="airline">
             <EntityTypeMapping TypeName="b2b_supportModel.airline">
               <MappingFragment StoreEntitySet="airline">
@@ -614,8 +614,8 @@
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
         <DesignerProperty Name="EnablePluralization" Value="false" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
-        <DesignerProperty Name="UseLegacyProvider" Value="false" />
-        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
       </DesignerInfoPropertySet>
     </Options>
     <!-- Diagram content (shape and connector positions) -->

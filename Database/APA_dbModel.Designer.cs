@@ -1,4 +1,4 @@
-﻿// Создание кода T4 для модели "C:\Users\phaen\Source\Repos\B2B_Application ver. 1\B2B_Application ver. 1\Database\APA_dbModel.edmx" включено. 
+﻿// Создание кода T4 для модели "C:\Users\RSadykov\Source\Repos\B2B_Application-ver.-1\Database\APA_DBmodel.edmx" включено. 
 // Чтобы включить формирование кода прежних версий, измените значение свойства "Стратегия создания кода" конструктора
 // на "Legacy ObjectContext". Это свойство доступно в окне "Свойства", если модель
 // открыта в конструкторе.
