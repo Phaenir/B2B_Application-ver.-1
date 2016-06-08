@@ -33,60 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <EntityDeploy Include="APA_dbModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>APA_dbModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="APA_dbModel.edmx.diagram">
-      <DependentUpon>APA_dbModel.edmx</DependentUpon>
-    </None>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="airline.cs">
-      <DependentUpon>APA_dbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="airports.cs">
-      <DependentUpon>APA_dbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="APA_dbModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>APA_dbModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="APA_dbModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>APA_dbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="APA_dbModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>APA_dbModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="cities.cs">
-      <DependentUpon>APA_dbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="contributors_type.cs">
-      <DependentUpon>APA_dbModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="DB_Program.cs" />
-    <Compile Include="roundtrip.cs">
-      <DependentUpon>APA_dbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="search_result.cs">
-      <DependentUpon>APA_dbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="service_class.cs">
-      <DependentUpon>APA_dbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="stops.cs">
-      <DependentUpon>APA_dbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="templates_storage.cs">
-      <DependentUpon>APA_dbModel.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -132,18 +83,6 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="APA_dbModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>APA_dbModel.edmx</DependentUpon>
-      <LastGenOutput>APA_dbModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="APA_dbModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>APA_dbModel.edmx</DependentUpon>
-      <LastGenOutput>APA_dbModel.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
