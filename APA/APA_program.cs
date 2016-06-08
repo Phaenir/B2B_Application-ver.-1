@@ -13,6 +13,7 @@ namespace APA
         {
             Log.Instance.Debug("Write Me");
             Log.Instance.Error("Write me 2 from APA");
+            Log.Instance.Fatal("Fatal Joke");
         }
     }
 }
