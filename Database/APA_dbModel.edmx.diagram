@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="584fceb885c54cb282705b3e94ff74e6" Name="Diagram1">
+        <EntityTypeShape EntityType="apa_supportModel.airline" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="apa_supportModel.airports" Width="1.5" PointX="7.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="apa_supportModel.cities" Width="1.5" PointX="2.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="apa_supportModel.contributors_type" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="apa_supportModel.roundtrip" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="apa_supportModel.search_result" Width="1.5" PointX="5.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="apa_supportModel.service_class" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="apa_supportModel.stops" Width="1.5" PointX="7.5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="apa_supportModel.templates_storage" Width="1.5" PointX="4.75" PointY="10" IsExpanded="true" />
+        <AssociationConnector Association="apa_supportModel.type" ManuallyRouted="false" />
+        <AssociationConnector Association="apa_supportModel.roundtrip_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="apa_supportModel.search_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="apa_supportModel.serviceClass" ManuallyRouted="false" />
+        <AssociationConnector Association="apa_supportModel.searchResult_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="apa_supportModel.serviceclass_fk" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
