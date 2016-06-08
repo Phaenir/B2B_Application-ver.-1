@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{203BEFA8-F138-483E-94FE-79837AFE3541}</ProjectGuid>
+    <ProjectGuid>{85E7814B-A7B8-47BD-9EC0-A4CA78EA485C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Database</RootNamespace>
@@ -33,27 +33,99 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <EntityDeploy Include="APA_DBmodel.edmx">
+    <EntityDeploy Include="APA_dbModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>APA_DBmodel.Designer.cs</LastGenOutput>
+      <LastGenOutput>APA_dbModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="APA_DBmodel.edmx.diagram">
-      <DependentUpon>APA_DBmodel.edmx</DependentUpon>
+    <None Include="APA_dbModel.edmx.diagram">
+      <DependentUpon>APA_dbModel.edmx</DependentUpon>
     </None>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    <Compile Include="airline.cs">
+      <DependentUpon>APA_dbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="airports.cs">
+      <DependentUpon>APA_dbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APA_dbModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>APA_dbModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APA_dbModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>APA_dbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="APA_dbModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>APA_dbModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="cities.cs">
+      <DependentUpon>APA_dbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="contributors_type.cs">
+      <DependentUpon>APA_dbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DB_Program.cs" />
+    <Compile Include="roundtrip.cs">
+      <DependentUpon>APA_dbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="search_result.cs">
+      <DependentUpon>APA_dbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="service_class.cs">
+      <DependentUpon>APA_dbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="stops.cs">
+      <DependentUpon>APA_dbModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="templates_storage.cs">
+      <DependentUpon>APA_dbModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.CF, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Fabric.Plugin, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.3.0\lib\net45\NLog.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog.Extended, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.Extended.4.0.0.1\lib\net45-full\NLog.Extended.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog.Web, Version=0.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.Web.4.2.1\lib\net35\NLog.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.Windows.Forms.4.2.3\lib\net35\NLog.Windows.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NLog.Xml, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.Xml.4.0.0.46\lib\net45\NLog.Xml.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Data">
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml" />
@@ -62,80 +134,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="airline.cs">
-      <DependentUpon>APA_DBmodel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="airports.cs">
-      <DependentUpon>APA_DBmodel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="APA_DBmodel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>APA_DBmodel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="APA_DBmodel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>APA_DBmodel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="APA_DBmodel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>APA_DBmodel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="cities.cs">
-      <DependentUpon>APA_DBmodel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="contributors_type.cs">
-      <DependentUpon>APA_DBmodel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="roundtrip.cs">
-      <DependentUpon>APA_DBmodel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="search_result.cs">
-      <DependentUpon>APA_DBmodel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="service_class.cs">
-      <DependentUpon>APA_DBmodel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="stops.cs">
-      <DependentUpon>APA_DBmodel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="templates_storage.cs">
-      <DependentUpon>APA_DBmodel.tt</DependentUpon>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="..\..\..\..\..\..\Program Files %28x86%29\Microsoft Visual Studio 14.0\Common7\IDE\ItemTemplatesCache\CSharp\MySQL\CSharpWinform_ItemTemplate.zip\Resources\bindingNavigatorAddNewItem.Image.png">
-      <Link>Resources\bindingNavigatorAddNewItem.Image.png</Link>
-    </Content>
-    <Content Include="..\..\..\..\..\..\Program Files %28x86%29\Microsoft Visual Studio 14.0\Common7\IDE\ItemTemplatesCache\CSharp\MySQL\CSharpWinform_ItemTemplate.zip\Resources\bindingNavigatorDeleteItem.Image.png">
-      <Link>Resources\bindingNavigatorDeleteItem.Image.png</Link>
-    </Content>
-    <Content Include="..\..\..\..\..\..\Program Files %28x86%29\Microsoft Visual Studio 14.0\Common7\IDE\ItemTemplatesCache\CSharp\MySQL\CSharpWinform_ItemTemplate.zip\Resources\bindingNavigatorMoveFirstItem.Image.png">
-      <Link>Resources\bindingNavigatorMoveFirstItem.Image.png</Link>
-    </Content>
-    <Content Include="..\..\..\..\..\..\Program Files %28x86%29\Microsoft Visual Studio 14.0\Common7\IDE\ItemTemplatesCache\CSharp\MySQL\CSharpWinform_ItemTemplate.zip\Resources\bindingNavigatorMoveLastItem.Image.png">
-      <Link>Resources\bindingNavigatorMoveLastItem.Image.png</Link>
-    </Content>
-    <Content Include="..\..\..\..\..\..\Program Files %28x86%29\Microsoft Visual Studio 14.0\Common7\IDE\ItemTemplatesCache\CSharp\MySQL\CSharpWinform_ItemTemplate.zip\Resources\bindingNavigatorMoveNextItem.Image.png">
-      <Link>Resources\bindingNavigatorMoveNextItem.Image.png</Link>
-    </Content>
-    <Content Include="..\..\..\..\..\..\Program Files %28x86%29\Microsoft Visual Studio 14.0\Common7\IDE\ItemTemplatesCache\CSharp\MySQL\CSharpWinform_ItemTemplate.zip\Resources\bindingNavigatorMovePreviousItem.Image.png">
-      <Link>Resources\bindingNavigatorMovePreviousItem.Image.png</Link>
-    </Content>
-    <Content Include="..\..\..\..\..\..\Program Files %28x86%29\Microsoft Visual Studio 14.0\Common7\IDE\ItemTemplatesCache\CSharp\MySQL\CSharpWinform_ItemTemplate.zip\Resources\bindingNavigatorSaveItem.Image.png">
-      <Link>Resources\bindingNavigatorSaveItem.Image.png</Link>
-    </Content>
-    <Content Include="APA_DBmodel.Context.tt">
+    <Content Include="APA_dbModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>APA_DBmodel.edmx</DependentUpon>
-      <LastGenOutput>APA_DBmodel.Context.cs</LastGenOutput>
+      <DependentUpon>APA_dbModel.edmx</DependentUpon>
+      <LastGenOutput>APA_dbModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="APA_DBmodel.tt">
+    <Content Include="APA_dbModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>APA_DBmodel.edmx</DependentUpon>
-      <LastGenOutput>APA_DBmodel.cs</LastGenOutput>
+      <DependentUpon>APA_dbModel.edmx</DependentUpon>
+      <LastGenOutput>APA_dbModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
