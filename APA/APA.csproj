@@ -33,25 +33,40 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="APA_program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="NLog">
-      <HintPath>..\packages\NLog.4.3.0\lib\net45\NLog.dll</HintPath>
+    <Reference Include="Metrics, Version=0.3.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Metrics.NET.0.3.7\lib\net45\Metrics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Metrics.Log4Net, Version=0.2.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Metrics.Log4Net.0.2.14\lib\net45\Metrics.Log4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Loginizer\Loginizer.csproj">
-      <Project>{67f54539-c0e3-497c-b0e5-8a62acec744d}</Project>
-      <Name>Loginizer</Name>
-    </ProjectReference>
+    <Analyzer Include="..\..\..\..\..\..\..\Program Files %28x86%29\Microsoft.NET\Primary Interop Assemblies\Microsoft.mshtml.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Analyzer Include="..\..\..\..\..\..\..\Program Files %28x86%29\Microsoft.NET\Primary Interop Assemblies\Microsoft.mshtml.dll" />
+    <ProjectReference Include="..\MyNLog\MyNLog.csproj">
+      <Project>{abf66475-eab9-4ab2-9ff7-8bd2276ad8e4}</Project>
+      <Name>MyNLog</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

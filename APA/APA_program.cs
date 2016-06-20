@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Loginizer;
+using MyNLog;
 
 namespace APA
 {
     class ApaProgram
     {
+        
+
         public static void Main()
         {
-            Log.Instance.Debug("Write Me");
-            Log.Instance.Error("Write me 2 from APA");
-            Log.Instance.Fatal("Fatal Joke");
+            MyLogger logger=new MyLogger(LoggerType.XML);
+            logger.SetMessage(LoggerLevel.DEBUG, "success work");
         }
     }
 }
