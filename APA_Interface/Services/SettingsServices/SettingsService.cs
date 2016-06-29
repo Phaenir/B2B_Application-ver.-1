@@ -40,7 +40,7 @@ namespace APA_Interface.Services.SettingsServices
             set
             {
                 _helper.Write(nameof(AppTheme), value.ToString());
-                (Window.Current.Content as FrameworkElement).RequestedTheme = value.ToElementTheme();
+                ((FrameworkElement) Window.Current.Content).RequestedTheme = value.ToElementTheme();
                 Views.Shell.HamburgerMenu.RefreshStyles(value);
             }
         }

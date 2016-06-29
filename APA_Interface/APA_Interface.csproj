@@ -91,17 +91,34 @@
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
     <None Include="APA_Interface_TemporaryKey.pfx" />
+    <None Include="DataModel\SampleData.json" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataModel\SampleDataSource.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\DetailPageViewModel.cs" />
     <Compile Include="ViewModels\SettingsPageViewModel.cs" />
+    <Compile Include="Views\APA\CommonConfiguration.xaml.cs">
+      <DependentUpon>CommonConfiguration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\APA\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\APA\PreferableListConfiguration.xaml.cs">
+      <DependentUpon>PreferableListConfiguration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\APA\ResultPage.xaml.cs">
+      <DependentUpon>ResultPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\APA\TemplateConfiguration.xaml.cs">
+      <DependentUpon>TemplateConfiguration.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Busy.xaml.cs">
       <DependentUpon>Busy.xaml</DependentUpon>
     </Compile>
@@ -120,6 +137,9 @@
     <Compile Include="Views\Splash.xaml.cs">
       <DependentUpon>Splash.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\TestPage.xaml.cs">
+      <DependentUpon>TestPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -127,10 +147,54 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Airline Master List.png" />
+    <Content Include="Assets\Application Icon.ico" />
+    <Content Include="Assets\By Month.png" />
+    <Content Include="Assets\Common Report.png" />
+    <Content Include="Assets\Configuration.png" />
+    <Content Include="Assets\Connection Settings.png" />
+    <Content Include="Assets\Convert Me.png" />
+    <Content Include="Assets\Duplicates.png" />
+    <Content Include="Assets\Error Code.png" />
+    <Content Include="Assets\Excel-to-XML.png" />
+    <Content Include="Assets\Failed Finance.png" />
+    <Content Include="Assets\Failed.png" />
+    <Content Include="Assets\Finance Reports.png" />
+    <Content Include="Assets\Find Bank.png" />
+    <Content Include="Assets\Find Customer.png" />
+    <Content Include="Assets\Find Objects.png" />
+    <Content Include="Assets\Find Passenger.png" />
+    <Content Include="Assets\General Consolidated.png" />
+    <Content Include="Assets\General.png" />
+    <Content Include="Assets\line.png" />
+    <Content Include="Assets\Log-to-CSV.png" />
+    <Content Include="Assets\Log-to-Excel.png" />
+    <Content Include="Assets\Make Search.png" />
+    <Content Include="Assets\Our Search.png" />
+    <Content Include="Assets\Price Analyse.png" />
+    <Content Include="Assets\Price Trends.png" />
+    <Content Include="Assets\Refresh DB.png" />
+    <Content Include="Assets\Refund.png" />
+    <Content Include="Assets\Refunded.png" />
+    <Content Include="Assets\Schemas Control.png" />
+    <Content Include="Assets\Search Engine.png" />
+    <Content Include="Assets\Search Timeout.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\SplashScreen-Kirito.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\Sucess.png" />
+    <Content Include="Assets\Top Airlines.png" />
+    <Content Include="Assets\Top Banks.png" />
+    <Content Include="Assets\Top Clearing Center.png" />
+    <Content Include="Assets\Top GDS.png" />
+    <Content Include="Assets\Websites Parse.png" />
+    <Content Include="Assets\XML-To-Excel.png" />
     <Content Include="Help.htm" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
-    <Content Include="Assets\SplashScreen.scale-200.png" />
     <Content Include="Assets\Square150x150Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
@@ -148,6 +212,26 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Views\APA\CommonConfiguration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\APA\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\APA\PreferableListConfiguration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\APA\ResultPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\APA\TemplateConfiguration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Busy.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -170,6 +254,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Splash.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TestPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

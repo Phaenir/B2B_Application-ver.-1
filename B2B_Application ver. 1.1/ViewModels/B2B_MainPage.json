@@ -1,0 +1,314 @@
+{
+"Groups": [
+{
+"UniqueId": "Find-Object",
+"Title": "Find Objects",
+"Subtitle": "Information about banks and customers\n",
+"ImagePath": "Assets/Find Objects.png",
+"Description": "Here we place functions to find banks by BIN and Name and find customer by PNR and Name",
+"Items": [
+{
+"UniqueId": "Find-Object-Bank",
+"Title": "Find Bank",
+"Subtitle": "by BIN or Name",
+"ImagePath": "Assets/Find Bank.png",
+"Description": "Make request to Database to receive as result table with information about banks. In request we could send BIN (4 and 6 digits) or Name (English, Russian)",
+"Content": "B2B_Support_Application.ViewCollection.SFBA.RootPages.FindFinanceInstitute"
+},
+{
+"UniqueId": "Find-Object-Customer",
+"Title": "Find Customer",
+"Subtitle": "by Name or Order Number",
+"ImagePath": "Assets/Find Customer.png",
+"Description": "Make request to Database to receive as result table with information about customer. In request we could send Name of customer or Number of order",
+"Content": "B2B_Support_Application.ViewCollection.SFBA.RootPages.FindCustomer"
+},
+{
+"UniqueId": "Find-Object-Passenger",
+"Title": "Find Passenger",
+"Subtitle": "by PNR or E-Mail",
+"ImagePath": "Assets/Find Passenger.png",
+"Description": "Make request to Database to receive as result table with information about banks. In request we could send PNR or E-Mail",
+"Content": "B2B_Support_Application.ViewCollection.SFBA.RootPages.FindPassenger"
+}
+]
+},
+{
+"UniqueId": "Finance-Reports",
+"Title": "Finance Reports",
+"Subtitle": "Information about finance turnover\n",
+"ImagePath": "Assets/Finance Reports.png",
+"Description": "Here we place reports about our financial statement splinted by groups (banks, status, time period)",
+"Items": [
+{
+"UniqueId": "Finance-Reports-Top-Banks",
+"Title": "Top Banks",
+"Subtitle": "",
+"ImagePath": "Assets/Top Banks.png",
+"Description": "Turnover for selected period focused on bank services usage",
+"Content": "B2B_Support_Application.ViewCollection.SFBA.RootPages.TopBanks"
+},
+{
+"UniqueId": "Finance-Reports-Top-GDS",
+"Title": "Top GDS",
+"Subtitle": "",
+"ImagePath": "Assets/Top GDS.png",
+"Description": "Turnover for selected period focused on GDS usage",
+"Content": "B2B_Support_Application.ViewCollection.SFBA.RootPages.TopGDS"
+},
+{
+"UniqueId": "Finance-Reports-Top-Clearing-Center",
+"Title": "Top Clearing Center",
+"Subtitle": "",
+"ImagePath": "Assets/Top Clearing Center.png",
+"Description": "Turnover for selected period focused on Clearing Center (GateLine, eGO) services usage",
+"Content": "B2B_Support_Application.ViewCollection.SFBA.RootPages.TopCC"
+},
+{
+"UniqueId": "Finance-Reports-Top-Airlines",
+"Title": "Top Airlines",
+"Subtitle": "",
+"ImagePath": "Assets/Top Airlines.png",
+"Description": "Turnover for selected period focused on Airlines usage",
+"Content": "B2B_Support_Application.ViewCollection.SFBA.RootPages.TopAirlines"
+},
+{
+"UniqueId": "Finance-Reports-By-Months",
+"Title": "By Months",
+"Subtitle": "",
+"ImagePath": "Assets/By Month.png",
+"Description": "Turnover for selected period focused on all parameters with status 'success",
+"Content": "B2B_Support_Application.ViewCollection.SFBA.RootPages.MonthlyReport"
+},
+{
+"UniqueId": "Finance-Reports-Failed",
+"Title": "Failed",
+"Subtitle": "",
+"ImagePath": "Assets/Failed.png",
+"Description": "Turnover for selected period focused on all parameters with status 'failed",
+"Content": "B2B_Support_Application.ViewCollection.SFBA.RootPages.FailedReport"
+},
+{
+"UniqueId": "Finance-Reports-Refunded",
+"Title": "Refunded",
+"Subtitle": "",
+"ImagePath": "Assets/Refunded.png",
+"Description": "Turnover for selected period focused on all parameters with status 'refund",
+"Content": "B2B_Support_Application.ViewCollection.SFBA.RootPages.RefundedReport"
+},
+{
+"UniqueId": "Finance-Reports-General",
+"Title": "General",
+"Subtitle": "",
+"ImagePath": "Assets/General.png",
+"Description": "Turnover for selected period focused on all parameters",
+"Content": "SFBA_GeneralReport"
+}
+]
+},
+{
+"UniqueId": "Convert-Me",
+"Title": "Convert Me",
+"Subtitle": "Conversation XML, CSV <-> XLSX\n",
+"ImagePath": "Assets/Convert Me.png",
+"Description": "Here we place instruments to make conversation between XML, LOG, CSV to EXCEL",
+"Items": [
+{
+"UniqueId": "Convert-Me-Log-to-CSV",
+"Title": "Log <-> CSV",
+"Subtitle": "Convert log files in CSV format.\nSeparate symbol is ',",
+"ImagePath": "Assets/Log-to-CSV.png",
+"Description": "Convert log files to CSV format and back",
+"Content": "B2B_Support_Application.ViewCollection.CP.RootPages.LogToCsv"
+},
+{
+"UniqueId": "Convert-Me-Log-to-Excel",
+"Title": "Log <-> Excel",
+"Subtitle": "Convert log files to Excel format",
+"ImagePath": "Assets/Log-to-Excel.png",
+"Description": "Convert log files to Excel format and back",
+"Content": "B2B_Support_Application.ViewCollection.CP.RootPages.LogToExcel"
+},
+{
+"UniqueId": "Convert-Me-XML-to-Excel",
+"Title": "XML -> Excel",
+"Subtitle": "Convert XML files to Excel",
+"ImagePath": "Assets/XML-to-Excel.png",
+"Description": "Convert XML files to Excel format and back",
+"Content": "B2B_Support_Application.ViewCollection.CP.RootPages.XmlToExcel"
+},
+{
+"UniqueId": "Convert-Me-Excel-to-XML",
+"Title": "Excel -> XML",
+"Subtitle": "Convert Excel files to XML",
+"ImagePath": "Assets/Excel-to-XML.png",
+"Description": "Convert Excel files to XML",
+"Content": "B2B_Support_Application.ViewCollection.CP.RootPages.ExcelToXml"
+}
+]
+},
+{
+"UniqueId": "Price-Analyze",
+"Title": "Price Analyze",
+"Subtitle": "Price compare with\nagents and competitors",
+"ImagePath": "Assets/Price Analyse.png",
+"Description": "Here we place application to check prices from our agents and competitors with us",
+"Items": [
+  {
+    "UniqueId": "Price-Analyze-Make-Search",
+    "Title": "Make Search",
+    "Subtitle": "Make search of airline content\nin different services",
+    "ImagePath": "Assets/Make Search.png",
+    "Description": "There are a form that duplicates search form in popular websites with airline content sales. Also there are some config data that accumulate information about parameters of search",
+    "Content": "B2B_Support_Application.ViewCollection.APA.RootPages.MakeSearch"
+  },
+{
+"UniqueId": "Price-Analyze-Make-Common-Report",
+"Title": "Common Report",
+"Subtitle": "Report according market\nprice investigation",
+"ImagePath": "Assets/Common Report.png",
+"Description": "After completing research we consolidate it in report form",
+"Content": "B2B_Support_Application.ViewCollection.APA.RootPages.CommonReports"
+},
+{
+"UniqueId": "Price-Analyze-Price-Trends",
+"Title": "Price Trends",
+"Subtitle": "Investigate of price changes\nduring given period",
+"ImagePath": "Assets/Price Trends.png",
+"Description": "Here we make report that show us how price changed during given period by airline and website",
+"Content": "B2B_Support_Application.ViewCollection.APA.RootPages.PriceTrends"
+},
+{
+"UniqueId": "Price-Analyze-Our-Search",
+"Title": "Our Search",
+"Subtitle": "Form that helps to investigate\nour prices for Sales Department",
+"ImagePath": "Assets/Our Search.png",
+"Description": "In this option we make a form where we help Sales Department make report about our advantages in prices",
+"Content": "B2B_Support_Application.ViewCollection.APA.RootPages.OurSearch"
+}
+]
+},
+{
+"UniqueId": "B2B-reports",
+"Title": "B2B Reports",
+"Subtitle": "System activities analyzing\n",
+"ImagePath": "Assets/line.png",
+"Description": "Here we place reports based on B2B reports loaded from IDEA system",
+"Items": [
+{
+"UniqueId": "B2B-reports-Success",
+"Title": "Success",
+"Subtitle": "All successful bookings",
+"ImagePath": "Assets/Sucess.png",
+"Description": "In this page we show all successful bookings in given period",
+"Content": "B2B_Support_Application.ViewCollection.B2B.RootPages.SuccessReport"
+},
+{
+"UniqueId": "B2B-reports-Failed",
+"Title": "Failed",
+"Subtitle": "All failed bookings",
+"ImagePath": "Assets/Failed.png",
+"Description": "In this page we show all failed bookings in given period",
+"Content": "B2B_Support_Application.ViewCollection.B2B.RootPages.FailedReport"
+},
+{
+"UniqueId": "B2B-reports-Refund",
+"Title": "Refund",
+"Subtitle": "All bookings on refund",
+"ImagePath": "Assets/Refund.png",
+"Description": "In this page we show all refunded bookings in given period",
+"Content": "B2B_Support_Application.ViewCollection.B2B.RootPages.RefundReport"
+},
+{
+"UniqueId": "B2B-reports-Error-Codes",
+"Title": "Error Codes",
+"Subtitle": "Library of Error Codes\nand their descriptions",
+"ImagePath": "Assets/Error Code.png",
+"Description": "In this page we show Error Codes that we have in our systems",
+"Content": "B2B_Support_Application.ViewCollection.B2B.RootPages.ErrorCode"
+},
+{
+"UniqueId": "B2B-reports-Master-List",
+"Title": "Airline Master List",
+"Subtitle": "List of available airlines",
+"ImagePath": "Assets/Airline Master List.png",
+"Description": "In this page we show all available airlines with history of changes",
+"Content": "B2B_Support_Application.ViewCollection.B2B.RootPages.MasterList"
+},
+{
+"UniqueId": "B2B-reports-Duplicates",
+"Title": "Duplicates",
+"Subtitle": "List of duplicate bookings",
+"ImagePath": "Assets/Duplicates.png",
+"Description": "In this option we check booking during given period on duplicates",
+"Content": "B2B_Support_Application.ViewCollection.B2B.RootPages.DuplicatesReport"
+},
+{
+"UniqueId": "B2B-reports-Search-TimeOut",
+"Title": "Search TimeOut",
+"Subtitle": "All bookings that declined\nunder timeout reason",
+"ImagePath": "Assets/Search Timeout.png",
+"Description": "In this option we look all bookings with over-limited timeout",
+"Content": "B2B_Support_Application.ViewCollection.B2B.RootPages.SearchTimeOut"
+},
+{
+"UniqueId": "B2B-reports-General-Consolidated",
+"Title": "General Consolidated",
+"Subtitle": "Full report with filters",
+"ImagePath": "Assets/General Consolidated.png",
+"Description": "Here we make consolidated report with filters",
+"Content": "B2B_Support_Application.ViewCollection.B2B.RootPages.GeneralReport"
+}
+]
+},
+{
+"UniqueId": "Configure",
+"Title": "Configuration",
+"Subtitle": "Application configuration\n",
+"ImagePath": "Assets/Configuration.png",
+"Description": "Here we save main configurations for our applications and its functions",
+"Items": [
+  {
+    "UniqueId": "Configure-Bank-DB-Refresh",
+    "Title": "Refresh Database with Bank information",
+    "Subtitle": "Send command to refresh data\nabout banks from trusted sources",
+    "ImagePath": "Assets/Refresh DB.png",
+    "Description": "Since information about banks changes periodically, we need manually refresh info there",
+    "Content": "B2B_Support_Application.ViewCollection.CFG.RootPages.RefreshDB"
+  },
+{
+"UniqueId": "Configure-Connections",
+"Title": "Connection Settings",
+"Subtitle": "Parameters that influenced on connection",
+"ImagePath": "Assets/Connection Settings.png",
+"Description": "Settings that influence on connection of application with open sources (delay, speed, resources, proxy, conn_string to database",
+"Content": "B2B_Support_Application.ViewCollection.CFG.RootPages.Connections"
+},
+  {
+    "UniqueId": "Configure-Search-Engine",
+    "Title": "Search Engine parameters",
+    "Subtitle": "List of requirements for search\nfunction in agents and competitors\nwebsites",
+    "ImagePath": "Assets/Search Engine.png",
+    "Description": "Here we set parameters for search module",
+    "Content": "B2B_Support_Application.ViewCollection.CFG.RootPages.SearchEngine"
+  },
+  {
+    "UniqueId": "Configure-Website-Targeting",
+    "Title": "Websites Parse Configurations",
+    "Subtitle": "Website Parse Configuration",
+    "ImagePath": "Assets/Websites Parse.png",
+    "Description": "Here we save tags and ID to recognize information from websites that we investigate",
+    "Content": "B2B_Support_Application.ViewCollection.CFG.RootPages.TargetWebsite"
+  },
+  {
+    "UniqueId": "Configure-Schemes-Storage",
+    "Title": "Schemes Control",
+    "Subtitle": "Schemes",
+    "ImagePath": "Assets/Schemas Control.png",
+    "Description": "Here we consolidate information about all schemes saved in applications to further manage it in functions realizations",
+    "Content": "B2B_Support_Application.ViewCollection.CFG.RootPages.Schemes"
+  }
+]
+}
+]
+}
